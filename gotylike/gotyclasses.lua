@@ -43,11 +43,18 @@ classDefs = {
             "Freerunner",
         },
         armorValueMods={
+            -- QuickDraw
             {ValueMods.QuickDraw, 0.5},
             {ValueMods.BeltThrowSpeedBuff, 0.25},
             {ValueMods.AcquisitionTimeByEnemyTurretsBuff, 0.5},
+            -- Survivalist
             {ValueMods.SurvivalistHealth, 0.3},
             {ValueMods.SurvivalistEnergy, 0.2},
+            -- Rage
+            {ValueMods.Rage, true},
+            {ValueMods.RageEnergyRegen, 0.2},
+            {ValueMods.RageTime, 15.0},
+            {ValueMods.RageMassReduction, -0.25},
         }
     },
     Infiltrator={
@@ -78,9 +85,11 @@ classDefs = {
             "Assassin",
         },
         armorValueMods={
+            -- QuickDraw
             {ValueMods.QuickDraw, 0.5},
             {ValueMods.BeltThrowSpeedBuff, 0.25},
             {ValueMods.AcquisitionTimeByEnemyTurretsBuff, 0.5},
+            -- Survivalist
             {ValueMods.SurvivalistHealth, 0.3},
             {ValueMods.SurvivalistEnergy, 0.2},
         }
@@ -109,9 +118,11 @@ classDefs = {
             "Specter",
         },
         armorValueMods={
+            -- QuickDraw
             {ValueMods.QuickDraw, 0.5},
             {ValueMods.BeltThrowSpeedBuff, 0.25},
             {ValueMods.AcquisitionTimeByEnemyTurretsBuff, 0.5},
+            -- Survivalist
             {ValueMods.SurvivalistHealth, 0.3},
             {ValueMods.SurvivalistEnergy, 0.2},
         }
@@ -146,9 +157,11 @@ classDefs = {
             "Synthrall",
         },
         armorValueMods={
+            -- QuickDraw
             {ValueMods.QuickDraw, 0.5},
             {ValueMods.BeltThrowSpeedBuff, 0.25},
             {ValueMods.AcquisitionTimeByEnemyTurretsBuff, 0.5},
+            -- Survivalist
             {ValueMods.SurvivalistHealth, 0.2},
             {ValueMods.SurvivalistEnergy, 0.2},
         }
@@ -181,9 +194,11 @@ classDefs = {
             "Griever",
         },
         armorValueMods={
+            -- QuickDraw
             {ValueMods.QuickDraw, 0.5},
             {ValueMods.BeltThrowSpeedBuff, 0.25},
             {ValueMods.AcquisitionTimeByEnemyTurretsBuff, 0.5},
+            -- Survivalist
             {ValueMods.SurvivalistHealth, 0.2},
             {ValueMods.SurvivalistEnergy, 0.2},
         }
@@ -214,11 +229,15 @@ classDefs = {
             "Specialist",
         },
         armorValueMods={
+            -- QuickDraw
             {ValueMods.QuickDraw, 0.5},
             {ValueMods.BeltThrowSpeedBuff, 0.25},
             {ValueMods.AcquisitionTimeByEnemyTurretsBuff, 0.5},
+            -- Survivalist
             {ValueMods.SurvivalistHealth, 0.2},
             {ValueMods.SurvivalistEnergy, 0.2},
+            -- Vehicle Improvements
+            {ValueMods.VehicleEnergyBuff, 0.25},
         }
     },
     Juggernaught={
@@ -247,11 +266,17 @@ classDefs = {
             "The Forlorn",
         },
         armorValueMods={
+            -- QuickDraw
             {ValueMods.QuickDraw, 0.5},
             {ValueMods.BeltThrowSpeedBuff, 0.25},
             {ValueMods.AcquisitionTimeByEnemyTurretsBuff, 0.5},
+            -- Survivalist
             {ValueMods.SurvivalistHealth, 0.12},
             {ValueMods.SurvivalistEnergy, 0.2},
+            -- Potential Energy
+            {ValueMods.PotentialEnergy, true},
+            -- Super Heavy
+            {ValueMods.SuperHeavy, true},
         }
     },
     Doombringer={
@@ -276,11 +301,17 @@ classDefs = {
             "Executioner",
         },
         armorValueMods={
+            -- QuickDraw
             {ValueMods.QuickDraw, 0.5},
             {ValueMods.BeltThrowSpeedBuff, 0.25},
             {ValueMods.AcquisitionTimeByEnemyTurretsBuff, 0.5},
+            -- Survivalist
             {ValueMods.SurvivalistHealth, 0.12},
             {ValueMods.SurvivalistEnergy, 0.2},
+            -- Potential Energy
+            {ValueMods.PotentialEnergy, true},
+            -- Super Heavy
+            {ValueMods.SuperHeavy, true},
         }
     },
     Brute={
@@ -312,11 +343,17 @@ classDefs = {
             "Crusher",
         },
         armorValueMods={
+            -- QuickDraw
             {ValueMods.QuickDraw, 0.5},
             {ValueMods.BeltThrowSpeedBuff, 0.25},
             {ValueMods.AcquisitionTimeByEnemyTurretsBuff, 0.5},
+            -- Survivalist
             {ValueMods.SurvivalistHealth, 0.12},
             {ValueMods.SurvivalistEnergy, 0.2},
+            -- Potential Energy
+            {ValueMods.PotentialEnergy, true},
+            -- Super Heavy
+            {ValueMods.SuperHeavy, true},
         }
     },
 }
