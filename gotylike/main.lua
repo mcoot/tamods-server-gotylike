@@ -1,11 +1,11 @@
 -- Server Settings
-require("serversettings")
+require("gotylike/serversettings")
 
 -- Classes
-require("gotyclasses")
+require("gotylike/gotyclasses")
 
 -- Weapon/item re-balance
-require("items")
+require("gotylike/items")
 
 -- Vehicles
-require("vehicles")
+require("gotylike/vehicles")

@@ -1,4 +1,4 @@
-utils = require("utils")
+utils = require("gotylike/utils")
 
 --------------------------
 -- Settings
@@ -144,7 +144,7 @@ classDefs = {
         },
         beltItems={
             "Frag Grenades XL",
-            "Short-Fuse Frags",
+            "Short-Fuse Frag Grenades",
             "AP Grenades",
             "Proximity Grenades",
         },
@@ -179,10 +179,10 @@ classDefs = {
             "NJ5 SMG",
         },
         beltItems={
-            "EMP Grenade"
-            "EMP XL Grenade"
-            "Blackout Grenade"
-            "Cluster Grenade"
+            "EMP Grenade",
+            "EMP XL Grenade",
+            "Blackout Grenade",
+            "Cluster Grenade",
         },
         packs={
             "Shield Pack",
@@ -216,9 +216,9 @@ classDefs = {
             "Sawed Off Shotgun",
         },
         beltItems={
-            "TCNG"
-            "Shortfuse TCNG"
-            "Motion Sensor"
+            "TCNG",
+            "TCNG Quickfuse",
+            "Motion Sensor",
         },
         packs={
             "Light Turret",
@@ -259,7 +259,7 @@ classDefs = {
         },
         packs={
             "Regen Pack",
-            "Heavy Energy Pool Pack",
+            "Heavy Energy Pack",
         },
         skins={
             "Juggernaut",
@@ -330,7 +330,7 @@ classDefs = {
         },
         beltItems={
             "Fractal Grenade",
-            "Extended Fractal Grenade",
+            "Extended Fractal",
             "Light Sticky Grenade",
         },
         packs={
