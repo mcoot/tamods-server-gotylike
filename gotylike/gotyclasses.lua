@@ -27,6 +27,7 @@ classDefs = {
             "Shotgun",
             "Holdout Shotgun",
             "Sparrow",
+            {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
         },
         beltItems={
             "Impact Nitron",
@@ -69,6 +70,7 @@ classDefs = {
             "Arctic SN7 Pistol",
             "Throwing Knives",
             "Shocklance",
+            {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
         },
         beltItems={
             "Sticky Grenades",
@@ -104,6 +106,7 @@ classDefs = {
             "SAP20",
             "Falcon",
             "Accurized Shotgun",
+            {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
         },
         beltItems={
             "T5 Grenades",
@@ -141,6 +144,7 @@ classDefs = {
             "Thumper DX",
             "Eagle",
             "Nova Blaster",
+            {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
         },
         beltItems={
             "Frag Grenades XL",
@@ -177,6 +181,7 @@ classDefs = {
             "NJ4 SMG",
             "Desert NJ4 SMG",
             "NJ5 SMG",
+            {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
         },
         beltItems={
             "EMP Grenade",
@@ -212,8 +217,8 @@ classDefs = {
             "TCN4 Rockwind",
             "Flak Cannon",
             "Improved Repair Tool",
-            "Long Range Repair Tool",
             "Sawed Off Shotgun",
+            {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
         },
         beltItems={
             "TCNG",
@@ -251,6 +256,7 @@ classDefs = {
             "Spinfusor MK-X",
             "Heavy Twinfusor",
             "X1 LMG",
+            {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
         },
         beltItems={
             "Heavy AP Grenade",
@@ -288,6 +294,7 @@ classDefs = {
             "Heavy Bolt Launcher",
             "Saber Launcher",
             "Titan Launcher",
+            {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
         },
         beltItems={
             "Frag Grenade",
@@ -327,6 +334,7 @@ classDefs = {
             "Plasma Cannon",
             "Nova Blaster MX",
             "EFG",
+            {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
         },
         beltItems={
             "Fractal Grenade",
