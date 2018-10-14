@@ -43,6 +43,14 @@ classDefs = {
             "Pathfinder",
             "Freerunner",
         },
+        properties={
+            {Classes.Properties.HealthPool, 800},
+            {Classes.Properties.EnergyPool, 100},
+            {Classes.Properties.EnergyRechargeRate, 14},
+            {Classes.Properties.GroundSpeed, 500},
+            {Classes.Properties.AirControlMaxMultiplier, 3.7},
+            {Classes.Properties.AirControlMinMultiplier, 1.4},
+        },
         armorValueMods={
             -- QuickDraw
             {ValueMods.QuickDraw, 0.5},
@@ -51,6 +59,12 @@ classDefs = {
             -- Survivalist
             {ValueMods.SurvivalistHealth, 0.3},
             {ValueMods.SurvivalistEnergy, 0.2},
+            -- Pathfinder Armor Upgrades
+            {ValueMods.RegenTimeBuff, 0.25},
+            {ValueMods.EnergyBuff, 10},
+            {ValueMods.HealthRegenRateBuff, 0.25},
+            {ValueMods.HealthBuff, 100},
+            {ValueMods.MassBuff, -0.1},
             -- Rage
             {ValueMods.Rage, true},
             {ValueMods.RageEnergyRegen, 0.2},
@@ -86,6 +100,9 @@ classDefs = {
             "Mercenary",
             "Assassin",
         },
+        properties={
+            {Classes.Properties.HealthPool, 800},
+        },
         armorValueMods={
             -- QuickDraw
             {ValueMods.QuickDraw, 0.5},
@@ -94,6 +111,8 @@ classDefs = {
             -- Survivalist
             {ValueMods.SurvivalistHealth, 0.3},
             {ValueMods.SurvivalistEnergy, 0.2},
+            -- Infiltrator Armor Upgrades
+
         }
     },
     Sentinel={
@@ -119,6 +138,9 @@ classDefs = {
         skins={
             "Sentinel",
             "Specter",
+        },
+        properties={
+            {Classes.Properties.HealthPool, 800},
         },
         armorValueMods={
             -- QuickDraw
@@ -160,6 +182,9 @@ classDefs = {
             "Soldier",
             "Synthrall",
         },
+        properties={
+            {Classes.Properties.HealthPool, 1200},
+        },
         armorValueMods={
             -- QuickDraw
             {ValueMods.QuickDraw, 0.5},
@@ -198,6 +223,9 @@ classDefs = {
             "Mercenary",
             "Griever",
         },
+        properties={
+            {Classes.Properties.HealthPool, 1200},
+        },
         armorValueMods={
             -- QuickDraw
             {ValueMods.QuickDraw, 0.5},
@@ -232,6 +260,9 @@ classDefs = {
         skins={
             "Technician",
             "Specialist",
+        },
+        properties={
+            {Classes.Properties.HealthPool, 1200},
         },
         armorValueMods={
             -- QuickDraw
@@ -271,6 +302,9 @@ classDefs = {
             "Juggernaut",
             "The Forlorn",
         },
+        properties={
+            {Classes.Properties.HealthPool, 2400},
+        },
         armorValueMods={
             -- QuickDraw
             {ValueMods.QuickDraw, 0.5},
@@ -306,6 +340,9 @@ classDefs = {
         skins={
             "Doombringer",
             "Executioner",
+        },
+        properties={
+            {Classes.Properties.HealthPool, 2300},
         },
         armorValueMods={
             -- QuickDraw
@@ -350,6 +387,9 @@ classDefs = {
             "Brute",
             "Crusher",
         },
+        properties={
+            {Classes.Properties.HealthPool, 2400},
+        },
         armorValueMods={
             -- QuickDraw
             {ValueMods.QuickDraw, 0.5},
@@ -371,4 +411,7 @@ for className, classDef in pairs(classDefs) do
                    classDef.weapons, classDef.beltItems, classDef.packs,
                    classDef.skins)
     Classes.setValueMods(classDef.armorClass, classDef.armorValueMods)
+    for k, v in pairs(classDef.properties) do
+        Classes.setProperty(classDef.armorClass, v[1], v[2])
+    end
 end
