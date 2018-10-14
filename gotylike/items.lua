@@ -1,3 +1,76 @@
+local utils = require("gotylike/utils")
+
+local proj_propsToPrint = {
+    "Damage",
+    "ExplosiveRadius",
+    "DirectHitMultiplier",
+    "ImpactMomentum",
+    "ProjectileSpeed",
+    "ProjectileMaxSpeed",
+    "ProjectileInheritance",
+    "CollisionSize",
+    "ProjectileLifespan",
+    "ProjectileGravity",
+    "ProjectileTerminalVelocity",
+    "Accuracy",
+    "ClipAmmo",
+    "SpareAmmo",
+    "LowAmmoCutoff",
+    "ReloadTime",
+    "FireInterval",
+    "BulletDamageRange",
+    "MinDamageProportion",
+    "MaxDamageRangeProportion",
+    "MinDamageRangeProportion",
+}
+
+local grenade_propsToPrint = {
+    "Damage",
+    "ExplosiveRadius",
+    "DirectHitMultiplier",
+    "ImpactMomentum",
+    "ProjectileSpeed",
+    "ProjectileMaxSpeed",
+    "ProjectileInheritance",
+    "CollisionSize",
+    "ProjectileLifespan",
+    "ProjectileGravity",
+    "ProjectileTerminalVelocity",
+    "Accuracy",
+    "ClipAmmo",
+    "SpareAmmo",
+    "LowAmmoCutoff",
+    "ReloadTime",
+    "FireInterval",
+    "ThrowDelay",
+    "ThrowPullPinTime",
+    "MinDamageProportion",
+    "MaxDamageRangeProportion",
+    "MinDamageRangeProportion",
+}
+
+local hitscan_propsToPrint = {
+    "Damage",
+    "Accuracy",
+    "AccuracyLossOnShot",
+    "AccuracyLossOnJump",
+    "AccuracyLossMax",
+    "AccuracyCorrectionRate",
+    "ClipAmmo",
+    "SpareAmmo",
+    "LowAmmoCutoff",
+    "ReloadTime",
+    "FireInterval",
+    "HitscanRange",
+    "MinDamageProportion",
+    "MaxDamageRangeProportion",
+    "MinDamageRangeProportion",
+}
+
+utils:printItemProps("Medium", "Thumper DX", proj_propsToPrint)
+
+
+
 itemChangeDefs = {
     groups = {
         direct_hit_explosives = {
@@ -78,14 +151,15 @@ itemChangeDefs = {
         {
             group="direct_hit_explosives", 
             changes={
+                -- Same as GOTY, smaller than OOTB
                 {Items.Properties.CollisionSize, 10},
             }
         },
         {
             group="chain", 
             changes={
-                -- This is actually slightly smaller than real GOTY
-                {Items.Properties.CollisionSize, 40},
+                -- Smaller than real GOTY, _slightly_ larger than OOTB
+                {Items.Properties.CollisionSize, 30},
             }
         },
         ---------------------
@@ -95,7 +169,48 @@ itemChangeDefs = {
         ---------------------
         -- MEDIUM
         ---------------------
-
+        {
+            class="Medium", 
+            name="Assault Rifle", 
+            changes={
+                {Items.Properties.Damage, 80},
+                {Items.Properties.ClipAmmo, 28},
+                {Items.Properties.ReloadTime, 1.53},
+                {Items.Properties.FireInterval, 0.11},
+                {Items.Properties.MinDamageProportion, 0.75},
+                {Items.Properties.MaxDamageRangeProportion, 0.75},
+            },
+        },
+        {
+            class="Medium", 
+            name="Gast Rifle", 
+            changes={
+                {Items.Properties.ClipAmmo, 24},
+                {Items.Properties.SpareAmmo, 216},
+                {Items.Properties.ReloadTime, 1.53},
+            },
+        },
+        {
+            class="Medium", 
+            name="Thumper DX", 
+            changes={
+                {Items.Properties.Damage, 600},
+                {Items.Properties.DirectHitMultiplier, 1.4},
+                {Items.Properties.SpareAmmo, 20},
+                {Items.Properties.MinDamageProportion, 0.5},
+                {Items.Properties.MaxDamageRangeProportion, 0.5},
+                {Items.Properties.MinDamageRangeProportion, 0.9},
+            },
+        },
+        {
+            class="Medium", 
+            name="Frag Grenade XL", 
+            valueMods={
+                {ValueMods.ExtraBeltAmmo, 1},
+                {ValueMods.BeltDamageRadiusBuff, 0.1},
+                {ValueMods.BeltArmorPenetrationBuff, 0.2},
+            },
+        },
         ---------------------
         -- HEAVY
         ---------------------
@@ -110,7 +225,7 @@ itemChangeDefs = {
                 -- Fire rate slightly slower than GOTY
                 {Items.Properties.FireInterval, 0.35},
                 {Items.Properties.Damage, 190},
-            }
+            },
         },
     },
 }
@@ -127,9 +242,19 @@ for modIdx, modDef in pairs(itemChangeDefs.mods) do
     end
 
     -- Apply each property
-    for changeIdx, change in pairs(modDef.changes) do
-        for itemIdx, item in pairs(itemsToApplyTo) do
-            Items.setProperty(item.class, item.name, change[1], change[2])
+    if modDef.changes ~= nil then
+        for changeIdx, change in pairs(modDef.changes) do
+            for itemIdx, item in pairs(itemsToApplyTo) do
+                Items.setProperty(item.class, item.name, change[1], change[2])
+            end
         end
     end
+
+    -- Apply each valuemod
+    if modDef.valueMods ~= nil then
+        for itemIdx, item in pairs(itemsToApplyTo) do
+            Items.setValueMods(item.class, item.name, modDef.valueMods)
+        end
+    end
+
 end

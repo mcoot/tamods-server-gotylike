@@ -16,4 +16,16 @@ function utils:addClass(name, ootbBase, armorClass, weapons, beltItems, packs, s
     end
 end
 
+function utils:printItemProps(class, item, propNames)
+    for idx, prop in pairs(propNames) do
+        local propVal = Items.getProperty(class, item, Items.Properties[prop])
+        if (propVal == nil) then
+            Logger.debug("||| " .. item .. " | " .. prop .. " = nil")
+        else
+            Logger.debug("||| " .. item .. " | " .. prop .. " = " .. tostring(propVal))
+        end
+        
+    end
+end
+
 return utils

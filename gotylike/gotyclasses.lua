@@ -1,4 +1,4 @@
-utils = require("gotylike/utils")
+local utils = require("gotylike/utils")
 
 --------------------------
 -- Settings
