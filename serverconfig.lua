@@ -1,5 +1,9 @@
+Logger.debug("----- Loading GOTYLike Preset -----")
+
 -- Import the GOTYLike preset
 require("gotylike/main")
+
+Logger.debug("----- GOTYLike Preset Applied -----")
 
 -- Map Rotation
 ServerSettings.MapRotation.add(Maps.CTF.ArxNovena)

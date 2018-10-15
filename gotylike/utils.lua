@@ -1,5 +1,16 @@
 local utils = {}
 
+-- Converts a list of mods in the form of {ModNameA = ValueA, ModNameB = ValueB}
+-- Into the TAMods accepted form of { {ValueMods.ModNameA, ValueA}, {ValueMods.ModNameB, ValueB} }
+function utils:valueModsListDefConverter(valueModsList)
+    local res = {}
+    for modName, modVal in pairs(valueModsList) do
+        table.insert(res, {ValueMods[modName], modVal})
+    end
+    return res
+end
+
+-- Helper for creating a custom class
 function utils:addClass(name, ootbBase, armorClass, weapons, beltItems, packs, skins)
     ServerSettings.CustomClasses.new(name, ootbBase, armorClass)
     for k, v in pairs(weapons) do
@@ -16,6 +27,7 @@ function utils:addClass(name, ootbBase, armorClass, weapons, beltItems, packs, s
     end
 end
 
+-- Log out the given set of properties for the given item
 function utils:printItemProps(class, item, propNames)
     for idx, prop in pairs(propNames) do
         local propVal = Items.getProperty(class, item, Items.Properties[prop])

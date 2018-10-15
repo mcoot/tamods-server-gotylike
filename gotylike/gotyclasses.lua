@@ -44,33 +44,33 @@ classDefs = {
             "Freerunner",
         },
         properties={
-            {Classes.Properties.HealthPool, 800},
-            {Classes.Properties.EnergyPool, 100},
-            {Classes.Properties.EnergyRechargeRate, 14},
-            {Classes.Properties.GroundSpeed, 500},
-            {Classes.Properties.AirControlMaxMultiplier, 3.7},
-            {Classes.Properties.AirControlMinMultiplier, 1.4},
-            {Classes.Properties.VehicleSpeedInheritance, 1},
+            HealthPool = 800,
+            EnergyPool = 100,
+            EnergyRechargeRate = 14,
+            GroundSpeed = 500,
+            AirControlMaxMultiplier = 3.7,
+            AirControlMinMultiplier = 1.4,
+            VehicleSpeedInheritance = 1,
         },
         armorValueMods={
             -- QuickDraw
-            {ValueMods.QuickDraw, 0.5},
-            {ValueMods.BeltThrowSpeedBuff, 0.25},
-            {ValueMods.AcquisitionTimeByEnemyTurretsBuff, 0.5},
+            QuickDraw = 0.5,
+            BeltThrowSpeedBuff = 0.25,
+            AcquisitionTimeByEnemyTurretsBuff = 0.5,
             -- Survivalist
-            {ValueMods.SurvivalistHealth, 0.3},
-            {ValueMods.SurvivalistEnergy, 0.2},
+            SurvivalistHealth = 0.3,
+            SurvivalistEnergy = 0.2,
             -- Pathfinder Armor Upgrades
-            {ValueMods.RegenTimeBuff, 0.25},
-            {ValueMods.EnergyBuff, 10},
-            {ValueMods.HealthRegenRateBuff, 0.25},
-            {ValueMods.HealthBuff, 100},
-            {ValueMods.MassBuff, -0.1},
+            RegenTimeBuff = 0.25,
+            EnergyBuff = 10,
+            HealthRegenRateBuff = 0.25,
+            HealthBuff = 100,
+            MassBuff = -0.1,
             -- Rage
-            {ValueMods.Rage, true},
-            {ValueMods.RageEnergyRegen, 0.2},
-            {ValueMods.RageTime, 15.0},
-            {ValueMods.RageMassReduction, -0.25},
+            Rage = true,
+            RageEnergyRegen = 0.2,
+            RageTime = 15.0,
+            RageMassReduction = -0.25,
         }
     },
     Infiltrator={
@@ -102,23 +102,23 @@ classDefs = {
             "Assassin",
         },
         properties={
-            {Classes.Properties.HealthPool, 800},
-            {Classes.Properties.VehicleSpeedInheritance, 1},
+            HealthPool = 800,
+            VehicleSpeedInheritance = 1,
         },
         armorValueMods={
             -- QuickDraw
-            {ValueMods.QuickDraw, 0.5},
-            {ValueMods.BeltThrowSpeedBuff, 0.25},
-            {ValueMods.AcquisitionTimeByEnemyTurretsBuff, 0.5},
+            QuickDraw = 0.5,
+            BeltThrowSpeedBuff = 0.25,
+            AcquisitionTimeByEnemyTurretsBuff = 0.5,
             -- Survivalist
-            {ValueMods.SurvivalistHealth, 0.3},
-            {ValueMods.SurvivalistEnergy, 0.2},
+            SurvivalistHealth = 0.3,
+            SurvivalistEnergy = 0.2,
             -- Infiltrator Armor Upgrades
-            {ValueMods.RegenTimeBuff, 0.25},
-            {ValueMods.EnergyBuff, 10},
-            {ValueMods.HealthBuff, 100},
-            {ValueMods.WalkSpeedBuff, 0.1},
-            {ValueMods.HealthBuff, 100},
+            RegenTimeBuff = 0.25,
+            EnergyBuff = 10,
+            HealthBuff = 100,
+            WalkSpeedBuff = 0.1,
+            HealthBuff = 100,
         }
     },
     Sentinel={
@@ -146,24 +146,24 @@ classDefs = {
             "Specter",
         },
         properties={
-            {Classes.Properties.HealthPool, 800},
-            {Classes.Properties.EnergyPool, 90},
-            {Classes.Properties.VehicleSpeedInheritance, 1},
+            HealthPool = 800,
+            EnergyPool = 90,
+            VehicleSpeedInheritance = 1,
         },
         armorValueMods={
             -- QuickDraw
-            {ValueMods.QuickDraw, 0.5},
-            {ValueMods.BeltThrowSpeedBuff, 0.25},
-            {ValueMods.AcquisitionTimeByEnemyTurretsBuff, 0.5},
+            QuickDraw = 0.5,
+            BeltThrowSpeedBuff = 0.25,
+            AcquisitionTimeByEnemyTurretsBuff = 0.5,
             -- Survivalist
-            {ValueMods.SurvivalistHealth, 0.3},
-            {ValueMods.SurvivalistEnergy, 0.2},
+            SurvivalistHealth = 0.3,
+            SurvivalistEnergy = 0.2,
             -- Sentinel Armor Upgrades
-            {ValueMods.RegenTimeBuff, 0.25},
-            {ValueMods.WalkSpeedBuff, 0.1},
-            {ValueMods.HealthRegenRateBuff, 0.25},
-            {ValueMods.HealthBuff, 100},
-            {ValueMods.EnergyBuff, 10},
+            RegenTimeBuff = 0.25,
+            WalkSpeedBuff = 0.1,
+            HealthRegenRateBuff = 0.25,
+            HealthBuff = 100,
+            EnergyBuff = 10,
         }
     },
     Soldier={
@@ -197,24 +197,24 @@ classDefs = {
             "Synthrall",
         },
         properties={
-            {Classes.Properties.HealthPool, 1200},
-            {Classes.Properties.Mass, 100},
-            {Classes.Properties.VehicleSpeedInheritance, 1},
+            HealthPool = 1200,
+            Mass = 100,
+            VehicleSpeedInheritance = 1,
         },
         armorValueMods={
             -- QuickDraw
-            {ValueMods.QuickDraw, 0.5},
-            {ValueMods.BeltThrowSpeedBuff, 0.25},
-            {ValueMods.AcquisitionTimeByEnemyTurretsBuff, 0.5},
+            QuickDraw = 0.5,
+            BeltThrowSpeedBuff = 0.25,
+            AcquisitionTimeByEnemyTurretsBuff = 0.5,
             -- Survivalist
-            {ValueMods.SurvivalistHealth, 0.2},
-            {ValueMods.SurvivalistEnergy, 0.2},
+            SurvivalistHealth = 0.2,
+            SurvivalistEnergy = 0.2,
             -- Soldier Armor Upgrades
-            {ValueMods.RegenTimeBuff, 0.25},
-            {ValueMods.HealthBuff, 50},
-            {ValueMods.HealthRegenRateBuff, 0.25},
-            {ValueMods.EnergyBuff, 5},
-            {ValueMods.HealthBuff, 50},
+            RegenTimeBuff = 0.25,
+            HealthBuff = 50,
+            HealthRegenRateBuff = 0.25,
+            EnergyBuff = 5,
+            HealthBuff = 50,
         }
     },
     Raider={
@@ -246,23 +246,23 @@ classDefs = {
             "Griever",
         },
         properties={
-            {Classes.Properties.HealthPool, 1200},
-            {Classes.Properties.VehicleSpeedInheritance, 1},
+            HealthPool = 1200,
+            VehicleSpeedInheritance = 1,
         },
         armorValueMods={
             -- QuickDraw
-            {ValueMods.QuickDraw, 0.5},
-            {ValueMods.BeltThrowSpeedBuff, 0.25},
-            {ValueMods.AcquisitionTimeByEnemyTurretsBuff, 0.5},
+            QuickDraw = 0.5,
+            BeltThrowSpeedBuff = 0.25,
+            AcquisitionTimeByEnemyTurretsBuff = 0.5,
             -- Survivalist
-            {ValueMods.SurvivalistHealth, 0.2},
-            {ValueMods.SurvivalistEnergy, 0.2},
+            SurvivalistHealth = 0.2,
+            SurvivalistEnergy = 0.2,
             -- Raider Armor Upgrades
-            {ValueMods.RegenTimeBuff, 0.25},
-            {ValueMods.HealthBuff, 50},
-            {ValueMods.HealthRegenRateBuff, 0.25},
-            {ValueMods.EnergyBuff, 10},
-            {ValueMods.HealthBuff, 50},
+            RegenTimeBuff = 0.25,
+            HealthBuff = 50,
+            HealthRegenRateBuff = 0.25,
+            EnergyBuff = 10,
+            HealthBuff = 50,
         }
     },
     Technician={
@@ -291,25 +291,25 @@ classDefs = {
             "Specialist",
         },
         properties={
-            {Classes.Properties.HealthPool, 1200},
-            {Classes.Properties.VehicleSpeedInheritance, 1},
+            HealthPool = 1200,
+            VehicleSpeedInheritance = 1,
         },
         armorValueMods={
             -- QuickDraw
-            {ValueMods.QuickDraw, 0.5},
-            {ValueMods.BeltThrowSpeedBuff, 0.25},
-            {ValueMods.AcquisitionTimeByEnemyTurretsBuff, 0.5},
+            QuickDraw = 0.5,
+            BeltThrowSpeedBuff = 0.25,
+            AcquisitionTimeByEnemyTurretsBuff = 0.5,
             -- Survivalist
-            {ValueMods.SurvivalistHealth, 0.2},
-            {ValueMods.SurvivalistEnergy, 0.2},
+            SurvivalistHealth = 0.2,
+            SurvivalistEnergy = 0.2,
             -- Technician Armor Upgrades
-            {ValueMods.RegenTimeBuff, 0.25},
-            {ValueMods.HealthBuff, 50},
-            {ValueMods.HealthRegenRateBuff, 0.25},
-            {ValueMods.EnergyBuff, 10},
-            {ValueMods.HealthBuff, 50},
+            RegenTimeBuff = 0.25,
+            HealthBuff = 50,
+            HealthRegenRateBuff = 0.25,
+            EnergyBuff = 10,
+            HealthBuff = 50,
             -- Vehicle Improvements
-            {ValueMods.VehicleEnergyBuff, 0.25},
+            VehicleEnergyBuff = 0.25,
         }
     },
     Juggernaught={
@@ -339,33 +339,33 @@ classDefs = {
             "The Forlorn",
         },
         properties={
-            {Classes.Properties.HealthPool, 2400},
-            {Classes.Properties.EnergyPool, 80},
-            {Classes.Properties.EnergyRechargeRate, 9},
-            {Classes.Properties.GroundSpeed, 360},
-            {Classes.Properties.Mass, 130},
-            {Classes.Properties.AirControlMaxMultiplier, 3.7},
-            {Classes.Properties.AirControlMinMultiplier, 0.4},
-            {Classes.Properties.VehicleSpeedInheritance, 0.75},
+            HealthPool = 2400,
+            EnergyPool = 80,
+            EnergyRechargeRate = 9,
+            GroundSpeed = 360,
+            Mass = 130,
+            AirControlMaxMultiplier = 3.7,
+            AirControlMinMultiplier = 0.4,
+            VehicleSpeedInheritance = 0.75,
         },
         armorValueMods={
             -- QuickDraw
-            {ValueMods.QuickDraw, 0.5},
-            {ValueMods.BeltThrowSpeedBuff, 0.25},
-            {ValueMods.AcquisitionTimeByEnemyTurretsBuff, 0.5},
+            QuickDraw = 0.5,
+            BeltThrowSpeedBuff = 0.25,
+            AcquisitionTimeByEnemyTurretsBuff = 0.5,
             -- Survivalist
-            {ValueMods.SurvivalistHealth, 0.12},
-            {ValueMods.SurvivalistEnergy, 0.2},
+            SurvivalistHealth = 0.12,
+            SurvivalistEnergy = 0.2,
             -- Juggernaught Armor Upgrades
-            {ValueMods.HealthBuff, 100},
-            {ValueMods.RegenTimeBuff, 0.25},
-            {ValueMods.EnergyBuff, 10},
-            {ValueMods.HealthRegenRateBuff, 0.25},
-            {ValueMods.HealthBuff, 100},
+            HealthBuff = 100,
+            RegenTimeBuff = 0.25,
+            EnergyBuff = 10,
+            HealthRegenRateBuff = 0.25,
+            HealthBuff = 100,
             -- Potential Energy
-            {ValueMods.PotentialEnergy, true},
+            PotentialEnergy = true,
             -- Super Heavy
-            {ValueMods.SuperHeavy, true},
+            SuperHeavy = true,
         }
     },
     Doombringer={
@@ -391,27 +391,27 @@ classDefs = {
             "Executioner",
         },
         properties={
-            {Classes.Properties.HealthPool, 2300},
-            {Classes.Properties.VehicleSpeedInheritance, 0.75},
+            HealthPool = 2300,
+            VehicleSpeedInheritance = 0.75,
         },
         armorValueMods={
             -- QuickDraw
-            {ValueMods.QuickDraw, 0.5},
-            {ValueMods.BeltThrowSpeedBuff, 0.25},
-            {ValueMods.AcquisitionTimeByEnemyTurretsBuff, 0.5},
+            QuickDraw = 0.5,
+            BeltThrowSpeedBuff = 0.25,
+            AcquisitionTimeByEnemyTurretsBuff = 0.5,
             -- Survivalist
-            {ValueMods.SurvivalistHealth, 0.12},
-            {ValueMods.SurvivalistEnergy, 0.2},
+            SurvivalistHealth = 0.12,
+            SurvivalistEnergy = 0.2,
             -- Doombringer Armor Upgrades
-            {ValueMods.HealthBuff, 100},
-            {ValueMods.RegenTimeBuff, 0.25},
-            {ValueMods.EnergyBuff, 10},
-            {ValueMods.HealthRegenRateBuff, 0.25},
-            {ValueMods.HealthBuff, 100},
+            HealthBuff = 100,
+            RegenTimeBuff = 0.25,
+            EnergyBuff = 10,
+            HealthRegenRateBuff = 0.25,
+            HealthBuff = 100,
             -- Potential Energy
-            {ValueMods.PotentialEnergy, true},
+            PotentialEnergy = true,
             -- Super Heavy
-            {ValueMods.SuperHeavy, true},
+            SuperHeavy = true,
         }
     },
     Brute={
@@ -444,27 +444,27 @@ classDefs = {
             "Crusher",
         },
         properties={
-            {Classes.Properties.HealthPool, 2400},
-            {Classes.Properties.VehicleSpeedInheritance, 0.75},
+            HealthPool = 2400,
+            VehicleSpeedInheritance = 0.75,
         },
         armorValueMods={
             -- QuickDraw
-            {ValueMods.QuickDraw, 0.5},
-            {ValueMods.BeltThrowSpeedBuff, 0.25},
-            {ValueMods.AcquisitionTimeByEnemyTurretsBuff, 0.5},
+            QuickDraw = 0.5,
+            BeltThrowSpeedBuff = 0.25,
+            AcquisitionTimeByEnemyTurretsBuff = 0.5,
             -- Survivalist
-            {ValueMods.SurvivalistHealth, 0.12},
-            {ValueMods.SurvivalistEnergy, 0.2},
+            SurvivalistHealth = 0.12,
+            SurvivalistEnergy = 0.2,
             -- Brute Armor Upgrades
-            {ValueMods.HealthBuff, 100},
-            {ValueMods.RegenTimeBuff, 0.25},
-            {ValueMods.EnergyBuff, 5},
-            {ValueMods.HealthRegenRateBuff, 0.25},
-            {ValueMods.HealthBuff, 100},
+            HealthBuff = 100,
+            RegenTimeBuff = 0.25,
+            EnergyBuff = 5,
+            HealthRegenRateBuff = 0.25,
+            HealthBuff = 100,
             -- Potential Energy
-            {ValueMods.PotentialEnergy, true},
+            PotentialEnergy = true,
             -- Super Heavy
-            {ValueMods.SuperHeavy, true},
+            SuperHeavy = true,
         }
     },
 }
@@ -473,8 +473,8 @@ for className, classDef in pairs(classDefs) do
     utils:addClass(className, classDef.ootbClass, classDef.armorClass,
                    classDef.weapons, classDef.beltItems, classDef.packs,
                    classDef.skins)
-    Classes.setValueMods(classDef.armorClass, classDef.armorValueMods)
-    for k, v in pairs(classDef.properties) do
-        Classes.setProperty(classDef.armorClass, v[1], v[2])
+    Classes.setValueMods(classDef.armorClass, utils:valueModsListDefConverter(classDef.armorValueMods))
+    for propName, propVal in pairs(classDef.properties) do
+        Classes.setProperty(classDef.armorClass, Classes.Properties[propName], propVal)
     end
 end

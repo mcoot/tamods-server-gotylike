@@ -67,7 +67,14 @@ local hitscan_propsToPrint = {
     "MinDamageRangeProportion",
 }
 
-utils:printItemProps("Medium", "Thumper DX", proj_propsToPrint)
+local pack_propsToPrint = {
+    -- "ClipAmmo",
+    -- "SpareAmmo",
+    "PackSustainedEnergyCost",
+    "PackBuffAmount",
+}
+
+utils:printItemProps("Medium", "Spinfusor", proj_propsToPrint)
 
 
 
@@ -152,79 +159,125 @@ itemChangeDefs = {
             group="direct_hit_explosives", 
             changes={
                 -- Same as GOTY, smaller than OOTB
-                {Items.Properties.CollisionSize, 10},
+                CollisionSize = 10,
             }
         },
         {
             group="chain", 
             changes={
                 -- Smaller than real GOTY, _slightly_ larger than OOTB
-                {Items.Properties.CollisionSize, 30},
+                CollisionSize = 30,
             }
         },
         ---------------------
-        -- LIGHT
+        -- PATHFINDER
         ---------------------
         
         ---------------------
-        -- MEDIUM
+        -- INFILTRATOR
         ---------------------
+        
+        ---------------------
+        -- SENTINEL
+        ---------------------
+        
+        ---------------------
+        -- SOLDIER
+        ---------------------
+        {
+            class="Medium", 
+            name="Spinfusor", 
+            changes={
+                Damage = 650,
+                DirectHitMultiplier = 1.4,
+                SpareAmmo = 28,
+                MinDamageProportion = 0.2,
+                MaxDamageRangeProportion = 0.3,
+                MinDamageRangeProportion = 0.7,
+            },
+        },
         {
             class="Medium", 
             name="Assault Rifle", 
             changes={
-                {Items.Properties.Damage, 80},
-                {Items.Properties.ClipAmmo, 28},
-                {Items.Properties.ReloadTime, 1.53},
-                {Items.Properties.FireInterval, 0.11},
-                {Items.Properties.MinDamageProportion, 0.75},
-                {Items.Properties.MaxDamageRangeProportion, 0.75},
+                Damage = 80,
+                ClipAmmo = 28,
+                ReloadTime = 1.53,
+                FireInterval = 0.11,
+                MinDamageProportion = 0.75,
+                MaxDamageRangeProportion = 0.75,
             },
         },
         {
             class="Medium", 
             name="Gast Rifle", 
             changes={
-                {Items.Properties.ClipAmmo, 24},
-                {Items.Properties.SpareAmmo, 216},
-                {Items.Properties.ReloadTime, 1.53},
+                ClipAmmo = 24,
+                SpareAmmo = 216,
+                ReloadTime = 1.53,
             },
         },
         {
             class="Medium", 
             name="Thumper DX", 
             changes={
-                {Items.Properties.Damage, 600},
-                {Items.Properties.DirectHitMultiplier, 1.4},
-                {Items.Properties.SpareAmmo, 20},
-                {Items.Properties.MinDamageProportion, 0.5},
-                {Items.Properties.MaxDamageRangeProportion, 0.5},
-                {Items.Properties.MinDamageRangeProportion, 0.9},
+                Damage = 600,
+                DirectHitMultiplier = 1.4,
+                SpareAmmo = 20,
+                MinDamageProportion = 0.5,
+                MaxDamageRangeProportion = 0.5,
+                MinDamageRangeProportion = 0.9,
             },
         },
         {
             class="Medium", 
             name="Frag Grenade XL", 
             valueMods={
-                {ValueMods.ExtraBeltAmmo, 1},
-                {ValueMods.BeltDamageRadiusBuff, 0.1},
-                {ValueMods.BeltArmorPenetrationBuff, 0.2},
+                ExtraBeltAmmo = 1,
+                BeltDamageRadiusBuff = 0.1,
+                BeltArmorPenetrationBuff = 0.2,
+            },
+        },
+        {
+            class="Medium", 
+            name="Utility Pack", 
+            valueMods={
+                EnergyBuff = 20,
+                ExtraBeltAmmo = 1,
+                HealthBuff = 100,
+                WalkSpeedBuff = 0.1,
             },
         },
         ---------------------
-        -- HEAVY
+        -- RAIDER
+        ---------------------
+        
+        ---------------------
+        -- TECHNICIAN
+        ---------------------
+
+        ---------------------
+        -- JUGGERNAUGHT
+        ---------------------
+
+        ---------------------
+        -- DOOMBRINGER
+        ---------------------
+
+        ---------------------
+        -- BRUTE
         ---------------------
         {
             class="Heavy", 
             name="Nova Colt", 
             changes={
-                {Items.Properties.ClipAmmo, 6},
-                {Items.Properties.SpareAmmo, 72},
-                {Items.Properties.LowAmmoCutoff, 1},
-                {Items.Properties.ReloadTime, 1.35},
+                ClipAmmo = 6,
+                SpareAmmo = 72,
+                LowAmmoCutoff = 1,
+                ReloadTime = 1.35,
                 -- Fire rate slightly slower than GOTY
-                {Items.Properties.FireInterval, 0.35},
-                {Items.Properties.Damage, 190},
+                FireInterval = 0.35,
+                Damage = 190,
             },
         },
     },
@@ -243,9 +296,9 @@ for modIdx, modDef in pairs(itemChangeDefs.mods) do
 
     -- Apply each property
     if modDef.changes ~= nil then
-        for changeIdx, change in pairs(modDef.changes) do
+        for changeProp, changeVal in pairs(modDef.changes) do
             for itemIdx, item in pairs(itemsToApplyTo) do
-                Items.setProperty(item.class, item.name, change[1], change[2])
+                Items.setProperty(item.class, item.name, Items.Properties[changeProp], changeVal)
             end
         end
     end
@@ -253,7 +306,7 @@ for modIdx, modDef in pairs(itemChangeDefs.mods) do
     -- Apply each valuemod
     if modDef.valueMods ~= nil then
         for itemIdx, item in pairs(itemsToApplyTo) do
-            Items.setValueMods(item.class, item.name, modDef.valueMods)
+            Items.setValueMods(item.class, item.name, utils:valueModsListDefConverter(modDef.valueMods))
         end
     end
 
