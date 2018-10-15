@@ -74,7 +74,7 @@ local pack_propsToPrint = {
     "PackBuffAmount",
 }
 
-utils:printItemProps("Medium", "Spinfusor", proj_propsToPrint)
+utils:printItemProps("Medium", "Spare Spinfusor", proj_propsToPrint)
 
 
 
@@ -125,6 +125,7 @@ itemChangeDefs = {
             {class="Heavy", name="Heavy Twinfusor"},
         },
         chain = {
+            -- For setting hitbox + damage falloff
             -- Light
             {class="Light", name="Rhino SMG"},
             {class="Light", name="Arctic Rhino SMG"},
@@ -150,6 +151,44 @@ itemChangeDefs = {
             {class="Medium", name="Eagle"},
             {class="Heavy", name="Nova Colt"},
         },
+        explosive_weapons = {
+            -- All explosive weapons that use the common damage banding values
+            -- of min damage of 50%, banding range between 50%-90% of damage radius
+            -- Light
+            {class="Light", name="Light Spinfusor"},
+            {class="Light", name="Dueling Spinfusor"},
+            {class="Light", name="Stealth Spinfusor"},
+            {class="Light", name="Light Twinfusor"},
+            {class="Light", name="Blinksfusor"},
+            {class="Light", name="Bolt Launcher"},
+            {class="Light", name="Light Grenade Launcher"},
+            {class="Light", name="Jackal"},
+            -- Medium
+            {class="Medium", name="Spinfusor"},
+            {class="Medium", name="Twinfusor"},
+            {class="Medium", name="Spare Spinfusor"},
+            {class="Medium", name="Honorfusor"},
+            {class="Medium", name="Thumper"},
+            {class="Medium", name="Thumper D"},
+            {class="Medium", name="Thumper DX"},
+            {class="Medium", name="Arx Buster"},
+            {class="Medium", name="Dust Devil"},
+            {class="Medium", name="Grenade Launcher"},
+            {class="Medium", name="Plasma Gun"},
+            -- Heavy
+            {class="Heavy", name="Fusion Mortar"},
+            {class="Heavy", name="Fusion Mortar Deluxe"},
+            {class="Heavy", name="MIRV Launcher"},
+            {class="Heavy", name="Spinfusor MKD"},
+            {class="Heavy", name="Spinfusor MK-X"},
+            {class="Heavy", name="Heavy Spinfusor"},
+            {class="Heavy", name="Devastator Spinfusor"},
+            {class="Heavy", name="Heavy Twinfusor"},
+            {class="Heavy", name="Heavy Bolt Launcher"},
+            {class="Heavy", name="Saber Launcher"},
+            {class="Heavy", name="Titan Launcher"},
+            {class="Heavy", name="Plasma Cannon"},
+        },
     },
     mods = {
         ---------------------
@@ -163,10 +202,23 @@ itemChangeDefs = {
             }
         },
         {
+            group="explosive_weapons", 
+            changes={
+                -- GOTY damage banding
+                MinDamageProportion = 0.5,
+                MaxDamageRangeProportion = 0.5,
+                MinDamageRangeProportion = 0.9,
+            }
+        },
+        {
             group="chain", 
             changes={
                 -- Smaller than real GOTY, _slightly_ larger than OOTB
                 CollisionSize = 30,
+                -- GOTY damage falloff
+                MinDamageProportion = 0.75,
+                MaxDamageRangeProportion = 0.75,
+                MinDamageRangeProportion = 1,
             }
         },
         ---------------------
@@ -191,9 +243,6 @@ itemChangeDefs = {
                 Damage = 650,
                 DirectHitMultiplier = 1.4,
                 SpareAmmo = 28,
-                MinDamageProportion = 0.2,
-                MaxDamageRangeProportion = 0.3,
-                MinDamageRangeProportion = 0.7,
             },
         },
         {
@@ -204,8 +253,6 @@ itemChangeDefs = {
                 ClipAmmo = 28,
                 ReloadTime = 1.53,
                 FireInterval = 0.11,
-                MinDamageProportion = 0.75,
-                MaxDamageRangeProportion = 0.75,
             },
         },
         {
@@ -224,9 +271,16 @@ itemChangeDefs = {
                 Damage = 600,
                 DirectHitMultiplier = 1.4,
                 SpareAmmo = 20,
-                MinDamageProportion = 0.5,
-                MaxDamageRangeProportion = 0.5,
-                MinDamageRangeProportion = 0.9,
+            },
+        },
+        {
+            class="Medium", 
+            name="Spare Spinfusor", 
+            changes={
+                Damage = 600,
+                DirectHitMultiplier = 1.1,
+                SpareAmmo = 28,
+                ProjectileInheritance = 0.5,
             },
         },
         {
