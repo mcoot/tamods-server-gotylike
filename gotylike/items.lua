@@ -67,12 +67,6 @@ local hitscan_propsToPrint = {
     "MinDamageProportion",
     "MaxDamageRangeProportion",
     "MinDamageRangeProportion",
-    "PhaseDamagePerEnergy",
-    "PhaseMaxConsumedEnergy",
-    "BXTChargeMaxDamage",
-    "BXTChargeTime",
-    "BXTChargeMultCoefficient",
-    "BXTChargeDivCoefficient",
     "ShotgunShotCount",
 }
 
@@ -85,8 +79,7 @@ local pack_propsToPrint = {
 
 -- utils:printItemProps("Heavy", "Spinfusor Disk", proj_propsToPrint)
 -- utils:printItemProps("Heavy", "Light Sticky Grenade", grenade_propsToPrint)
-utils:printItemProps("Light", "Phase Rifle", hitscan_propsToPrint)
-utils:printItemProps("Light", "SAP20", hitscan_propsToPrint)
+utils:printItemProps("Medium", "Sawed Off Shotgun", hitscan_propsToPrint)
 
 
 
@@ -165,6 +158,14 @@ itemChangeDefs = {
             {class="Light", name="Sparrow"},
             {class="Medium", name="Eagle"},
             {class="Heavy", name="Nova Colt"},
+        },
+        shotguns = {
+            {class="Light", name="Shotgun"},
+            {class="Light", name="Holdout Shotgun"},
+            {class="Light", name="Accurized Shotgun"},
+            {class="Medium", name="Sawed Off Shotgun"},
+            {class="Heavy", name="Auto Shotgun"},
+            {class="Heavy", name="The Hammer"},
         },
         explosive_weapon_dmg_banding = {
             -- All explosive weapons that use the common damage banding values
@@ -279,6 +280,15 @@ itemChangeDefs = {
             }
         },
         {
+            group="shotguns", 
+            changes={
+                -- GOTY falloff
+                MinDamageProportion = 0.4,
+                MaxDamageRangeProportion = 0.5,
+                MinDamageRangeProportion = 0.9,
+            }
+        },
+        {
             group="hitscan_pistols",
             changes={
                 HitscanRange=10000,
@@ -345,6 +355,28 @@ itemChangeDefs = {
                 -- Currently haven't reverted accuracy, idk if we should
                 -- Damage here is slightly lower because in GOTY this wasn't on light
                 -- Need to validate this and decide!!!
+            },
+        },
+        {
+            class="Light", 
+            name="Shotgun", 
+            changes={
+                Damage = 80,
+                ShotgunShotCount = 8,
+                ClipAmmo = 6,
+                SpareAmmo = 50,
+                HitscanRange = 3000,
+            },
+        },
+        {
+            class="Light", 
+            name="Holdout Shotgun", 
+            changes={
+                Damage = 90,
+                ShotgunShotCount = 8,
+                ClipAmmo = 5,
+                SpareAmmo = 46,
+                HitscanRange = 3000,
             },
         },
         {
@@ -446,6 +478,17 @@ itemChangeDefs = {
                 -- FireInterval = 0.1,
             },
         },
+        {
+            class="Light", 
+            name="Accurized Shotgun", 
+            changes={
+                Damage = 70,
+                ShotgunShotCount = 8,
+                ClipAmmo = 6,
+                SpareAmmo = 50,
+                HitscanRange = 3000,
+            },
+        },
         ---------------------
         -- SOLDIER
         ---------------------
@@ -532,7 +575,18 @@ itemChangeDefs = {
         ---------------------
         -- TECHNICIAN
         ---------------------
-
+        {
+            class="Medium", 
+            name="Sawed Off Shotgun", 
+            changes={
+                Damage = 80,
+                ShotgunShotCount = 8,
+                ClipAmmo = 2,
+                SpareAmmo = 50,
+                HitscanRange = 3000,
+                ReloadTime = 1.28,
+            },
+        },
         ---------------------
         -- JUGGERNAUGHT
         ---------------------
@@ -638,6 +692,30 @@ itemChangeDefs = {
                 -- Fire rate slightly slower than GOTY
                 FireInterval = 0.35,
                 Damage = 190,
+            },
+        },
+        {
+            class="Heavy", 
+            name="Auto Shotgun", 
+            changes={
+                Damage = 50,
+                ShotgunShotCount = 8,
+                ClipAmmo = 8,
+                SpareAmmo = 60,
+                HitscanRange = 3000,
+                ReloadTime = 1.35,
+            },
+        },
+        {
+            class="Heavy", 
+            name="The Hammer", 
+            changes={
+                Damage = 60,
+                ShotgunShotCount = 8,
+                ClipAmmo = 6,
+                SpareAmmo = 50,
+                HitscanRange = 3000,
+                ReloadTime = 1.35,
             },
         },
         {
