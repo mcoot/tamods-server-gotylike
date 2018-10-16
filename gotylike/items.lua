@@ -319,13 +319,14 @@ itemChangeDefs = {
         },
         {
             class="Light", 
-            name="Falcon", 
+            name="Sparrow", 
             changes={
-                Damage = 65,
-                ProjectileInheritance = 0,
-                ClipAmmo = 24,
-                ReloadTime = 1.53,
-                -- FireInterval = 0.1,
+                Damage = 85,
+                ClipAmmo = 20,
+                SpareAmmo = 132,
+                -- Currently haven't reverted accuracy, idk if we should
+                -- Damage here is slightly lower because in GOTY this wasn't on light
+                -- Need to validate this and decide!!!
             },
         },
         {
@@ -344,7 +345,17 @@ itemChangeDefs = {
         ---------------------
         -- SENTINEL
         ---------------------
-        
+        {
+            class="Light", 
+            name="Falcon", 
+            changes={
+                Damage = 65,
+                ProjectileInheritance = 0,
+                ClipAmmo = 24,
+                ReloadTime = 1.53,
+                -- FireInterval = 0.1,
+            },
+        },
         ---------------------
         -- SOLDIER
         ---------------------
@@ -395,15 +406,16 @@ itemChangeDefs = {
                 ProjectileInheritance = 0.5,
             },
         },
-        -- {
-        --     class="Medium", 
-        --     name="Eagle", 
-        --     changes={
-        --         Damage = 100,
-        --         ClipAmmo = 20,
-        --         SpareAmmo = 132,
-        --     },
-        -- },
+        {
+            class="Medium", 
+            name="Eagle", 
+            changes={
+                Damage = 100,
+                ClipAmmo = 20,
+                SpareAmmo = 132,
+                -- Currently haven't reverted accuracy, idk if we should
+            },
+        },
         {
             class="Medium", 
             name="Frag Grenade XL", 
