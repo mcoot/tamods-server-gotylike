@@ -116,9 +116,8 @@ classDefs = {
             -- Infiltrator Armor Upgrades
             RegenTimeBuff = 0.25,
             EnergyBuff = 10,
-            HealthBuff = 100,
+            HealthBuff = 200,
             WalkSpeedBuff = 0.1,
-            HealthBuff = 100,
         }
     },
     Sentinel={
@@ -211,10 +210,9 @@ classDefs = {
             SurvivalistEnergy = 0.2,
             -- Soldier Armor Upgrades
             RegenTimeBuff = 0.25,
-            HealthBuff = 50,
+            HealthBuff = 100,
             HealthRegenRateBuff = 0.25,
             EnergyBuff = 5,
-            HealthBuff = 50,
         }
     },
     Raider={
@@ -259,10 +257,9 @@ classDefs = {
             SurvivalistEnergy = 0.2,
             -- Raider Armor Upgrades
             RegenTimeBuff = 0.25,
-            HealthBuff = 50,
+            HealthBuff = 100,
             HealthRegenRateBuff = 0.25,
             EnergyBuff = 10,
-            HealthBuff = 50,
         }
     },
     Technician={
@@ -304,10 +301,9 @@ classDefs = {
             SurvivalistEnergy = 0.2,
             -- Technician Armor Upgrades
             RegenTimeBuff = 0.25,
-            HealthBuff = 50,
+            HealthBuff = 100,
             HealthRegenRateBuff = 0.25,
             EnergyBuff = 10,
-            HealthBuff = 50,
             -- Vehicle Improvements
             VehicleEnergyBuff = 0.25,
         }
@@ -357,11 +353,10 @@ classDefs = {
             SurvivalistHealth = 0.12,
             SurvivalistEnergy = 0.2,
             -- Juggernaught Armor Upgrades
-            HealthBuff = 100,
+            HealthBuff = 200,
             RegenTimeBuff = 0.25,
             EnergyBuff = 10,
             HealthRegenRateBuff = 0.25,
-            HealthBuff = 100,
             -- Potential Energy
             PotentialEnergy = true,
             -- Super Heavy
@@ -403,11 +398,10 @@ classDefs = {
             SurvivalistHealth = 0.12,
             SurvivalistEnergy = 0.2,
             -- Doombringer Armor Upgrades
-            HealthBuff = 100,
+            HealthBuff = 200,
             RegenTimeBuff = 0.25,
             EnergyBuff = 10,
             HealthRegenRateBuff = 0.25,
-            HealthBuff = 100,
             -- Potential Energy
             PotentialEnergy = true,
             -- Super Heavy
@@ -456,11 +450,10 @@ classDefs = {
             SurvivalistHealth = 0.12,
             SurvivalistEnergy = 0.2,
             -- Brute Armor Upgrades
-            HealthBuff = 100,
+            HealthBuff = 200,
             RegenTimeBuff = 0.25,
             EnergyBuff = 5,
             HealthRegenRateBuff = 0.25,
-            HealthBuff = 100,
             -- Potential Energy
             PotentialEnergy = true,
             -- Super Heavy

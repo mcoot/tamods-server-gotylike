@@ -5,6 +5,8 @@ local proj_propsToPrint = {
     "ExplosiveRadius",
     "DirectHitMultiplier",
     "ImpactMomentum",
+    "SelfImpactMomentumMultiplier",
+    "SelfImpactExtraZMomentum",
     "ProjectileSpeed",
     "ProjectileMaxSpeed",
     "ProjectileInheritance",
@@ -74,7 +76,9 @@ local pack_propsToPrint = {
     "PackBuffAmount",
 }
 
-utils:printItemProps("Medium", "Spare Spinfusor", proj_propsToPrint)
+utils:printItemProps("Heavy", "Spinfusor Disk", proj_propsToPrint)
+-- utils:printItemProps("Heavy", "Light Sticky Grenade", grenade_propsToPrint)
+-- utils:printItemProps("Medium", "Eagle", hitscan_propsToPrint)
 
 
 
@@ -104,6 +108,7 @@ itemChangeDefs = {
             {class="Heavy", name="Devastator Spinfusor"},
             {class="Heavy", name="Heavy Twinfusor"},
             {class="Heavy", name="Heavy Bolt Launcher"},
+            {class="Heavy", name="Spinfusor Disk"},
         },
         spinfusors = {
             -- Light
@@ -123,9 +128,11 @@ itemChangeDefs = {
             {class="Heavy", name="Heavy Spinfusor"},
             {class="Heavy", name="Devastator Spinfusor"},
             {class="Heavy", name="Heavy Twinfusor"},
+            {class="Heavy", name="Spinfusor Disk"},
         },
         chain = {
             -- For setting hitbox + damage falloff
+            -- Falloff is between 4200 and 6000 Unreal Units, and down to 75% dmg
             -- Light
             {class="Light", name="Rhino SMG"},
             {class="Light", name="Arctic Rhino SMG"},
@@ -151,7 +158,7 @@ itemChangeDefs = {
             {class="Medium", name="Eagle"},
             {class="Heavy", name="Nova Colt"},
         },
-        explosive_weapons = {
+        explosive_weapon_dmg_banding = {
             -- All explosive weapons that use the common damage banding values
             -- of min damage of 50%, banding range between 50%-90% of damage radius
             -- Light
@@ -175,12 +182,14 @@ itemChangeDefs = {
             {class="Medium", name="Dust Devil"},
             {class="Medium", name="Grenade Launcher"},
             {class="Medium", name="Plasma Gun"},
+            {class="Medium", name="Cluster Grenade"},
             -- Heavy
             {class="Heavy", name="Fusion Mortar"},
             {class="Heavy", name="Fusion Mortar Deluxe"},
             {class="Heavy", name="MIRV Launcher"},
             {class="Heavy", name="Spinfusor MKD"},
             {class="Heavy", name="Spinfusor MK-X"},
+            {class="Heavy", name="Spinfusor Disk"},
             {class="Heavy", name="Heavy Spinfusor"},
             {class="Heavy", name="Devastator Spinfusor"},
             {class="Heavy", name="Heavy Twinfusor"},
@@ -188,6 +197,35 @@ itemChangeDefs = {
             {class="Heavy", name="Saber Launcher"},
             {class="Heavy", name="Titan Launcher"},
             {class="Heavy", name="Plasma Cannon"},
+            {class="Heavy", name="Fractal Grenade"},
+            {class="Heavy", name="Extended Fractal"},
+        },
+        grenade_dmg_banding = {
+            -- All explosive grenades that use the common damage banding values
+            -- of min damage of 30%, banding range between 50%-90% of damage radius
+            -- Light
+            {class="Light", name="Impact Nitron"},
+            {class="Light", name="Explosive Nitron"},
+            {class="Light", name="Compact Nitron"},
+            {class="Light", name="Sticky Grenades"},
+            {class="Light", name="Sticky Grenade XL"},
+            {class="Light", name="Sticky Grenade XL"},
+            {class="Light", name="Chaff Grenade"},
+            {class="Light", name="T5 Grenade"},
+            {class="Medium", name="Frag Grenade XL"},
+            {class="Medium", name="Short-Fuse Frag Grenade"},
+            {class="Medium", name="AP Grenade"},
+            {class="Medium", name="Proximity Grenade"},
+            {class="Medium", name="EMP Grenade"},
+            {class="Medium", name="EMP XL Grenade"},
+            {class="Medium", name="Blackout Grenade"},
+            {class="Medium", name="TCNG"},
+            {class="Medium", name="TCNG Quickfuse"},
+            {class="Heavy", name="Heavy AP Grenade"},
+            {class="Heavy", name="Heavy AP-XL"},
+            {class="Heavy", name="Heavy AP-XL"},
+            {class="Heavy", name="Frag Grenade"},
+            {class="Heavy", name="Light Sticky Grenade"},
         },
     },
     mods = {
@@ -202,12 +240,23 @@ itemChangeDefs = {
             }
         },
         {
-            group="explosive_weapons", 
+            group="explosive_weapon_dmg_banding", 
             changes={
                 -- GOTY damage banding
                 MinDamageProportion = 0.5,
                 MaxDamageRangeProportion = 0.5,
                 MinDamageRangeProportion = 0.9,
+            }
+        },
+        {
+            group="grenade_dmg_banding", 
+            changes={
+                -- GOTY damage banding
+                MinDamageProportion = 0.3,
+                MaxDamageRangeProportion = 0.5,
+                MinDamageRangeProportion = 0.9,
+                -- Collision size > OOTB but < GOTY
+                CollisionSize = 30,
             }
         },
         {
@@ -221,10 +270,73 @@ itemChangeDefs = {
                 MinDamageRangeProportion = 1,
             }
         },
+        {
+            group="hitscan_pistols",
+            changes={
+                HitscanRange=10000,
+            }
+        },
         ---------------------
         -- PATHFINDER
         ---------------------
-        
+        {
+            class="Light", 
+            name="Light Spinfusor", 
+            changes={
+                Damage = 550,
+                DirectHitMultiplier = 1.4,
+                SpareAmmo = 28,
+            },
+        },
+        {
+            class="Light", 
+            name="Dueling Spinfusor", 
+            changes={
+                Damage = 550,
+                DirectHitMultiplier = 1.6,
+                SpareAmmo = 28,
+            },
+        },
+        {
+            class="Light", 
+            name="Bolt Launcher", 
+            changes={
+                Damage = 650,
+                DirectHitMultiplier = 1.35,
+                SpareAmmo = 28,
+            },
+        },
+        {
+            class="Light", 
+            name="Light Assault Rifle", 
+            changes={
+                Damage = 80,
+                ClipAmmo = 24,
+                SpareAmmo = 204,
+                ReloadTime = 1.53,
+                FireInterval = 0.1,
+            },
+        },
+        {
+            class="Light", 
+            name="Falcon", 
+            changes={
+                Damage = 65,
+                ProjectileInheritance = 0,
+                ClipAmmo = 24,
+                ReloadTime = 1.53,
+                -- FireInterval = 0.1,
+            },
+        },
+        {
+            class="Light", 
+            name="Impact Nitron", 
+            changes={
+                Damage=300,
+                ExplosiveRadius=460,
+            },
+        },
+
         ---------------------
         -- INFILTRATOR
         ---------------------
@@ -283,6 +395,15 @@ itemChangeDefs = {
                 ProjectileInheritance = 0.5,
             },
         },
+        -- {
+        --     class="Medium", 
+        --     name="Eagle", 
+        --     changes={
+        --         Damage = 100,
+        --         ClipAmmo = 20,
+        --         SpareAmmo = 132,
+        --     },
+        -- },
         {
             class="Medium", 
             name="Frag Grenade XL", 
@@ -313,7 +434,68 @@ itemChangeDefs = {
         ---------------------
         -- JUGGERNAUGHT
         ---------------------
-
+        {
+            class="Heavy", 
+            name="Fusion Mortar", 
+            changes={
+                Damage = 1300,
+                DirectHitMultiplier = 1,
+                ExplosiveRadius = 700,
+                ProjectileSpeed = 3500,
+                ProjectileMaxSpeed = 7000,
+                ProjectileTerminalVelocity = 7000,
+                SpareAmmo = 25,
+            },
+        },
+        {
+            class="Heavy", 
+            name="Fusion Mortar Deluxe", 
+            changes={
+                Damage = 1400,
+                DirectHitMultiplier = 1,
+                ExplosiveRadius = 650,
+                ProjectileSpeed = 4000,
+                ProjectileMaxSpeed = 8000,
+                ProjectileTerminalVelocity = 8000,
+                SpareAmmo = 25,
+            },
+        },
+        {
+            class="Heavy", 
+            name="Spinfusor MKD", 
+            changes={
+                SpareAmmo = 28,
+            },
+        },
+        {
+            class="Heavy", 
+            name="Spinfusor MK-X", 
+            changes={
+                SpareAmmo = 28,
+            },
+        },
+        {
+            class="Heavy", 
+            name="X1 LMG", 
+            changes={
+                Damage = 75,
+                ProjectileInheritance = 0,
+                ClipAmmo = 80,
+                SpareAmmo = 460,
+                ReloadTime = 1.925,
+                FireInterval = 0.1,
+            },
+        },
+        {
+            class="Heavy", 
+            name="Spinfusor Disk", 
+            changes={
+                Damage = 650,
+                ExplosiveRadius = 360,
+                DirectHitMultiplier = 1.4,
+                SpareAmmo=3,
+            },
+        },
         ---------------------
         -- DOOMBRINGER
         ---------------------
@@ -323,15 +505,45 @@ itemChangeDefs = {
         ---------------------
         {
             class="Heavy", 
+            name="Heavy Spinfusor", 
+            changes={
+                Damage = 750,
+                DirectHitMultiplier = 1.4,
+                SpareAmmo = 30,
+                ImpactMomentum = 90000,
+            },
+        },
+        {
+            class="Heavy", 
+            name="Devastator Spinfusor", 
+            changes={
+                Damage = 700,
+                DirectHitMultiplier = 1.72,
+                ProjectileInheritance = 0.5,
+                SpareAmmo = 30,
+                ImpactMomentum = 90000,
+            },
+        },
+        {
+            class="Heavy", 
             name="Nova Colt", 
             changes={
                 ClipAmmo = 6,
                 SpareAmmo = 72,
                 LowAmmoCutoff = 1,
-                ReloadTime = 1.35,
+                ReloadTime = 1.4,
                 -- Fire rate slightly slower than GOTY
                 FireInterval = 0.35,
                 Damage = 190,
+            },
+        },
+        {
+            class="Heavy", 
+            name="Light Sticky Grenade",
+            valueMods={
+                ExtraBeltAmmo = 2,
+                BeltDamageRadiusBuff = 0.1,
+                BeltArmorPenetrationBuff = 0.2,
             },
         },
     },
