@@ -67,6 +67,13 @@ local hitscan_propsToPrint = {
     "MinDamageProportion",
     "MaxDamageRangeProportion",
     "MinDamageRangeProportion",
+    "PhaseDamagePerEnergy",
+    "PhaseMaxConsumedEnergy",
+    "BXTChargeMaxDamage",
+    "BXTChargeTime",
+    "BXTChargeMultCoefficient",
+    "BXTChargeDivCoefficient",
+    "ShotgunShotCount",
 }
 
 local pack_propsToPrint = {
@@ -76,9 +83,10 @@ local pack_propsToPrint = {
     "PackBuffAmount",
 }
 
-utils:printItemProps("Heavy", "Spinfusor Disk", proj_propsToPrint)
+-- utils:printItemProps("Heavy", "Spinfusor Disk", proj_propsToPrint)
 -- utils:printItemProps("Heavy", "Light Sticky Grenade", grenade_propsToPrint)
--- utils:printItemProps("Medium", "Eagle", hitscan_propsToPrint)
+utils:printItemProps("Light", "Phase Rifle", hitscan_propsToPrint)
+utils:printItemProps("Light", "SAP20", hitscan_propsToPrint)
 
 
 
@@ -277,6 +285,16 @@ itemChangeDefs = {
             }
         },
         ---------------------
+        -- CROSS-CLASS
+        ---------------------
+        {
+            class="Light", -- Will apply across classes 
+            name="Melee", 
+            changes={
+                Damage = 900,
+            },
+        },
+        ---------------------
         -- PATHFINDER
         ---------------------
         {
@@ -345,6 +363,78 @@ itemChangeDefs = {
         ---------------------
         -- SENTINEL
         ---------------------
+        {
+            class="Light", 
+            name="BXT1", 
+            changes={
+                Damage = 10, -- Uncharged damage
+                BXTChargeMaxDamage = 500,
+                BXTChargeTime = 2.5,
+                BXTChargeMultCoefficient = 16,
+                BXTChargeDivCoefficient = 100,
+                ReloadTime = 1.4,
+                FireInterval = 1.0,
+                ClipAmmo = 5,
+                SpareAmmo = 32,
+                HitscanRange = 100000,
+                MinDamageProportion = 0.45,
+                MaxDamageRangeProportion = 0.12,
+                MinDamageRangeProportion = 0.24,
+            },
+        },
+        {
+            class="Light", 
+            name="BXT1A", 
+            changes={
+                Damage = 10, -- Uncharged damage
+                BXTChargeMaxDamage = 500,
+                BXTChargeTime = 2.8,
+                BXTChargeMultCoefficient = 16,
+                BXTChargeDivCoefficient = 100,
+                ReloadTime = 1.4,
+                FireInterval = 1.0,
+                ClipAmmo = 6,
+                SpareAmmo = 34,
+                HitscanRange = 100000,
+                MinDamageProportion = 0.45,
+                MaxDamageRangeProportion = 0.12,
+                MinDamageRangeProportion = 0.24,
+            },
+        },
+        {
+            class="Light", 
+            name="Phase Rifle", 
+            changes={
+                Damage = 60, -- Damage with no energy
+                PhaseDamagePerEnergy = 5.0,
+                PhaseMaxConsumedEnergy = 90.0,
+                ReloadTime = 1.4,
+                FireInterval = 1.0,
+                ClipAmmo = 5,
+                SpareAmmo = 32,
+                HitscanRange = 100000,
+                MinDamageProportion = 0.65,
+                MaxDamageRangeProportion = 0.24,
+                MinDamageRangeProportion = 0.36,
+            },
+        },
+        {
+            class="Light", 
+            name="SAP20", 
+            changes={
+                Damage = 100, -- Damage with no energy
+                PhaseDamagePerEnergy = 5.0,
+                PhaseMaxConsumedEnergy = 95.0,
+                ReloadTime = 1.4,
+                FireInterval = 1.0,
+                ClipAmmo = 3,
+                SpareAmmo = 32,
+                HitscanRange = 100000,
+                MinDamageProportion = 0.65,
+                MaxDamageRangeProportion = 0.24,
+                MinDamageRangeProportion = 0.36,
+            },
+        },
         {
             class="Light", 
             name="Falcon", 
@@ -496,6 +586,7 @@ itemChangeDefs = {
                 SpareAmmo = 460,
                 ReloadTime = 1.925,
                 FireInterval = 0.1,
+                SpinupTime = 0.5,
             },
         },
         {
