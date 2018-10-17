@@ -66,6 +66,8 @@ classDefs = {
             HealthRegenRateBuff = 0.25,
             HealthBuff = 100,
             MassBuff = -0.1,
+            -- Egocentric
+            Egocentric = 0.35,
             -- Rage
             Rage = true,
             RageEnergyRegen = 0.2,

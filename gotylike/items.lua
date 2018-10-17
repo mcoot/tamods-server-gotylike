@@ -77,9 +77,9 @@ local pack_propsToPrint = {
     "PackBuffAmount",
 }
 
--- utils:printItemProps("Heavy", "Spinfusor Disk", proj_propsToPrint)
+utils:printItemProps("Light", "Light Twinfusor", proj_propsToPrint)
 -- utils:printItemProps("Heavy", "Light Sticky Grenade", grenade_propsToPrint)
-utils:printItemProps("Medium", "Sawed Off Shotgun", hitscan_propsToPrint)
+-- utils:printItemProps("Medium", "Sawed Off Shotgun", hitscan_propsToPrint)
 
 
 
@@ -327,6 +327,20 @@ itemChangeDefs = {
         },
         {
             class="Light", 
+            name="Light Twinfusor", 
+            changes={
+                Damage = 380,
+                ExplosiveRadius = 360,
+                DirectHitMultiplier = 1.4,
+                SpareAmmo = 36,
+                ImpactMomentum = 85000,
+                SelfImpactMomentumMultiplier = 0.5,
+                SelfImpactExtraZMomentum = 45000,
+                ReloadTime = 1.4,
+            },
+        },
+        {
+            class="Light", 
             name="Bolt Launcher", 
             changes={
                 Damage = 650,
@@ -503,6 +517,20 @@ itemChangeDefs = {
         },
         {
             class="Medium", 
+            name="Twinfusor", 
+            changes={
+                Damage = 410,
+                ExplosiveRadius = 360,
+                DirectHitMultiplier = 1.4,
+                SpareAmmo = 36,
+                ImpactMomentum = 85000,
+                SelfImpactMomentumMultiplier = 0.5,
+                SelfImpactExtraZMomentum = 45000,
+                ReloadTime = 1.6,
+            },
+        },
+        {
+            class="Medium", 
             name="Assault Rifle", 
             changes={
                 Damage = 80,
@@ -628,6 +656,20 @@ itemChangeDefs = {
             name="Spinfusor MK-X", 
             changes={
                 SpareAmmo = 28,
+            },
+        },
+        {
+            class="Heavy", 
+            name="Heavy Twinfusor", 
+            changes={
+                Damage = 440,
+                ExplosiveRadius = 360,
+                DirectHitMultiplier = 1.4,
+                SpareAmmo = 36,
+                ImpactMomentum = 85000,
+                SelfImpactMomentumMultiplier = 0.5,
+                SelfImpactExtraZMomentum = 45000,
+                ReloadTime = 1.9,
             },
         },
         {
