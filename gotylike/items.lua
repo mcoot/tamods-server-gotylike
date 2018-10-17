@@ -46,6 +46,7 @@ local grenade_propsToPrint = {
     "FireInterval",
     "ThrowDelay",
     "ThrowPullPinTime",
+    "EnergyDrain",
     "MinDamageProportion",
     "MaxDamageRangeProportion",
     "MinDamageRangeProportion",
@@ -77,11 +78,8 @@ local pack_propsToPrint = {
     "PackBuffAmount",
 }
 
--- utils:printItemProps("Light", "Light Twinfusor", proj_propsToPrint)
-utils:printItemProps("Light", "Explosive Nitron", grenade_propsToPrint)
-utils:printItemProps("Light", "Compact Nitron", grenade_propsToPrint)
-utils:printItemValueMods("Light", "Light Energy Pack")
-utils:printItemValueMods("Light", "Light Utility Pack")
+-- utils:printItemProps("Medium", "Grenade Launcher", proj_propsToPrint)
+-- utils:printItemProps("Light", "Explosive Nitron", grenade_propsToPrint)
 -- utils:printItemProps("Medium", "Sawed Off Shotgun", hitscan_propsToPrint)
 
 
@@ -639,7 +637,80 @@ itemChangeDefs = {
         ---------------------
         -- RAIDER
         ---------------------
-        
+        {
+            class="Medium", 
+            name="Arx Buster", 
+            changes={
+                Damage = 600,
+                ExplosiveRadius = 360,
+                SpareAmmo = 39,
+            },
+        },
+        {
+            class="Medium", 
+            name="Grenade Launcher", 
+            changes={
+                Damage = 550,
+                ExplosiveRadius = 500,
+                ClipAmmo = 5,
+                SpareAmmo = 46,
+            },
+        },
+        {
+            class="Medium", 
+            name="NJ4 SMG", 
+            changes={
+                Damage = 75,
+                ProjectileInheritance = 0,
+                ClipAmmo = 28,
+                SpareAmmo = 240,
+                ReloadTime = 1.53,
+                FireInterval = 0.11,
+            },
+        },
+        {
+            class="Medium", 
+            name="Desert NJ4 SMG", 
+            changes={
+                Damage = 70,
+                ProjectileInheritance = 0,
+                ClipAmmo = 28,
+                SpareAmmo = 240,
+                ReloadTime = 1.53,
+                FireInterval = 0.1,
+            },
+        },
+        {
+            class="Medium", 
+            name="NJ5 SMG", 
+            changes={
+                Damage = 140,
+                ClipAmmo = 24,
+                SpareAmmo = 216,
+                ReloadTime = 1.53,
+                FireInterval = 0.2,
+            },
+        },
+        {
+            class="Medium", 
+            name="EMP Grenade", 
+            changes={
+                Damage = 600,
+                ExplosiveRadius = 682,
+                EnergyDrain = 192,
+                SpareAmmo = 2,
+            }
+        },
+        {
+            class="Medium", 
+            name="EMP XL Grenade", 
+            changes={
+                Damage = 500,
+                ExplosiveRadius = 858,
+                EnergyDrain = 192,
+                SpareAmmo = 2,
+            }
+        },
         ---------------------
         -- TECHNICIAN
         ---------------------
