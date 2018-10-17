@@ -77,8 +77,11 @@ local pack_propsToPrint = {
     "PackBuffAmount",
 }
 
-utils:printItemProps("Light", "Light Twinfusor", proj_propsToPrint)
--- utils:printItemProps("Heavy", "Light Sticky Grenade", grenade_propsToPrint)
+-- utils:printItemProps("Light", "Light Twinfusor", proj_propsToPrint)
+utils:printItemProps("Light", "Explosive Nitron", grenade_propsToPrint)
+utils:printItemProps("Light", "Compact Nitron", grenade_propsToPrint)
+utils:printItemValueMods("Light", "Light Energy Pack")
+utils:printItemValueMods("Light", "Light Utility Pack")
 -- utils:printItemProps("Medium", "Sawed Off Shotgun", hitscan_propsToPrint)
 
 
@@ -398,10 +401,47 @@ itemChangeDefs = {
             name="Impact Nitron", 
             changes={
                 Damage=300,
-                ExplosiveRadius=460,
+                ExplosiveRadius=506,
+                DirectHitMultiplier=1,
+                SpareAmmo=2,
             },
         },
-
+        {
+            class="Light", 
+            name="Explosive Nitron", 
+            changes={
+                Damage=650,
+                ExplosiveRadius=396,
+                DirectHitMultiplier=1,
+                SpareAmmo=2,
+            },
+        },
+        {
+            class="Light", 
+            name="Compact Nitron", 
+            changes={
+                Damage=300,
+                ExplosiveRadius=440,
+                DirectHitMultiplier=1,
+                SpareAmmo=3,
+            },
+        },
+        {
+            class="Light", 
+            name="Light Energy Pack", 
+            valueMods={
+                EnergyRegenRateBuff=0.18
+            },
+        },
+        {
+            -- Converted into a 'lightweight pack'
+            class="Light", 
+            name="Light Utility Pack", 
+            valueMods={
+                EnergyBuff=25,
+                MassBuff=-0.3
+            },
+        },
         ---------------------
         -- INFILTRATOR
         ---------------------

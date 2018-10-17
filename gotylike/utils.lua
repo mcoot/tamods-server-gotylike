@@ -40,4 +40,11 @@ function utils:printItemProps(class, item, propNames)
     end
 end
 
+function utils:printItemValueMods(class, item)
+    local vms = Items.getValueMods(class, item)
+    for idx, vm in pairs(vms) do
+        Logger.debug("||| " .. item .. " | " .. vm[1] .. " = " .. tostring(vm[2]))
+    end
+end
+
 return utils

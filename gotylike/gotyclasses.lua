@@ -36,7 +36,11 @@ classDefs = {
         },
         packs={
             "Thrust Pack",
+            -- The Energy pack is the SEN one now
+            -- But in GOTY the two were identical
             "Light Energy Pack",
+            -- Light Utility pack is being converted
+            -- into a 'Lightweight pack'
             "Light Utility Pack",
         },
         skins={
