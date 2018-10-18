@@ -1,11 +1,11 @@
 -- Server Settings
 require("gotylike/serversettings")
 
--- Classes
-require("gotylike/gotyclasses")
-
--- Weapon/item re-balance
+-- Cross-class weapon and item rebalances
 require("gotylike/items")
+
+-- Custom Classes
+require("gotylike/classes")
 
 -- Vehicles
 require("gotylike/vehicles")

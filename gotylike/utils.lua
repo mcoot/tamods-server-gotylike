@@ -1,5 +1,11 @@
 local utils = {}
 
+-- Whether a file exists
+function utils:fileExists(name)
+	local f = io.open(name,"r")
+	if f ~= nil then io.close(f) return true else return false end
+end
+
 -- Converts a list of mods in the form of {ModNameA = ValueA, ModNameB = ValueB}
 -- Into the TAMods accepted form of { {ValueMods.ModNameA, ValueA}, {ValueMods.ModNameB, ValueB} }
 function utils:valueModsListDefConverter(valueModsList)
