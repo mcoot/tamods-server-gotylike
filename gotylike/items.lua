@@ -641,7 +641,7 @@ itemChangeDefs = {
             class="Medium", 
             name="Arx Buster", 
             changes={
-                Damage = 600,
+                Damage = 400,
                 ExplosiveRadius = 360,
                 SpareAmmo = 39,
             },
