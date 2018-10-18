@@ -59,6 +59,7 @@ local itemDefs = {
             DirectHitMultiplier = 1.4,
             SpareAmmo = 30,
             ImpactMomentum = 90000,
+            ReloadTime = 1.8,
         },
     },
     {
@@ -69,6 +70,7 @@ local itemDefs = {
             ProjectileInheritance = 0.5,
             SpareAmmo = 30,
             ImpactMomentum = 90000,
+            ReloadTime = 1.8,
         },
     },
     {
@@ -81,6 +83,10 @@ local itemDefs = {
             -- Fire rate slightly slower than GOTY
             FireInterval = 0.35,
             Damage = 190,
+            HitscanRange = 10000,
+            MinDamageProportion = 0.65,
+            MaxDamageRangeProportion = 0.2,
+            MinDamageRangeProportion = 0.4,
         },
     },
     {
@@ -111,6 +117,14 @@ local itemDefs = {
             ExtraBeltAmmo = 2,
             BeltDamageRadiusBuff = 0.1,
             BeltArmorPenetrationBuff = 0.2,
+        },
+    },
+    {
+        name="Survival Pack",
+        valueMods={
+            HealthBuff = 200,
+            WalkSpeedBuff = 0.25,
+            EnergyRegenRateBuff = 0.15,
         },
     },
 }

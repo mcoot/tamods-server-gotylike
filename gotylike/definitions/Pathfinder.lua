@@ -57,11 +57,11 @@ local classDef = {
         MassBuff = -0.1,
         -- Egocentric
         Egocentric = 0.35,
-        -- Rage
-        Rage = true,
-        RageEnergyRegen = 0.2,
-        RageTime = 15.0,
-        RageMassReduction = -0.25,
+        -- -- Rage
+        -- Rage = true,
+        -- RageEnergyRegen = 0.2,
+        -- RageTime = 15.0,
+        -- RageMassReduction = -0.25,
     }
 }
 
@@ -72,6 +72,7 @@ local itemDefs = {
             Damage = 550,
             DirectHitMultiplier = 1.4,
             SpareAmmo = 28,
+            ReloadTime = 1.24,
         },
     },
     {
@@ -80,6 +81,7 @@ local itemDefs = {
             Damage = 550,
             DirectHitMultiplier = 1.6,
             SpareAmmo = 28,
+            ReloadTime = 1.24,
         },
     },
     {
@@ -150,7 +152,7 @@ local itemDefs = {
             Damage=300,
             ExplosiveRadius=506,
             DirectHitMultiplier=1,
-            SpareAmmo=2,
+            SpareAmmo=3,
         },
     },
     {
@@ -159,7 +161,7 @@ local itemDefs = {
             Damage=650,
             ExplosiveRadius=396,
             DirectHitMultiplier=1,
-            SpareAmmo=2,
+            SpareAmmo=3,
         },
     },
     {
@@ -168,7 +170,7 @@ local itemDefs = {
             Damage=300,
             ExplosiveRadius=440,
             DirectHitMultiplier=1,
-            SpareAmmo=3,
+            SpareAmmo=4,
         },
     },
     {

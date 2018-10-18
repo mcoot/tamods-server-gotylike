@@ -35,6 +35,7 @@ end
 
 local classNames = {
     "Pathfinder",
+    -- "Jumper",
     "Infiltrator",
     "Sentinel",
     "Soldier",

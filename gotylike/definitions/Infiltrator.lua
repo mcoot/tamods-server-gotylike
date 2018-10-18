@@ -110,6 +110,7 @@ local itemDefs = {
         name="Throwing Knives",
         changes={
             Damage = 100,
+            DirectHitMultiplier = 3.75,
             ExplosiveRadius = 120,
             ProjectileSpeed = 15000,
             ProjectileLifespan = 1.0,

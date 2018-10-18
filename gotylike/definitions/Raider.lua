@@ -58,12 +58,38 @@ local itemDefs = {
         },
     },
     {
+        name="Dust Devil", 
+        changes={
+            Damage = 500,
+            StuckDamageMultiplier = 1,
+            StuckMomentumMultiplier = 1,
+            ExplosiveRadius = 410,
+            SpareAmmo = 39,
+        },
+    },
+    {
         name="Grenade Launcher", 
         changes={
             Damage = 550,
             ExplosiveRadius = 500,
             ClipAmmo = 5,
             SpareAmmo = 46,
+        },
+    },
+    {
+        name="Plasma Gun", 
+        changes={
+            Damage = 400,
+            DirectHitMultiplier = 1.25,
+            ExplosiveRadius = 270,
+            ProjectileInheritance = 0.5,
+            ProjectileSpeed = 3620,
+            ProjectileMaxSpeed = 8000,
+            ProjectileLifespan = 3,
+            ClipAmmo = 10,
+            SpareAmmo = 50,
+            ReloadTime = 1.8,
+            FireInterval = 0.47,
         },
     },
     {
@@ -114,6 +140,12 @@ local itemDefs = {
             ExplosiveRadius = 858,
             EnergyDrain = 192,
             SpareAmmo = 2,
+        }
+    },
+    {
+        name="Blackout Grenade", 
+        changes={
+            Damage = 250,
         }
     },
 }

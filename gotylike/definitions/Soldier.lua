@@ -56,6 +56,7 @@ local itemDefs = {
             Damage = 650,
             DirectHitMultiplier = 1.4,
             SpareAmmo = 28,
+            ReloadTime = 1.5,
         },
     },
     {
@@ -103,6 +104,7 @@ local itemDefs = {
             DirectHitMultiplier = 1.1,
             SpareAmmo = 28,
             ProjectileInheritance = 0.5,
+            ReloadTime = 1.5,
         },
     },
     {

@@ -96,6 +96,7 @@ local itemDefs = {
             MaxDamageRangeProportion = 0.24,
             MinDamageRangeProportion = 0.36,
         },
+        valueMods={}
     },
     {
         name="SAP20", 
@@ -112,6 +113,7 @@ local itemDefs = {
             MaxDamageRangeProportion = 0.24,
             MinDamageRangeProportion = 0.36,
         },
+        valueMods={}
     },
     {
         name="Falcon", 
@@ -132,6 +134,27 @@ local itemDefs = {
             SpareAmmo = 50,
             HitscanRange = 3000,
         },
+    },
+    {
+        name="T5 Grenades", 
+        changes={
+            Damage = 1100,
+            ExplosiveRadius = 682,
+            SpareAmmo = 2,
+        },
+    },
+    {
+        name="Prism Mines", 
+        changes={
+            Damage = 800,
+            ExplosiveRadius = 583,
+            PrismMineTripDistance = 512,
+            MineDeployTime=2,
+            MineMaxAllowed=3,
+            MineCollisionCylinderRadius=300,
+            MineCollisionCylinderHeight=100,
+            SpareAmmo=2,
+        }
     },
 }
 

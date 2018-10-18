@@ -159,7 +159,6 @@ itemChangeDefs = {
         hitscan_pistols = {
             {class="Light", name="Sparrow"},
             {class="Medium", name="Eagle"},
-            {class="Heavy", name="Nova Colt"},
         },
         shotguns = {
             {class="Light", name="Shotgun"},
@@ -294,6 +293,9 @@ itemChangeDefs = {
             group="hitscan_pistols",
             changes={
                 HitscanRange=10000,
+                MinDamageProportion = 0.4,
+                MaxDamageRangeProportion = 0.2,
+                MinDamageRangeProportion = 0.4,
             }
         },
         ---------------------
