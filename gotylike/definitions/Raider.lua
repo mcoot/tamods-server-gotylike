@@ -48,16 +48,16 @@ local classDef = {
 
 local itemDefs = {
     {
-        class="Medium", 
         name="Arx Buster", 
         changes={
-            Damage = 400,
+            Damage = 600,
+            StuckDamageMultiplier = 1,
+            StuckMomentumMultiplier = 1,
             ExplosiveRadius = 360,
             SpareAmmo = 39,
         },
     },
     {
-        class="Medium", 
         name="Grenade Launcher", 
         changes={
             Damage = 550,
@@ -67,7 +67,6 @@ local itemDefs = {
         },
     },
     {
-        class="Medium", 
         name="NJ4 SMG", 
         changes={
             Damage = 75,
@@ -79,7 +78,6 @@ local itemDefs = {
         },
     },
     {
-        class="Medium", 
         name="Desert NJ4 SMG", 
         changes={
             Damage = 70,
@@ -91,7 +89,6 @@ local itemDefs = {
         },
     },
     {
-        class="Medium", 
         name="NJ5 SMG", 
         changes={
             Damage = 140,
@@ -102,7 +99,6 @@ local itemDefs = {
         },
     },
     {
-        class="Medium", 
         name="EMP Grenade", 
         changes={
             Damage = 600,
@@ -112,7 +108,6 @@ local itemDefs = {
         }
     },
     {
-        class="Medium", 
         name="EMP XL Grenade", 
         changes={
             Damage = 500,

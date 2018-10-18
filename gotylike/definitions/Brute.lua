@@ -53,7 +53,6 @@ local classDef = {
 
 local itemDefs = {
     {
-        class="Heavy", 
         name="Heavy Spinfusor", 
         changes={
             Damage = 750,
@@ -63,7 +62,6 @@ local itemDefs = {
         },
     },
     {
-        class="Heavy", 
         name="Devastator Spinfusor", 
         changes={
             Damage = 700,
@@ -74,7 +72,6 @@ local itemDefs = {
         },
     },
     {
-        class="Heavy", 
         name="Nova Colt", 
         changes={
             ClipAmmo = 6,
@@ -87,7 +84,6 @@ local itemDefs = {
         },
     },
     {
-        class="Heavy", 
         name="Auto Shotgun", 
         changes={
             Damage = 50,
@@ -99,7 +95,6 @@ local itemDefs = {
         },
     },
     {
-        class="Heavy", 
         name="The Hammer", 
         changes={
             Damage = 60,
@@ -111,7 +106,6 @@ local itemDefs = {
         },
     },
     {
-        class="Heavy", 
         name="Light Sticky Grenade",
         valueMods={
             ExtraBeltAmmo = 2,

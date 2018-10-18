@@ -51,7 +51,6 @@ local classDef = {
 
 local itemDefs = {
     {
-        class="Medium", 
         name="Spinfusor", 
         changes={
             Damage = 650,
@@ -60,7 +59,6 @@ local itemDefs = {
         },
     },
     {
-        class="Medium", 
         name="Twinfusor", 
         changes={
             Damage = 410,
@@ -74,7 +72,6 @@ local itemDefs = {
         },
     },
     {
-        class="Medium", 
         name="Assault Rifle", 
         changes={
             Damage = 80,
@@ -84,7 +81,6 @@ local itemDefs = {
         },
     },
     {
-        class="Medium", 
         name="Gast Rifle", 
         changes={
             ClipAmmo = 24,
@@ -93,7 +89,6 @@ local itemDefs = {
         },
     },
     {
-        class="Medium", 
         name="Thumper DX", 
         changes={
             Damage = 600,
@@ -102,7 +97,6 @@ local itemDefs = {
         },
     },
     {
-        class="Medium", 
         name="Spare Spinfusor", 
         changes={
             Damage = 600,
@@ -112,7 +106,6 @@ local itemDefs = {
         },
     },
     {
-        class="Medium", 
         name="Eagle", 
         changes={
             Damage = 100,
@@ -122,7 +115,6 @@ local itemDefs = {
         },
     },
     {
-        class="Medium", 
         name="Frag Grenade XL", 
         valueMods={
             ExtraBeltAmmo = 1,
@@ -131,7 +123,6 @@ local itemDefs = {
         },
     },
     {
-        class="Medium", 
         name="Utility Pack", 
         valueMods={
             EnergyBuff = 20,

@@ -47,7 +47,6 @@ local classDef = {
 
 local itemDefs = {
     {
-        class="Medium", 
         name="Sawed Off Shotgun", 
         changes={
             Damage = 80,

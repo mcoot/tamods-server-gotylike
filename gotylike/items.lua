@@ -78,8 +78,8 @@ local pack_propsToPrint = {
     "PackBuffAmount",
 }
 
--- utils:printItemProps("Medium", "Grenade Launcher", proj_propsToPrint)
--- utils:printItemProps("Light", "Explosive Nitron", grenade_propsToPrint)
+-- utils:printItemProps("Light", "Stealth Spinfusor", proj_propsToPrint)
+-- utils:printItemProps("Light", "Chaff Grenades", grenade_propsToPrint)
 -- utils:printItemProps("Medium", "Sawed Off Shotgun", hitscan_propsToPrint)
 
 

@@ -56,7 +56,6 @@ local classDef = {
 
 local itemDefs = {
     {
-        class="Heavy", 
         name="Fusion Mortar", 
         changes={
             Damage = 1300,
@@ -69,7 +68,6 @@ local itemDefs = {
         },
     },
     {
-        class="Heavy", 
         name="Fusion Mortar Deluxe", 
         changes={
             Damage = 1400,
@@ -82,21 +80,18 @@ local itemDefs = {
         },
     },
     {
-        class="Heavy", 
         name="Spinfusor MKD", 
         changes={
             SpareAmmo = 28,
         },
     },
     {
-        class="Heavy", 
         name="Spinfusor MK-X", 
         changes={
             SpareAmmo = 28,
         },
     },
     {
-        class="Heavy", 
         name="Heavy Twinfusor", 
         changes={
             Damage = 440,
@@ -110,7 +105,6 @@ local itemDefs = {
         },
     },
     {
-        class="Heavy", 
         name="X1 LMG", 
         changes={
             Damage = 75,
@@ -123,7 +117,6 @@ local itemDefs = {
         },
     },
     {
-        class="Heavy", 
         name="Spinfusor Disk", 
         changes={
             Damage = 650,

@@ -67,7 +67,6 @@ local classDef = {
 
 local itemDefs = {
     {
-        class="Light", 
         name="Light Spinfusor", 
         changes={
             Damage = 550,
@@ -76,7 +75,6 @@ local itemDefs = {
         },
     },
     {
-        class="Light", 
         name="Dueling Spinfusor", 
         changes={
             Damage = 550,
@@ -85,7 +83,6 @@ local itemDefs = {
         },
     },
     {
-        class="Light", 
         name="Light Twinfusor", 
         changes={
             Damage = 380,
@@ -99,7 +96,6 @@ local itemDefs = {
         },
     },
     {
-        class="Light", 
         name="Bolt Launcher", 
         changes={
             Damage = 650,
@@ -108,7 +104,6 @@ local itemDefs = {
         },
     },
     {
-        class="Light", 
         name="Light Assault Rifle", 
         changes={
             Damage = 80,
@@ -119,7 +114,6 @@ local itemDefs = {
         },
     },
     {
-        class="Light", 
         name="Sparrow", 
         changes={
             Damage = 85,
@@ -131,7 +125,6 @@ local itemDefs = {
         },
     },
     {
-        class="Light", 
         name="Shotgun", 
         changes={
             Damage = 80,
@@ -142,7 +135,6 @@ local itemDefs = {
         },
     },
     {
-        class="Light", 
         name="Holdout Shotgun", 
         changes={
             Damage = 90,
@@ -153,7 +145,6 @@ local itemDefs = {
         },
     },
     {
-        class="Light", 
         name="Impact Nitron", 
         changes={
             Damage=300,
@@ -163,7 +154,6 @@ local itemDefs = {
         },
     },
     {
-        class="Light", 
         name="Explosive Nitron", 
         changes={
             Damage=650,
@@ -173,7 +163,6 @@ local itemDefs = {
         },
     },
     {
-        class="Light", 
         name="Compact Nitron", 
         changes={
             Damage=300,
@@ -183,7 +172,6 @@ local itemDefs = {
         },
     },
     {
-        class="Light", 
         name="Light Energy Pack", 
         valueMods={
             EnergyRegenRateBuff=0.18
@@ -191,7 +179,6 @@ local itemDefs = {
     },
     {
         -- Converted into a 'lightweight pack'
-        class="Light", 
         name="Light Utility Pack", 
         valueMods={
             EnergyBuff=25,

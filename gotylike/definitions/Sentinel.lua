@@ -46,7 +46,6 @@ local classDef = {
 
 local itemDefs = {
     {
-        class="Light", 
         name="BXT1", 
         changes={
             Damage = 10, -- Uncharged damage
@@ -65,7 +64,6 @@ local itemDefs = {
         },
     },
     {
-        class="Light", 
         name="BXT1A", 
         changes={
             Damage = 10, -- Uncharged damage
@@ -84,7 +82,6 @@ local itemDefs = {
         },
     },
     {
-        class="Light", 
         name="Phase Rifle", 
         changes={
             Damage = 60, -- Damage with no energy
@@ -101,7 +98,6 @@ local itemDefs = {
         },
     },
     {
-        class="Light", 
         name="SAP20", 
         changes={
             Damage = 100, -- Damage with no energy
@@ -118,7 +114,6 @@ local itemDefs = {
         },
     },
     {
-        class="Light", 
         name="Falcon", 
         changes={
             Damage = 65,
@@ -129,7 +124,6 @@ local itemDefs = {
         },
     },
     {
-        class="Light", 
         name="Accurized Shotgun", 
         changes={
             Damage = 70,
