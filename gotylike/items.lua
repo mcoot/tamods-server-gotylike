@@ -76,11 +76,15 @@ local pack_propsToPrint = {
     -- "SpareAmmo",
     "PackSustainedEnergyCost",
     "PackBuffAmount",
+    "ShieldPackEnergyCostPerDamagePoint",
+    "JammerPackRange",
 }
 
--- utils:printItemProps("Light", "Stealth Spinfusor", proj_propsToPrint)
--- utils:printItemProps("Light", "Chaff Grenades", grenade_propsToPrint)
+-- utils:printItemProps("Medium", "Nova Blaster", proj_propsToPrint)
+-- utils:printItemProps("Heavy", "Nova Blaster MX", proj_propsToPrint)
+-- utils:printItemProps("Light", "Cluster Grenades", grenade_propsToPrint)
 -- utils:printItemProps("Medium", "Sawed Off Shotgun", hitscan_propsToPrint)
+-- utils:printItemProps("Medium", "Jammer Pack", pack_propsToPrint)
 
 
 -- Definitions here are for things which affect many weapons or cross-class weapons

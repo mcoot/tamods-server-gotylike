@@ -117,6 +117,21 @@ local itemDefs = {
         },
     },
     {
+        name="Nova Blaster", 
+        changes={
+            Damage = 350,
+            ProjectileSpeed = 8000,
+            ProjectileLifespan = 1,
+            ClipAmmo = 16,
+            SpareAmmo = 96,
+            ReloadTime = 1.4,
+            FireInterval = 0.35,
+            MinDamageProportion = 1,
+            MaxDamageRangeProportion = 0.2,
+            MinDamageRangeProportion = 0.4,
+        },
+    },
+    {
         name="Frag Grenade XL", 
         valueMods={
             ExtraBeltAmmo = 1,

@@ -6,6 +6,7 @@ local classDef = {
         "BXT1A",
         "Phase Rifle",
         "SAP20",
+        {class="Heavy", name="Nova Blaster MX"},
         "Falcon",
         "Accurized Shotgun",
         {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
@@ -123,6 +124,22 @@ local itemDefs = {
             ClipAmmo = 24,
             ReloadTime = 1.53,
             -- FireInterval = 0.1,
+        },
+    },
+    {
+        class="Heavy",
+        name="Nova Blaster MX", 
+        changes={
+            Damage = 250,
+            ProjectileSpeed = 8000,
+            ProjectileLifespan = 1,
+            ClipAmmo = 20,
+            SpareAmmo = 128,
+            ReloadTime = 1.4,
+            FireInterval = 0.25,
+            MinDamageProportion = 1,
+            MaxDamageRangeProportion = 0.2,
+            MinDamageRangeProportion = 0.4,
         },
     },
     {

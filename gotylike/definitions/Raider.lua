@@ -148,6 +148,20 @@ local itemDefs = {
             Damage = 250,
         }
     },
+    {
+        name="Shield Pack", 
+        changes={
+            ShieldPackEnergyCostPerDamagePoint = 0.15,
+            PackSustainedEnergyCost = 1.5,
+        }
+    },
+    {
+        name="Jammer Pack", 
+        changes={
+            PackSustainedEnergyCost = 1.75,
+            JammerPackRange = 910,
+        }
+    },
 }
 
 

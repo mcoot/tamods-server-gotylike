@@ -9,7 +9,6 @@ local classDef = {
         "The Hammer",
         "Nova Colt",
         "Plasma Cannon",
-        "Nova Blaster MX",
         "EFG",
         {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
     },
