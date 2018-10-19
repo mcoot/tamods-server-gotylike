@@ -31,6 +31,8 @@ local classDef = {
         HealthPool = 1200,
         Mass = 100,
         VehicleSpeedInheritance = 1,
+        CollisionCylinderRadius = 24,
+        CollisionCylinderHeight = 46,
     },
     armorValueMods={
         -- QuickDraw

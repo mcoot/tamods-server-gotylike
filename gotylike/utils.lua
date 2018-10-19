@@ -46,6 +46,19 @@ function utils:printItemProps(class, item, propNames)
     end
 end
 
+-- Log out the given set of properties for the given class
+function utils:printClassProps(class, propNames)
+    for idx, prop in pairs(propNames) do
+        local propVal = Classes.getProperty(class, Classes.Properties[prop])
+        if (propVal == nil) then
+            Logger.debug("||| " .. class .. " | " .. prop .. " = nil")
+        else
+            Logger.debug("||| " .. class .. " | " .. prop .. " = " .. tostring(propVal))
+        end
+        
+    end
+end
+
 function utils:printItemValueMods(class, item)
     local vms = Items.getValueMods(class, item)
     for idx, vm in pairs(vms) do

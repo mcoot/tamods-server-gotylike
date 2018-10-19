@@ -211,8 +211,6 @@ itemChangeDefs = {
             {class="Heavy", name="Saber Launcher"},
             {class="Heavy", name="Titan Launcher"},
             {class="Heavy", name="Plasma Cannon"},
-            {class="Heavy", name="Fractal Grenade"},
-            {class="Heavy", name="Extended Fractal"},
         },
         grenade_dmg_banding = {
             -- All explosive grenades that use the common damage banding values
@@ -269,15 +267,13 @@ itemChangeDefs = {
                 MinDamageProportion = 0.3,
                 MaxDamageRangeProportion = 0.5,
                 MinDamageRangeProportion = 0.9,
-                -- Collision size > OOTB but < GOTY
-                CollisionSize = 30,
+                CollisionSize = 42,
             }
         },
         {
             group="chain", 
             changes={
-                -- Smaller than real GOTY, _slightly_ larger than OOTB
-                CollisionSize = 30,
+                CollisionSize = 50,
                 -- GOTY damage falloff
                 MinDamageProportion = 0.75,
                 MaxDamageRangeProportion = 0.75,

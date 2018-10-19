@@ -27,6 +27,8 @@ local classDef = {
     properties={
         HealthPool = 1200,
         VehicleSpeedInheritance = 1,
+        CollisionCylinderRadius = 24,
+        CollisionCylinderHeight = 46,
     },
     armorValueMods={
         -- QuickDraw
@@ -59,6 +61,7 @@ local itemDefs = {
         },
     },
     {
+        class="Light",
         name="Sparrow", 
         changes={
             Damage = 90,

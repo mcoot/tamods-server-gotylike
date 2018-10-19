@@ -121,7 +121,8 @@ local itemDefs = {
     {
         name="Fractal Grenade",
         changes={
-            Damage = 370, -- Have disabled the final explosion damage
+            Damage = 370, -- Reduced final explosion damage
+            ExplosiveRadius = 520,
             SpareAmmo = 2,
             ProjectileSpeed = 1200,
             ImpactMomentum = 40000,
@@ -133,12 +134,16 @@ local itemDefs = {
             FractalShardHeight = 100,
             FractalShardDamage = 370,
             FractalShardDamageRadius = 300,
+            MinDamageProportion = 1,
+            MaxDamageRangeProportion = 0.5,
+            MinDamageRangeProportion = 0.9,
         },
     },
     {
         name="Extended Fractal Grenade",
         changes={
-            Damage = 350, -- Have disabled the final explosion damage
+            Damage = 350, -- Reduced final explosion damage
+            ExplosiveRadius = 520,
             SpareAmmo = 2,
             ProjectileSpeed = 1200,
             ImpactMomentum = 40000,
@@ -150,6 +155,9 @@ local itemDefs = {
             FractalShardHeight = 100,
             FractalShardDamage = 350,
             FractalShardDamageRadius = 300,
+            MinDamageProportion = 1,
+            MaxDamageRangeProportion = 0.5,
+            MinDamageRangeProportion = 0.9,
         },
     },
     {
