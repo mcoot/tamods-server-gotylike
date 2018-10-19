@@ -8,6 +8,7 @@ local classDef = {
         "Flak Cannon",
         "Improved Repair Tool",
         "Sawed Off Shotgun",
+        {class="Light", name="Sparrow"},
         {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
     },
     beltItems={
@@ -55,6 +56,20 @@ local itemDefs = {
             SpareAmmo = 50,
             HitscanRange = 3000,
             ReloadTime = 1.28,
+        },
+    },
+    {
+        name="Sparrow", 
+        changes={
+            Damage = 90,
+            ClipAmmo = 28,
+            SpareAmmo = 188,
+            ReloadTime = 1.26,
+            FireInterval = 0.16,
+            Accuracy = 0.98,
+            AccuracyLossOnShot = 0.45,
+            AccuracyLossMax = 0.1,
+            AccuracyCorrectionRate = 0.38,
         },
     },
 }

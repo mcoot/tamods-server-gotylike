@@ -11,7 +11,6 @@ local classDef = {
         "Thumper D",
         "Thumper DX",
         "Eagle",
-        "Nova Blaster",
         {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
     },
     beltItems={
@@ -113,22 +112,12 @@ local itemDefs = {
             Damage = 100,
             ClipAmmo = 20,
             SpareAmmo = 132,
-            -- Currently haven't reverted accuracy, idk if we should
-        },
-    },
-    {
-        name="Nova Blaster", 
-        changes={
-            Damage = 350,
-            ProjectileSpeed = 8000,
-            ProjectileLifespan = 1,
-            ClipAmmo = 16,
-            SpareAmmo = 96,
-            ReloadTime = 1.4,
-            FireInterval = 0.35,
-            MinDamageProportion = 1,
-            MaxDamageRangeProportion = 0.2,
-            MinDamageRangeProportion = 0.4,
+            ReloadTime = 1.26,
+            FireInterval = 0.16,
+            Accuracy = 0.98,
+            AccuracyLossOnShot = 0.45,
+            AccuracyLossMax = 0.1,
+            AccuracyCorrectionRate = 0.38,
         },
     },
     {

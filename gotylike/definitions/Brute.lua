@@ -121,7 +121,7 @@ local itemDefs = {
     {
         name="Fractal Grenade",
         changes={
-            Damage = 0, -- Have disabled the final explosion damage
+            Damage = 370, -- Have disabled the final explosion damage
             SpareAmmo = 2,
             ProjectileSpeed = 1200,
             ImpactMomentum = 40000,
@@ -138,7 +138,7 @@ local itemDefs = {
     {
         name="Extended Fractal Grenade",
         changes={
-            Damage = 0, -- Have disabled the final explosion damage
+            Damage = 350, -- Have disabled the final explosion damage
             SpareAmmo = 2,
             ProjectileSpeed = 1200,
             ImpactMomentum = 40000,

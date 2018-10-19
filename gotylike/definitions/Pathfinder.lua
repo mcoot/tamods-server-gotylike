@@ -7,11 +7,10 @@ local classDef = {
         "Blinksfusor",
         "Light Twinfusor",
         "Dueling Spinfusor",
-        "Light Grenade Launcher",
+        -- "Light Grenade Launcher",
         "Light Assault Rifle",
         "Shotgun",
         "Holdout Shotgun",
-        "Sparrow",
         {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
     },
     beltItems={
@@ -113,17 +112,6 @@ local itemDefs = {
             SpareAmmo = 204,
             ReloadTime = 1.53,
             FireInterval = 0.1,
-        },
-    },
-    {
-        name="Sparrow", 
-        changes={
-            Damage = 85,
-            ClipAmmo = 20,
-            SpareAmmo = 132,
-            -- Currently haven't reverted accuracy, idk if we should
-            -- Damage here is slightly lower because in GOTY this wasn't on light
-            -- Need to validate this and decide!!!
         },
     },
     {
