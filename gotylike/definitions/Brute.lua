@@ -119,6 +119,40 @@ local itemDefs = {
         },
     },
     {
+        name="Fractal Grenade",
+        changes={
+            Damage = 0, -- Have disabled the final explosion damage
+            SpareAmmo = 2,
+            ProjectileSpeed = 1200,
+            ImpactMomentum = 40000,
+            FractalDuration = 5.5,
+            FractalShardInterval = 0.2,
+            FractalAscentTime = 1,
+            FractalAscentHeight = 90,
+            FractalShardDistance = 900,
+            FractalShardHeight = 100,
+            FractalShardDamage = 370,
+            FractalShardDamageRadius = 300,
+        },
+    },
+    {
+        name="Extended Fractal Grenade",
+        changes={
+            Damage = 0, -- Have disabled the final explosion damage
+            SpareAmmo = 2,
+            ProjectileSpeed = 1200,
+            ImpactMomentum = 40000,
+            FractalDuration = 6.5,
+            FractalShardInterval = 0.2,
+            FractalAscentTime = 1,
+            FractalAscentHeight = 90,
+            FractalShardDistance = 900,
+            FractalShardHeight = 100,
+            FractalShardDamage = 350,
+            FractalShardDamageRadius = 300,
+        },
+    },
+    {
         name="Survival Pack",
         valueMods={
             HealthBuff = 200,
