@@ -111,6 +111,7 @@ local itemDefs = {
     {
         name="Eagle", 
         changes={
+            HoldToFire = false,
             Damage = 100,
             ClipAmmo = 20,
             SpareAmmo = 132,

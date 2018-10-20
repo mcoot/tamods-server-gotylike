@@ -64,6 +64,7 @@ local itemDefs = {
         class="Light",
         name="Sparrow", 
         changes={
+            HoldToFire = false,
             Damage = 90,
             ClipAmmo = 28,
             SpareAmmo = 188,
