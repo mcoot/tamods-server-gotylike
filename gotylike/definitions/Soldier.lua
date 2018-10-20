@@ -61,6 +61,15 @@ local itemDefs = {
         },
     },
     {
+        name="Honorfusor", 
+        changes={
+            Damage = 650,
+            DirectHitMultiplier = 1.4,
+            SpareAmmo = 28,
+            ReloadTime = 1.5,
+        },
+    },
+    {
         name="Twinfusor", 
         changes={
             Damage = 410,
@@ -91,9 +100,19 @@ local itemDefs = {
         },
     },
     {
+        name="Thumper D", 
+        changes={
+            Damage = 550,
+            ExplosiveRadius = 370,
+            DirectHitMultiplier = 1.4,
+            SpareAmmo = 20,
+        },
+    },
+    {
         name="Thumper DX", 
         changes={
             Damage = 600,
+            ExplosiveRadius = 350,
             DirectHitMultiplier = 1.4,
             SpareAmmo = 20,
         },
@@ -125,10 +144,40 @@ local itemDefs = {
     },
     {
         name="Frag Grenade XL", 
+        changes={
+            Damage = 1100,
+            ExplosiveRadius = 682,
+            SpareAmmo = 3,
+        },
+    },
+    {
+        name="Short-Fuse Frag Grenades", 
+        changes={
+            Damage = 900,
+            ExplosiveRadius = 660,
+            SpareAmmo = 3,
+        },
+    },
+    {
+        name="AP Grenades", 
+        changes={
+            Damage = 1300,
+            ExplosiveRadius = 624,
+            SpareAmmo = 3,
+        },
+    },
+    {
+        name="Proximity Grenades", 
+        changes={
+            Damage = 620,
+            ExplosiveRadius = 528,
+            SpareAmmo = 3,
+        },
+    },
+    {
+        name="Energy Pack", 
         valueMods={
-            ExtraBeltAmmo = 1,
-            BeltDamageRadiusBuff = 0.1,
-            BeltArmorPenetrationBuff = 0.2,
+            EnergyBuff = 35,
         },
     },
     {

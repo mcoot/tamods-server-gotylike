@@ -46,6 +46,12 @@ local grenade_propsToPrint = {
     "FireInterval",
     "ThrowDelay",
     "ThrowPullPinTime",
+    "StuckDamageMultiplier",
+    "StuckMomentumMultiplier",
+    "FuseTimer",
+    "ExplodeOnContact",
+    "ExplodeOnFuse",
+    "MustBounceBeforeExplode",
     "EnergyDrain",
     "MinDamageProportion",
     "MaxDamageRangeProportion",
@@ -80,7 +86,7 @@ local pack_propsToPrint = {
     "JammerPackRange",
 }
 
--- utils:printItemProps("Medium", "Nova Blaster", proj_propsToPrint)
+utils:printItemProps("Medium", "Thumper D", proj_propsToPrint)
 -- utils:printItemProps("Heavy", "Nova Blaster MX", proj_propsToPrint)
 -- utils:printItemProps("Light", "Cluster Grenades", grenade_propsToPrint)
 -- utils:printItemProps("Medium", "Sawed Off Shotgun", hitscan_propsToPrint)
