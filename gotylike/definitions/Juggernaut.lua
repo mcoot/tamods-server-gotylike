@@ -18,7 +18,6 @@ local classDef = {
     },
     packs={
         "Regen Pack",
-        "Heavy Energy Pack",
     },
     skins={
         "Juggernaut",
@@ -82,13 +81,21 @@ local itemDefs = {
     {
         name="Spinfusor MKD", 
         changes={
+            Damage = 600,
+            ExplosiveRadius = 390,
+            DirectHitMultiplier = 1.4,
             SpareAmmo = 28,
+            ReloadTime = 1.5,
         },
     },
     {
         name="Spinfusor MK-X", 
         changes={
+            Damage = 660,
+            ExplosiveRadius = 360,
+            DirectHitMultiplier = 1.4,
             SpareAmmo = 28,
+            ReloadTime = 1.5,
         },
     },
     {
@@ -117,12 +124,34 @@ local itemDefs = {
         },
     },
     {
+        name="Heavy AP Grenade", 
+        changes={
+            Damage = 1500,
+            ExplosiveRadius = 624,
+            SpareAmmo = 3,
+        },
+    },
+    {
+        name="Heavy AP-XL", 
+        changes={
+            Damage = 1300,
+            ExplosiveRadius = 696,
+            SpareAmmo = 3,
+        },
+    },
+    {
         name="Spinfusor Disk", 
         changes={
             Damage = 650,
             ExplosiveRadius = 360,
             DirectHitMultiplier = 1.4,
             SpareAmmo=3,
+        },
+    },
+    {
+        name="Regen Pack", 
+        valueMods={
+            RegenTimeBuff = 0.14,
         },
     },
 }

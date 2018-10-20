@@ -108,14 +108,13 @@ local pack_propsToPrint = {
     "JammerPackRange",
 }
 
-utils:printItemProps("Medium", "Thumper", proj_propsToPrint)
-utils:printItemProps("Medium", "TCN4", proj_propsToPrint)
-utils:printItemProps("Medium", "TCN4 Rockwind", proj_propsToPrint)
-utils:printItemProps("Medium", "TCNG", grenade_propsToPrint)
-utils:printItemProps("Medium", "TCNG Quickfuse", grenade_propsToPrint)
-utils:printItemProps("Medium", "Motion Sensor", grenade_propsToPrint)
+utils:printItemProps("Heavy", "Spinfusor MKD", proj_propsToPrint)
+utils:printItemProps("Heavy", "Spinfusor MK-X", proj_propsToPrint)
+utils:printItemProps("Heavy", "Heavy AP Grenades", grenade_propsToPrint)
+utils:printItemProps("Heavy", "Heavy AP-XL", grenade_propsToPrint)
 -- utils:printItemProps("Medium", "Sawed Off Shotgun", hitscan_propsToPrint)
--- utils:printItemProps("Medium", "Jammer Pack", pack_propsToPrint)
+utils:printItemProps("Heavy", "Regen Pack", pack_propsToPrint)
+utils:printItemProps("Heavy", "Heavy Energy Pack", pack_propsToPrint)
 
 
 -- Definitions here are for things which affect many weapons or cross-class weapons
