@@ -50,6 +50,34 @@ local classDef = {
 
 local itemDefs = {
     {
+        name="Thumper", 
+        changes={
+            Damage = 650,
+            ExplosiveRadius = 360,
+            DirectHitMultiplier = 1.4,
+            SpareAmmo = 35,
+        },
+    },
+    {
+        name="TCN4", 
+        changes={
+            Damage = 80,
+            ClipAmmo = 32,
+            SpareAmmo = 336,
+            ReloadTime = 1.53,
+        },
+    },
+    {
+        name="TCN4 Rockwind", 
+        changes={
+            Damage = 105,
+            ClipAmmo = 24,
+            SpareAmmo = 240,
+            ReloadTime = 1.53,
+            FireInterval = 0.15,
+        },
+    },
+    {
         name="Sawed Off Shotgun", 
         changes={
             Damage = 80,
@@ -74,6 +102,35 @@ local itemDefs = {
             AccuracyLossOnShot = 0.45,
             AccuracyLossMax = 0.1,
             AccuracyCorrectionRate = 0.38,
+        },
+    },
+    {
+        name="TCNG", 
+        changes={
+            Damage = 1000,
+            ExplosiveRadius = 572,
+            SpareAmmo = 3,
+        },
+    },
+    {
+        name="TCNG Quickfuse", 
+        changes={
+            Damage = 800,
+            ExplosiveRadius = 550,
+            SpareAmmo = 3,
+            FuseTimer = 1.2,
+        },
+    },
+    {
+        name="Motion Sensor", 
+        changes={
+            Damage = 10,
+            EnergyDrain = 100,
+            ImpactMomentum = 1000,
+            ExplosiveRadius = 572,
+            SpareAmmo = 3,
+            MineCollisionCylinderRadius = 300,
+            MineCollisionCylinderHeight = 200,
         },
     },
 }

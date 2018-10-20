@@ -58,6 +58,28 @@ local grenade_propsToPrint = {
     "MinDamageRangeProportion",
 }
 
+local mine_propsToPrint = {
+    "Damage",
+    "ExplosiveRadius",
+    "ImpactMomentum",
+    "ProjectileSpeed",
+    "ProjectileMaxSpeed",
+    "ProjectileInheritance",
+    "ClipAmmo",
+    "SpareAmmo",
+    "LowAmmoCutoff",
+    "ReloadTime",
+    "FireInterval",
+    "EnergyDrain",
+    "MineDeployTime",
+    "MineMaxAllowed",
+    "MineCollisionCylinderRadius",
+    "MineCollisionCylinderHeight",
+    "MinDamageProportion",
+    "MaxDamageRangeProportion",
+    "MinDamageRangeProportion",
+}
+
 local hitscan_propsToPrint = {
     "Damage",
     "Accuracy",
@@ -86,9 +108,12 @@ local pack_propsToPrint = {
     "JammerPackRange",
 }
 
-utils:printItemProps("Medium", "Thumper D", proj_propsToPrint)
--- utils:printItemProps("Heavy", "Nova Blaster MX", proj_propsToPrint)
--- utils:printItemProps("Light", "Cluster Grenades", grenade_propsToPrint)
+utils:printItemProps("Medium", "Thumper", proj_propsToPrint)
+utils:printItemProps("Medium", "TCN4", proj_propsToPrint)
+utils:printItemProps("Medium", "TCN4 Rockwind", proj_propsToPrint)
+utils:printItemProps("Medium", "TCNG", grenade_propsToPrint)
+utils:printItemProps("Medium", "TCNG Quickfuse", grenade_propsToPrint)
+utils:printItemProps("Medium", "Motion Sensor", grenade_propsToPrint)
 -- utils:printItemProps("Medium", "Sawed Off Shotgun", hitscan_propsToPrint)
 -- utils:printItemProps("Medium", "Jammer Pack", pack_propsToPrint)
 
