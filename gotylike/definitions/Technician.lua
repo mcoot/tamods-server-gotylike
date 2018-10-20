@@ -43,8 +43,11 @@ local classDef = {
         HealthBuff = 100,
         HealthRegenRateBuff = 0.25,
         EnergyBuff = 10,
-        -- Vehicle Improvements
+        -- Vehicle / Repair Improvements
+        VehicleHealthBuff = 0.1,
         VehicleEnergyBuff = 0.25,
+        RepairRateBuff = 0.2,
+        VehiclePassengerDamageReductionBuff = 0.25,
     }
 }
 
