@@ -141,6 +141,7 @@ local itemDefs = {
             MinDamageProportion = 1,
             MaxDamageRangeProportion = 0.2,
             MinDamageRangeProportion = 0.4,
+            HoldToFire = false,
         },
     },
     {
@@ -157,6 +158,7 @@ local itemDefs = {
             MinDamageProportion = 1,
             MaxDamageRangeProportion = 0.2,
             MinDamageRangeProportion = 0.4,
+            HoldToFire = false,
         },
     },
     {
