@@ -171,6 +171,7 @@ local itemDefs = {
             AccuracyLossMax = 0.3,
             AccuracyLossOnShot = 0.0,
             AccuracyCorrectionRate = 0.18,
+            ShotgunUseGOTYSpread = true,
         },
     },
     {
