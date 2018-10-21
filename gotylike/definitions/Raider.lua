@@ -153,9 +153,12 @@ local itemDefs = {
     {
         name="Shield Pack", 
         changes={
-            ShieldPackEnergyCostPerDamagePoint = 0.15,
+            ShieldPackEnergyCostPerDamagePoint = 0.16,
             PackSustainedEnergyCost = 1.5,
-        }
+        },
+        valueMods={
+            ShieldPackBuff = 0.01,
+        },
     },
     {
         name="Jammer Pack", 

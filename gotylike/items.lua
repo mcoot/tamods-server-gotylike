@@ -108,13 +108,15 @@ local pack_propsToPrint = {
     "JammerPackRange",
 }
 
-utils:printItemProps("Heavy", "Spinfusor MKD", proj_propsToPrint)
-utils:printItemProps("Heavy", "Spinfusor MK-X", proj_propsToPrint)
-utils:printItemProps("Heavy", "Heavy AP Grenades", grenade_propsToPrint)
-utils:printItemProps("Heavy", "Heavy AP-XL", grenade_propsToPrint)
+utils:printItemProps("Heavy", "Chain Gun", proj_propsToPrint)
+utils:printItemProps("Heavy", "Chain Cannon", proj_propsToPrint)
+utils:printItemProps("Heavy", "Heavy Bolt Launcher", proj_propsToPrint)
+utils:printItemProps("Heavy", "Saber Launcher", proj_propsToPrint)
+utils:printItemProps("Heavy", "Titan Launcher", proj_propsToPrint)
+utils:printItemProps("Heavy", "Frag Grenades", grenade_propsToPrint)
+utils:printItemProps("Heavy", "Mines", mine_propsToPrint)
 -- utils:printItemProps("Medium", "Sawed Off Shotgun", hitscan_propsToPrint)
-utils:printItemProps("Heavy", "Regen Pack", pack_propsToPrint)
-utils:printItemProps("Heavy", "Heavy Energy Pack", pack_propsToPrint)
+-- utils:printItemProps("Heavy", "Regen Pack", pack_propsToPrint)
 
 
 -- Definitions here are for things which affect many weapons or cross-class weapons

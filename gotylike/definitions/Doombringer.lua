@@ -45,7 +45,98 @@ local classDef = {
 }
 
 local itemDefs = {
-    
+    {
+        name="Chain Gun", 
+        changes={
+            Damage = 95,
+            ProjectileSpeed = 18000,
+            ProjectileMaxSpeed = 18000,
+            ClipAmmo = 250,
+            SpareAmmo = 250,
+            ReloadTime = 1.925,
+            FireInterval = 0.11,
+            SpinupTime = 1.05,
+            Accuracy = 0.98,
+            AccuracyLossMax = 0.11,
+            AccuracyCorrectionRate = 0.19,
+        },
+    },
+    {
+        name="Chain Cannon", 
+        changes={
+            Damage = 115,
+            ProjectileSpeed = 18000,
+            ProjectileMaxSpeed = 18000,
+            ClipAmmo = 250,
+            SpareAmmo = 250,
+            ReloadTime = 1.925,
+            FireInterval = 0.14,
+            SpinupTime = 1.05,
+            Accuracy = 0.98,
+            AccuracyLossMax = 0.11,
+            AccuracyCorrectionRate = 0.19,
+        },
+    },
+    {
+        name="Heavy Bolt Launcher", 
+        changes={
+            Damage = 750,
+            ExplosiveRadius = 360,
+            DirectHitMultiplier = 1.4,
+            ImpactMomentum=90000,
+            SpareAmmo = 30,
+            ReloadTime = 1.7,
+        },
+    },
+    {
+        -- Because of the OOTB change to Saber logic, it can't really be reverted
+        -- I'm giving it slightly reduced explosive radius to compensate for its anti-shrike advantage
+        name="Saber Launcher", 
+        changes={
+            Damage = 650,
+            ExplosiveRadius = 360,
+            DirectHitMultiplier = 1.25,
+            ProjectileSpeed = 3000,
+            ProjectileMaxSpeed = 8000,
+            ImpactMomentum = 85000,
+            SpareAmmo = 20,
+            ReloadTime = 1.7,
+            FireInterval = 0.5,
+        },
+    },
+    {
+        name="Titan Launcher", 
+        changes={
+            Damage = 650,
+            ExplosiveRadius = 450,
+            DirectHitMultiplier = 1.25,
+            ProjectileSpeed = 3000,
+            ProjectileMaxSpeed = 8000,
+            ImpactMomentum  = 85000,
+            SpareAmmo = 20,
+            ReloadTime = 1.7,
+            FireInterval = 0.5,
+        },
+    },
+    {
+        name="Frag Grenade", 
+        changes={
+            Damage = 900,
+            ExplosiveRadius = 572,
+            SpareAmmo = 3,
+            FuseTimer = 1.5,
+        },
+    },
+    {
+        name="Mine", 
+        changes={
+            Damage = 700,
+            ExplosiveRadius = 400,
+            SpareAmmo = 2,
+            MineCollisionCylinderRadius = 200,
+            MineCollisionCylinderHeight = 80,
+        },
+    },
 }
 
 

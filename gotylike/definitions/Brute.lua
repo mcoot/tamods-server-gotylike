@@ -73,6 +73,16 @@ local itemDefs = {
         },
     },
     {
+        name="Gladiator", 
+        changes={
+            Damage = 800,
+            ExplosiveRadius = 200,
+            DirectHitMultiplier = 1.4,
+            SpareAmmo = 20,
+            ReloadTime = 1.4,
+        },
+    },
+    {
         name="Nova Colt", 
         changes={
             HoldToFire = false,
@@ -109,6 +119,22 @@ local itemDefs = {
             SpareAmmo = 50,
             HitscanRange = 3000,
             ReloadTime = 1.35,
+        },
+    },
+    {
+        name="Plasma Cannon", 
+        changes={
+            Damage = 460,
+            DirectHitMultiplier = 1.25,
+            ExplosiveRadius = 270,
+            ProjectileInheritance = 0.5,
+            ProjectileSpeed = 3620,
+            ProjectileMaxSpeed = 8000,
+            ProjectileLifespan = 3,
+            ClipAmmo = 12,
+            SpareAmmo = 60,
+            ReloadTime = 2.75,
+            FireInterval = 0.85,
         },
     },
     {
@@ -167,6 +193,22 @@ local itemDefs = {
             HealthBuff = 200,
             WalkSpeedBuff = 0.25,
             EnergyRegenRateBuff = 0.15,
+        },
+    },
+    {
+        name="Heavy Energy Pack",
+        valueMods={
+            EnergyBuff = 35,
+        },
+    },
+    {
+        name="Heavy Shield Pack",
+        changes={
+            ShieldPackEnergyCostPerDamagePoint = 0.16,
+            PackSustainedEnergyCost = 4.25,
+        },
+        valueMods={
+            ShieldPackBuff = 0.032,
         },
     },
 }
