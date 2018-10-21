@@ -108,13 +108,9 @@ local pack_propsToPrint = {
     "JammerPackRange",
 }
 
-utils:printItemProps("Heavy", "Chain Gun", proj_propsToPrint)
-utils:printItemProps("Heavy", "Chain Cannon", proj_propsToPrint)
-utils:printItemProps("Heavy", "Heavy Bolt Launcher", proj_propsToPrint)
-utils:printItemProps("Heavy", "Saber Launcher", proj_propsToPrint)
-utils:printItemProps("Heavy", "Titan Launcher", proj_propsToPrint)
-utils:printItemProps("Heavy", "Frag Grenades", grenade_propsToPrint)
-utils:printItemProps("Heavy", "Mines", mine_propsToPrint)
+-- utils:printItemProps("Heavy", "Chain Gun", proj_propsToPrint)
+-- utils:printItemProps("Heavy", "Frag Grenades", grenade_propsToPrint)
+-- utils:printItemProps("Heavy", "Mines", mine_propsToPrint)
 -- utils:printItemProps("Medium", "Sawed Off Shotgun", hitscan_propsToPrint)
 -- utils:printItemProps("Heavy", "Regen Pack", pack_propsToPrint)
 
