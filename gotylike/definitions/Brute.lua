@@ -108,6 +108,10 @@ local itemDefs = {
             SpareAmmo = 60,
             HitscanRange = 3000,
             ReloadTime = 1.35,
+            Accuracy = 0.85,
+            AccuracyLossMax = 0.3,
+            AccuracyLossOnShot = 0.0,
+            AccuracyCorrectionRate = 0.18,
         },
     },
     {
@@ -119,6 +123,10 @@ local itemDefs = {
             SpareAmmo = 50,
             HitscanRange = 3000,
             ReloadTime = 1.35,
+            Accuracy = 0.85,
+            AccuracyLossMax = 0.3,
+            AccuracyLossOnShot = 0.0,
+            AccuracyCorrectionRate = 0.18,
         },
     },
     {
@@ -204,7 +212,6 @@ local itemDefs = {
     {
         name="Heavy Shield Pack",
         changes={
-            ShieldPackEnergyCostPerDamagePoint = 0.16,
             PackSustainedEnergyCost = 4.25,
         },
         valueMods={

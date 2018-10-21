@@ -89,6 +89,10 @@ local itemDefs = {
             SpareAmmo = 50,
             HitscanRange = 3000,
             ReloadTime = 1.28,
+            Accuracy = 0.85,
+            AccuracyLossMax = 0.3,
+            AccuracyLossOnShot = 0.0,
+            AccuracyCorrectionRate = 0.18,
         },
     },
     {

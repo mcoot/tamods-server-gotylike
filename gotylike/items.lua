@@ -97,6 +97,7 @@ local hitscan_propsToPrint = {
     "MaxDamageRangeProportion",
     "MinDamageRangeProportion",
     "ShotgunShotCount",
+    "ShotgunInnerAccuracy",
 }
 
 local pack_propsToPrint = {

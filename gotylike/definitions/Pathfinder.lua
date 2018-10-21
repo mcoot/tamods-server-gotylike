@@ -122,6 +122,10 @@ local itemDefs = {
             ClipAmmo = 6,
             SpareAmmo = 50,
             HitscanRange = 3000,
+            Accuracy = 0.85,
+            AccuracyLossMax = 0.3,
+            AccuracyLossOnShot = 0.0,
+            AccuracyCorrectionRate = 0.18,
         },
     },
     {
@@ -132,6 +136,10 @@ local itemDefs = {
             ClipAmmo = 5,
             SpareAmmo = 46,
             HitscanRange = 3000,
+            Accuracy = 0.85,
+            AccuracyLossMax = 0.3,
+            AccuracyLossOnShot = 0.0,
+            AccuracyCorrectionRate = 0.18,
         },
     },
     {
