@@ -59,6 +59,32 @@ function utils:printClassProps(class, propNames)
     end
 end
 
+-- Log out the given set of properties for the given vehicle
+function utils:printVehicleProps(vehicle, propNames)
+    for idx, prop in pairs(propNames) do
+        local propVal = Vehicles.getProperty(vehicle, Vehicles.Properties[prop])
+        if (propVal == nil) then
+            Logger.debug("||| " .. vehicle .. " | " .. prop .. " = nil")
+        else
+            Logger.debug("||| " .. vehicle .. " | " .. prop .. " = " .. tostring(propVal))
+        end
+        
+    end
+end
+
+-- Log out the given set of properties for the given vehicle weapon
+function utils:printVehicleWeaponProps(vehicleWeapon, propNames)
+    for idx, prop in pairs(propNames) do
+        local propVal = VehicleWeapons.getProperty(vehicleWeapon, VehicleWeapons.Properties[prop])
+        if (propVal == nil) then
+            Logger.debug("||| " .. vehicleWeapon .. " | " .. prop .. " = nil")
+        else
+            Logger.debug("||| " .. vehicleWeapon .. " | " .. prop .. " = " .. tostring(propVal))
+        end
+        
+    end
+end
+
 function utils:printItemValueMods(class, item)
     local vms = Items.getValueMods(class, item)
     for idx, vm in pairs(vms) do

@@ -14,15 +14,14 @@ ServerSettings.BaseAssets = false
 -- Vehicles
 ServerSettings.GravCycleLimit = 16
 ServerSettings.BeowulfLimit = 1
--- ServerSettings.ShrikeLimit = 1
-ServerSettings.ShrikeLimit = 5
+ServerSettings.ShrikeLimit = 1
+-- ServerSettings.ShrikeLimit = 5
 ServerSettings.GravCycleSpawnTime = 30
 ServerSettings.BeowulfSpawnTime = 600
--- ServerSettings.ShrikeSpawnTime = 420
-ServerSettings.ShrikeSpawnTime = 15
+ServerSettings.ShrikeSpawnTime = 420
+-- ServerSettings.ShrikeSpawnTime = 3
 
 -- Weapon bans
-ServerSettings.BannedItems.add("Light", "Chaff Grenades")
 
 -- Limit all classes to two weapons
 ServerSettings.DisabledEquipPoints.add("Light", Loadouts.EquipPoints.Tertiary)

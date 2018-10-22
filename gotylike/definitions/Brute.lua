@@ -28,6 +28,7 @@ local classDef = {
     },
     properties={
         HealthPool = 2400,
+        EnergyPool = 90,
         VehicleSpeedInheritance = 0.75,
     },
     armorValueMods={
@@ -201,6 +202,7 @@ local itemDefs = {
         name="Survival Pack",
         valueMods={
             HealthBuff = 200,
+            EnergyBuff = 15,
             WalkSpeedBuff = 0.25,
             EnergyRegenRateBuff = 0.15,
         },
