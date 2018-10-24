@@ -119,7 +119,7 @@ local itemDefs = {
     {
         name="NJ5 SMG", 
         changes={
-            Damage = 140,
+            Damage = 125,
             ClipAmmo = 24,
             SpareAmmo = 216,
             ReloadTime = 1.53,
