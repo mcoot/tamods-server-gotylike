@@ -10,6 +10,7 @@ local classDef = {
         "Nova Colt",
         "Plasma Cannon",
         "EFG",
+        {class="Light", name="Shocklance"},
         {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
     },
     beltItems={
@@ -28,6 +29,7 @@ local classDef = {
     },
     properties={
         HealthPool = 2400,
+        RegenRate = 0.1,
         EnergyPool = 90,
         VehicleSpeedInheritance = 0.75,
     },
@@ -92,7 +94,7 @@ local itemDefs = {
             LowAmmoCutoff = 1,
             ReloadTime = 1.4,
             -- Fire rate slightly slower than GOTY
-            FireInterval = 0.35,
+            FireInterval = 0.3,
             Damage = 190,
             HitscanRange = 10000,
             MinDamageProportion = 0.65,
@@ -142,10 +144,11 @@ local itemDefs = {
             ProjectileSpeed = 3620,
             ProjectileMaxSpeed = 8000,
             ProjectileLifespan = 3,
-            ClipAmmo = 12,
+            ClipAmmo = 10,
             SpareAmmo = 60,
             ReloadTime = 2.75,
             FireInterval = 0.85,
+            DamageAgainstShrikeMultiplier = 0.1,
         },
     },
     {
@@ -164,7 +167,7 @@ local itemDefs = {
             SpareAmmo = 2,
             ProjectileSpeed = 1200,
             ImpactMomentum = 40000,
-            FractalDuration = 5.5,
+            FractalDuration = 4.5,
             FractalShardInterval = 0.2,
             FractalAscentTime = 1,
             FractalAscentHeight = 90,
@@ -185,7 +188,7 @@ local itemDefs = {
             SpareAmmo = 2,
             ProjectileSpeed = 1200,
             ImpactMomentum = 40000,
-            FractalDuration = 6.5,
+            FractalDuration = 5.5,
             FractalShardInterval = 0.2,
             FractalAscentTime = 1,
             FractalAscentHeight = 90,

@@ -8,6 +8,7 @@ local classDef = {
         "Flak Cannon",
         "Improved Repair Tool",
         "Sawed Off Shotgun",
+        {class="Light", name="Shocklance"},
         {class="Light", name="Sparrow"},
         {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
     },
@@ -26,6 +27,7 @@ local classDef = {
     },
     properties={
         HealthPool = 1200,
+        RegenRate = 0.1,
         VehicleSpeedInheritance = 1,
         CollisionCylinderRadius = 24,
         CollisionCylinderHeight = 46,
@@ -115,7 +117,7 @@ local itemDefs = {
     {
         name="TCNG", 
         changes={
-            Damage = 1000,
+            Damage = 900,
             ExplosiveRadius = 572,
             SpareAmmo = 3,
         },
@@ -123,8 +125,8 @@ local itemDefs = {
     {
         name="TCNG Quickfuse", 
         changes={
-            Damage = 800,
-            ExplosiveRadius = 550,
+            Damage = 700,
+            ExplosiveRadius = 528,
             SpareAmmo = 3,
             FuseTimer = 1.2,
         },

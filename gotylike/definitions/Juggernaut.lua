@@ -9,6 +9,7 @@ local classDef = {
         "Spinfusor MK-X",
         "Heavy Twinfusor",
         "X1 LMG",
+        {class="Light", name="Shocklance"},
         {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
     },
     beltItems={
@@ -25,6 +26,7 @@ local classDef = {
     },
     properties={
         HealthPool = 2400,
+        RegenRate = 0.1,
         EnergyPool = 80,
         EnergyRechargeRate = 9,
         GroundSpeed = 360,

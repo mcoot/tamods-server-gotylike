@@ -9,7 +9,7 @@ local classDef = {
         "SN7 Pistol",
         "Arctic SN7 Pistol",
         "Throwing Knives",
-        "Shocklance",
+        {class="Light", name="Shocklance"},
         {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
     },
     beltItems={
@@ -28,6 +28,7 @@ local classDef = {
     },
     properties={
         HealthPool = 800,
+        RegenRate = 0.1,
         VehicleSpeedInheritance = 1,
     },
     armorValueMods={
@@ -64,6 +65,7 @@ local itemDefs = {
             StuckMomentumMultiplier = 2,
             DirectHitMultiplier = 1.4,
             SpareAmmo = 39,
+            FireInterval = 0.35,
         },
     },
     {
@@ -124,8 +126,8 @@ local itemDefs = {
     {
         name="Sticky Grenade", 
         changes={
-            Damage = 1200,
-            ExplosiveRadius = 660,
+            Damage = 1000,
+            ExplosiveRadius = 555,
             StuckDamageMultiplier = 1,
             StuckMomentumMultiplier = 1,
             ProjectileSpeed = 1200,
@@ -135,8 +137,8 @@ local itemDefs = {
     {
         name="Sticky Grenade XL", 
         changes={
-            Damage = 1000,
-            ExplosiveRadius = 770,
+            Damage = 800,
+            ExplosiveRadius = 660,
             StuckDamageMultiplier = 1,
             StuckMomentumMultiplier = 1,
             ProjectileSpeed = 1200,

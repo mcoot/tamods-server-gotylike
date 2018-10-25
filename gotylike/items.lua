@@ -287,6 +287,7 @@ itemChangeDefs = {
                 MinDamageProportion = 0.5,
                 MaxDamageRangeProportion = 0.5,
                 MinDamageRangeProportion = 0.9,
+                DamageAgainstShrikeMultiplier = 2.5,
             }
         },
         {
@@ -297,6 +298,7 @@ itemChangeDefs = {
                 MaxDamageRangeProportion = 0.5,
                 MinDamageRangeProportion = 0.9,
                 CollisionSize = 42,
+                DamageAgainstShrikeMultiplier = 0.25,
             }
         },
         {
@@ -307,15 +309,17 @@ itemChangeDefs = {
                 MinDamageProportion = 0.75,
                 MaxDamageRangeProportion = 0.75,
                 MinDamageRangeProportion = 1,
+                DamageAgainstShrikeMultiplier = 0.65,
             }
         },
         {
             group="shotguns", 
             changes={
                 -- GOTY falloff
-                MinDamageProportion = 0.4,
+                MinDamageProportion = 0.3,
                 MaxDamageRangeProportion = 0.5,
                 MinDamageRangeProportion = 0.9,
+                DamageAgainstShrikeMultiplier = 0.65,
             }
         },
         {
@@ -325,6 +329,7 @@ itemChangeDefs = {
                 MinDamageProportion = 0.4,
                 MaxDamageRangeProportion = 0.2,
                 MinDamageRangeProportion = 0.4,
+                DamageAgainstShrikeMultiplier = 0.65,
             }
         },
         ---------------------

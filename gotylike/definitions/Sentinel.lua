@@ -10,6 +10,7 @@ local classDef = {
         {class="Heavy", name="Nova Blaster MX"},
         "Falcon",
         "Accurized Shotgun",
+        {class="Light", name="Shocklance"},
         {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
     },
     beltItems={
@@ -26,6 +27,7 @@ local classDef = {
     },
     properties={
         HealthPool = 800,
+        RegenRate = 0.1,
         EnergyPool = 90,
         VehicleSpeedInheritance = 1,
     },
@@ -63,6 +65,7 @@ local itemDefs = {
             MinDamageProportion = 0.45,
             MaxDamageRangeProportion = 0.12,
             MinDamageRangeProportion = 0.24,
+            DamageAgainstShrikeMultiplier = 0.1,
         },
     },
     {
@@ -81,6 +84,7 @@ local itemDefs = {
             MinDamageProportion = 0.45,
             MaxDamageRangeProportion = 0.12,
             MinDamageRangeProportion = 0.24,
+            DamageAgainstShrikeMultiplier = 0.1,
         },
     },
     {
@@ -94,9 +98,10 @@ local itemDefs = {
             ClipAmmo = 5,
             SpareAmmo = 32,
             HitscanRange = 100000,
-            MinDamageProportion = 0.65,
-            MaxDamageRangeProportion = 0.24,
-            MinDamageRangeProportion = 0.36,
+            MinDamageProportion = 0.45,
+            MaxDamageRangeProportion = 0.12,
+            MinDamageRangeProportion = 0.24,
+            DamageAgainstShrikeMultiplier = 0.1,
         },
         valueMods={}
     },
@@ -111,9 +116,10 @@ local itemDefs = {
             ClipAmmo = 3,
             SpareAmmo = 32,
             HitscanRange = 100000,
-            MinDamageProportion = 0.65,
-            MaxDamageRangeProportion = 0.24,
-            MinDamageRangeProportion = 0.36,
+            MinDamageProportion = 0.45,
+            MaxDamageRangeProportion = 0.12,
+            MinDamageRangeProportion = 0.24,
+            DamageAgainstShrikeMultiplier = 0.1,
         },
         valueMods={}
     },

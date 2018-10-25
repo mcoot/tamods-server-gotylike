@@ -9,6 +9,7 @@ local classDef = {
         "NJ4 SMG",
         "Desert NJ4 SMG",
         "NJ5 SMG",
+        {class="Light", name="Shocklance"},
         {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
     },
     beltItems={
@@ -28,6 +29,7 @@ local classDef = {
     },
     properties={
         HealthPool = 1200,
+        RegenRate = 0.1,
         VehicleSpeedInheritance = 1,
         CollisionCylinderRadius = 24,
         CollisionCylinderHeight = 46,
@@ -88,10 +90,11 @@ local itemDefs = {
             ProjectileSpeed = 3620,
             ProjectileMaxSpeed = 8000,
             ProjectileLifespan = 3,
-            ClipAmmo = 10,
+            ClipAmmo = 6,
             SpareAmmo = 50,
             ReloadTime = 1.8,
             FireInterval = 0.47,
+            DamageAgainstShrikeMultiplier = 0.1,
         },
     },
     {
@@ -132,7 +135,7 @@ local itemDefs = {
             Damage = 600,
             ExplosiveRadius = 682,
             EnergyDrain = 192,
-            SpareAmmo = 2,
+            SpareAmmo = 1,
         }
     },
     {
@@ -141,7 +144,7 @@ local itemDefs = {
             Damage = 500,
             ExplosiveRadius = 858,
             EnergyDrain = 192,
-            SpareAmmo = 2,
+            SpareAmmo = 1,
         }
     },
     {
@@ -164,7 +167,7 @@ local itemDefs = {
         name="Jammer Pack", 
         changes={
             PackSustainedEnergyCost = 1.75,
-            JammerPackRange = 910,
+            JammerPackRange = 1300,
         }
     },
 }

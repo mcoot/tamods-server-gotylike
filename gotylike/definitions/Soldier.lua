@@ -11,6 +11,7 @@ local classDef = {
         "Thumper D",
         "Thumper DX",
         "Eagle",
+        {class="Light", name="Shocklance"},
         {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
     },
     beltItems={
@@ -29,6 +30,7 @@ local classDef = {
     },
     properties={
         HealthPool = 1200,
+        RegenRate = 0.1,
         Mass = 100,
         VehicleSpeedInheritance = 1,
         CollisionCylinderRadius = 24,
@@ -145,25 +147,25 @@ local itemDefs = {
     {
         name="Frag Grenade XL", 
         changes={
-            Damage = 1100,
+            Damage = 1000,
             ExplosiveRadius = 682,
-            SpareAmmo = 3,
+            SpareAmmo = 2,
         },
     },
     {
         name="Short-Fuse Frag Grenades", 
         changes={
-            Damage = 900,
-            ExplosiveRadius = 660,
-            SpareAmmo = 3,
+            Damage = 720,
+            ExplosiveRadius = 550,
+            SpareAmmo = 2,
         },
     },
     {
         name="AP Grenades", 
         changes={
-            Damage = 1300,
-            ExplosiveRadius = 624,
-            SpareAmmo = 3,
+            Damage = 1200,
+            ExplosiveRadius = 600,
+            SpareAmmo = 2,
         },
     },
     {
@@ -171,7 +173,7 @@ local itemDefs = {
         changes={
             Damage = 620,
             ExplosiveRadius = 528,
-            SpareAmmo = 3,
+            SpareAmmo = 2,
         },
     },
     {

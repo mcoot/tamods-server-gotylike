@@ -7,6 +7,7 @@ local classDef = {
         "Heavy Bolt Launcher",
         "Saber Launcher",
         "Titan Launcher",
+        {class="Light", name="Shocklance"},
         {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
     },
     beltItems={
@@ -22,6 +23,7 @@ local classDef = {
     },
     properties={
         HealthPool = 2300,
+        RegenRate = 0.1,
         VehicleSpeedInheritance = 0.75,
     },
     armorValueMods={
@@ -133,8 +135,8 @@ local itemDefs = {
             Damage = 700,
             ExplosiveRadius = 400,
             SpareAmmo = 2,
-            MineCollisionCylinderRadius = 200,
-            MineCollisionCylinderHeight = 80,
+            MineCollisionCylinderRadius = 180,
+            MineCollisionCylinderHeight = 72,
         },
     },
 }

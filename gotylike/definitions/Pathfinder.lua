@@ -11,6 +11,7 @@ local classDef = {
         "Light Assault Rifle",
         "Shotgun",
         "Holdout Shotgun",
+        {class="Light", name="Shocklance"},
         {class="Medium", name="Long Range Repair Tool"}, -- Dummy tertiary weapon
     },
     beltItems={
@@ -33,6 +34,7 @@ local classDef = {
     },
     properties={
         HealthPool = 800,
+        RegenRate = 0.1,
         EnergyPool = 100,
         EnergyRechargeRate = 14,
         GroundSpeed = 500,
@@ -132,7 +134,7 @@ local itemDefs = {
     {
         name="Holdout Shotgun", 
         changes={
-            Damage = 90,
+            Damage = 85,
             ShotgunShotCount = 8,
             ClipAmmo = 5,
             SpareAmmo = 46,
@@ -183,6 +185,14 @@ local itemDefs = {
         valueMods={
             EnergyBuff=25,
             MassBuff=-0.3
+        },
+    },
+    {
+        -- Converted into a 'lightweight pack'
+        name="Shocklance", 
+        changes={
+            Damage = 700,
+            HitscanRange = 500,
         },
     },
 }
