@@ -291,6 +291,12 @@ itemChangeDefs = {
             }
         },
         {
+            group="spinfusors",
+            changes={
+                DamageAgainstShrikeMultiplier = 3,
+            },
+        },
+        {
             group="grenade_dmg_banding", 
             changes={
                 -- GOTY damage banding
@@ -305,6 +311,7 @@ itemChangeDefs = {
             group="chain", 
             changes={
                 CollisionSize = 50,
+                ProjectileLifespan = 1.0,
                 -- GOTY damage falloff
                 MinDamageProportion = 0.75,
                 MaxDamageRangeProportion = 0.75,

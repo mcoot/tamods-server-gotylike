@@ -158,6 +158,12 @@ local itemDefs = {
             SpareAmmo=2,
         }
     },
+    {
+        name="Stealth Pack", 
+        changes={
+            PackSustainedEnergyCost = 5,
+        }
+    },
 }
 
 

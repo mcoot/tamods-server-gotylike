@@ -193,6 +193,7 @@ local itemDefs = {
         changes={
             Damage = 700,
             HitscanRange = 500,
+            ShotEnergyCost = 10,
         },
     },
 }
