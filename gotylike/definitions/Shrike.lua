@@ -31,6 +31,7 @@ local vehicleWeaponsDef = {
             ProjectileSpeed = 8500,
             ProjectileMaxSpeed = 8500,
             CollisionSize = 42,
+            DamageAgainstShrikeMultiplier = 2.5,
 
             ClipAmmo = 4,
             BurstShotCount = 4,

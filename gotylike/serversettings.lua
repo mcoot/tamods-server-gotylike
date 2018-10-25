@@ -15,11 +15,17 @@ ServerSettings.BaseAssets = false
 ServerSettings.GravCycleLimit = 16
 ServerSettings.BeowulfLimit = 1
 ServerSettings.ShrikeLimit = 1
--- ServerSettings.ShrikeLimit = 5
 ServerSettings.GravCycleSpawnTime = 30
 ServerSettings.BeowulfSpawnTime = 600
 ServerSettings.ShrikeSpawnTime = 420
--- ServerSettings.ShrikeSpawnTime = 3
+
+-- Vehicles testing
+-- ServerSettings.GravCycleLimit = 16
+-- ServerSettings.BeowulfLimit = 16
+-- ServerSettings.ShrikeLimit = 16
+-- ServerSettings.GravCycleSpawnTime = 2
+-- ServerSettings.BeowulfSpawnTime = 2
+-- ServerSettings.ShrikeSpawnTime = 2
 
 -- Weapon bans
 

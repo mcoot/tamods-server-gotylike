@@ -34,8 +34,8 @@ local vehicleWeapon_propsToPrint = {
     "MinDamageRangeProportion",
 }
 
-utils:printVehicleProps("Shrike", vehicle_propsToPrint)
-utils:printVehicleWeaponProps("Shrike", vehicleWeapon_propsToPrint)
+utils:printVehicleProps("Grav Cycle", vehicle_propsToPrint)
+utils:printVehicleWeaponProps("Grav Cycle", vehicleWeapon_propsToPrint)
 
 ------------------------------
 

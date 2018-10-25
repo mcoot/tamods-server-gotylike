@@ -287,14 +287,8 @@ itemChangeDefs = {
                 MinDamageProportion = 0.5,
                 MaxDamageRangeProportion = 0.5,
                 MinDamageRangeProportion = 0.9,
-                DamageAgainstShrikeMultiplier = 2.5,
-            }
-        },
-        {
-            group="spinfusors",
-            changes={
                 DamageAgainstShrikeMultiplier = 3,
-            },
+            }
         },
         {
             group="grenade_dmg_banding", 
