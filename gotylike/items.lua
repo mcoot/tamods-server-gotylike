@@ -288,6 +288,8 @@ itemChangeDefs = {
                 MaxDamageRangeProportion = 0.5,
                 MinDamageRangeProportion = 0.9,
                 DamageAgainstShrikeMultiplier = 3,
+                DamageAgainstGravCycleMultiplier = 1.2,
+                DamageAgainstBeowulfMultiplier = 1.2,
             }
         },
         {
@@ -299,6 +301,8 @@ itemChangeDefs = {
                 MinDamageRangeProportion = 0.9,
                 CollisionSize = 42,
                 DamageAgainstShrikeMultiplier = 0.25,
+                DamageAgainstGravCycleMultiplier = 1.2,
+                DamageAgainstBeowulfMultiplier = 1.2,
             }
         },
         {
@@ -311,6 +315,8 @@ itemChangeDefs = {
                 MaxDamageRangeProportion = 0.75,
                 MinDamageRangeProportion = 1,
                 DamageAgainstShrikeMultiplier = 0.65,
+                DamageAgainstGravCycleMultiplier = 0,
+                DamageAgainstBeowulfMultiplier = 0,
             }
         },
         {
@@ -321,6 +327,8 @@ itemChangeDefs = {
                 MaxDamageRangeProportion = 0.5,
                 MinDamageRangeProportion = 0.9,
                 DamageAgainstShrikeMultiplier = 0.65,
+                DamageAgainstGravCycleMultiplier = 0,
+                DamageAgainstBeowulfMultiplier = 0,
             }
         },
         {
@@ -331,6 +339,8 @@ itemChangeDefs = {
                 MaxDamageRangeProportion = 0.2,
                 MinDamageRangeProportion = 0.4,
                 DamageAgainstShrikeMultiplier = 0.65,
+                DamageAgainstGravCycleMultiplier = 0,
+                DamageAgainstBeowulfMultiplier = 0,
             }
         },
         ---------------------
