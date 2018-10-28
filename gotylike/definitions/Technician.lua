@@ -39,8 +39,8 @@ local classDef = {
         BeltThrowSpeedBuff = 0.25,
         AcquisitionTimeByEnemyTurretsBuff = 0.5,
         -- Survivalist
-        SurvivalistHealth = 0.2,
-        SurvivalistEnergy = 0.2,
+        -- SurvivalistHealth = 0.2,
+        -- SurvivalistEnergy = 0.2,
         -- Technician Armor Upgrades
         RegenTimeBuff = 0.25,
         HealthBuff = 100,

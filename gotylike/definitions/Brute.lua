@@ -40,8 +40,8 @@ local classDef = {
         BeltThrowSpeedBuff = 0.25,
         AcquisitionTimeByEnemyTurretsBuff = 0.5,
         -- Survivalist
-        SurvivalistHealth = 0.12,
-        SurvivalistEnergy = 0.2,
+        -- SurvivalistHealth = 0.12,
+        -- SurvivalistEnergy = 0.2,
         -- Brute Armor Upgrades
         HealthBuff = 200,
         RegenTimeBuff = 0.25,

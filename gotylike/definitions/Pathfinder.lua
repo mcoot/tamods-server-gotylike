@@ -49,8 +49,8 @@ local classDef = {
         BeltThrowSpeedBuff = 0.25,
         AcquisitionTimeByEnemyTurretsBuff = 0.5,
         -- Survivalist
-        SurvivalistHealth = 0.3,
-        SurvivalistEnergy = 0.2,
+        -- SurvivalistHealth = 0.3,
+        -- SurvivalistEnergy = 0.2,
         -- Pathfinder Armor Upgrades
         RegenTimeBuff = 0.25,
         EnergyBuff = 10,
