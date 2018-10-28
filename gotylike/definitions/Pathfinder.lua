@@ -34,6 +34,7 @@ local classDef = {
     },
     properties={
         HealthPool = 800,
+        Mass = 100,
         RegenRate = 0.1,
         EnergyPool = 100,
         EnergyRechargeRate = 14,
@@ -58,11 +59,17 @@ local classDef = {
         MassBuff = -0.1,
         -- Egocentric
         Egocentric = 0.35,
-        -- -- Rage
-        -- Rage = true,
-        -- RageEnergyRegen = 0.2,
-        -- RageTime = 15.0,
-        -- RageMassReduction = -0.25,
+        -- Rage
+        Rage = true,
+        RageEnergyRegen = 0.2,
+        RageTime = 15.0,
+        RageMassReduction = -0.25,
+        -- Sonic Punch
+        SonicPunch = true,
+        SonicPunchRange = 315,
+        SonicPunchFlagDrop = true,
+        -- SonicPunchKnockback = 750,
+        SonicPunchKnockback = 0,
     }
 }
 

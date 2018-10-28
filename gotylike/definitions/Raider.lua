@@ -29,6 +29,7 @@ local classDef = {
     },
     properties={
         HealthPool = 1200,
+        Mass = 100,
         RegenRate = 0.1,
         VehicleSpeedInheritance = 1,
         CollisionCylinderRadius = 24,
@@ -90,6 +91,7 @@ local itemDefs = {
             ProjectileSpeed = 3620,
             ProjectileMaxSpeed = 8000,
             ProjectileLifespan = 3,
+            SelfImpactExtraZMomentum = 25000,
             ClipAmmo = 6,
             SpareAmmo = 50,
             ReloadTime = 1.8,
@@ -151,6 +153,7 @@ local itemDefs = {
         name="Blackout Grenade", 
         changes={
             Damage = 250,
+            SelfImpactExtraZMomentum = 50000,
         }
     },
     {

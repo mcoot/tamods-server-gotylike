@@ -109,6 +109,7 @@ local pack_propsToPrint = {
     "JammerPackRange",
 }
 
+-- utils:printItemProps("Medium", "Spinfusor", proj_propsToPrint)
 -- utils:printItemProps("Heavy", "Chain Gun", proj_propsToPrint)
 -- utils:printItemProps("Heavy", "Frag Grenades", grenade_propsToPrint)
 -- utils:printItemProps("Heavy", "Mines", mine_propsToPrint)
@@ -287,6 +288,8 @@ itemChangeDefs = {
                 MinDamageProportion = 0.5,
                 MaxDamageRangeProportion = 0.5,
                 MinDamageRangeProportion = 0.9,
+                SelfImpactMomentumMultiplier = 1.2,
+                SelfImpactExtraZMomentum = 90000,
                 DamageAgainstShrikeMultiplier = 3,
                 DamageAgainstGravCycleMultiplier = 1.2,
                 DamageAgainstBeowulfMultiplier = 1.2,
@@ -303,6 +306,7 @@ itemChangeDefs = {
                 DamageAgainstShrikeMultiplier = 0.25,
                 DamageAgainstGravCycleMultiplier = 1.2,
                 DamageAgainstBeowulfMultiplier = 1.2,
+                SelfImpactExtraZMomentum = 90000,
             }
         },
         {

@@ -108,6 +108,7 @@ local itemDefs = {
             ExplosiveRadius = 370,
             DirectHitMultiplier = 1.4,
             SpareAmmo = 20,
+            SelfImpactExtraZMomentum = 70000,
         },
     },
     {
@@ -117,6 +118,7 @@ local itemDefs = {
             ExplosiveRadius = 350,
             DirectHitMultiplier = 1.4,
             SpareAmmo = 20,
+            SelfImpactExtraZMomentum = 70000,
         },
     },
     {

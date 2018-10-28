@@ -23,6 +23,8 @@ local classDef = {
     },
     properties={
         HealthPool = 2300,
+        EnergyPool = 80,
+        Mass = 100,
         RegenRate = 0.1,
         VehicleSpeedInheritance = 0.75,
     },
@@ -85,6 +87,7 @@ local itemDefs = {
             Damage = 750,
             ExplosiveRadius = 360,
             DirectHitMultiplier = 1.4,
+            SelfImpactExtraZMomentum = 25000,
             ImpactMomentum=90000,
             SpareAmmo = 30,
             ReloadTime = 1.7,

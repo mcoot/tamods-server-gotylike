@@ -27,6 +27,7 @@ local classDef = {
     },
     properties={
         HealthPool = 1200,
+        Mass = 100,
         RegenRate = 0.1,
         VehicleSpeedInheritance = 1,
         CollisionCylinderRadius = 24,

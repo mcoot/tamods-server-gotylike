@@ -88,6 +88,7 @@ local itemDefs = {
             DirectHitMultiplier = 1.4,
             SpareAmmo = 28,
             ReloadTime = 1.5,
+            SelfImpactExtraZMomentum = 25000,
         },
     },
     {
@@ -98,6 +99,7 @@ local itemDefs = {
             DirectHitMultiplier = 1.4,
             SpareAmmo = 28,
             ReloadTime = 1.5,
+            SelfImpactExtraZMomentum = 25000,
         },
     },
     {

@@ -29,6 +29,7 @@ local classDef = {
     },
     properties={
         HealthPool = 2400,
+        Mass = 130,
         RegenRate = 0.1,
         EnergyPool = 90,
         VehicleSpeedInheritance = 0.75,
@@ -61,6 +62,7 @@ local itemDefs = {
             DirectHitMultiplier = 1.4,
             SpareAmmo = 30,
             ImpactMomentum = 90000,
+            SelfImpactExtraZMomentum = 25000,
             ReloadTime = 1.8,
         },
     },
@@ -144,6 +146,7 @@ local itemDefs = {
             ProjectileSpeed = 3620,
             ProjectileMaxSpeed = 8000,
             ProjectileLifespan = 3,
+            SelfImpactExtraZMomentum = 45000,
             ClipAmmo = 10,
             SpareAmmo = 60,
             ReloadTime = 2.75,
