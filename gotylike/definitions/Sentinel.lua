@@ -184,19 +184,6 @@ local itemDefs = {
             SpareAmmo = 2,
         },
     },
-    {
-        name="Prism Mines", 
-        changes={
-            Damage = 800,
-            ExplosiveRadius = 583,
-            PrismMineTripDistance = 512,
-            MineDeployTime=2,
-            MineMaxAllowed=3,
-            MineCollisionCylinderRadius=300,
-            MineCollisionCylinderHeight=100,
-            SpareAmmo=2,
-        }
-    },
 }
 
 

@@ -149,7 +149,7 @@ local itemDefs = {
             MineMaxAllowed=3,
             MineCollisionCylinderRadius=300,
             MineCollisionCylinderHeight=100,
-            SpareAmmo=2,
+            SpareAmmo=3,
         }
     },
     {
