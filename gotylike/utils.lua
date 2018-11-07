@@ -18,7 +18,17 @@ end
 
 -- Helper for creating a custom class
 function utils:addClass(name, ootbBase, armorClass, weapons, beltItems, packs, skins)
-    ServerSettings.CustomClasses.new(name, ootbBase, armorClass)
+    -- For GOTY, we only want to validate custom classes against equip points that existed in GOTY
+    -- i.e. not tertiary weapons, which TAMods core uses to transport perk information
+    local eqpPointsToValidate = {
+        Loadouts.EquipPoints.Primary,
+        Loadouts.EquipPoints.Secondary,
+        Loadouts.EquipPoints.Pack,
+        Loadouts.EquipPoints.Belt,
+        Loadouts.EquipPoints.Skin,
+    }
+
+    ServerSettings.CustomClasses.new(name, ootbBase, armorClass, eqpPointsToValidate)
     for k, v in pairs(weapons) do
         ServerSettings.CustomClasses.addItem(name, v["class"] or ootbBase, v["name"] or v)
     end
