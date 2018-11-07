@@ -44,32 +44,12 @@ local classDef = {
         VehicleSpeedInheritance = 1,
     },
     armorValueMods={
-        -- QuickDraw
-        QuickDraw = 0.5,
-        BeltThrowSpeedBuff = 0.25,
-        AcquisitionTimeByEnemyTurretsBuff = 0.5,
-        -- Survivalist
-        -- SurvivalistHealth = 0.3,
-        -- SurvivalistEnergy = 0.2,
         -- Pathfinder Armor Upgrades
         RegenTimeBuff = 0.25,
         EnergyBuff = 10,
         HealthRegenRateBuff = 0.25,
         HealthBuff = 100,
         MassBuff = -0.1,
-        -- Egocentric
-        Egocentric = 0.35,
-        -- Rage
-        Rage = true,
-        RageEnergyRegen = 0.2,
-        RageTime = 15.0,
-        RageMassReduction = -0.25,
-        -- Sonic Punch
-        SonicPunch = true,
-        SonicPunchRange = 315,
-        SonicPunchFlagDrop = true,
-        -- SonicPunchKnockback = 750,
-        SonicPunchKnockback = 0,
     }
 }
 

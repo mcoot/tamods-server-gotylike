@@ -29,22 +29,11 @@ local classDef = {
         VehicleSpeedInheritance = 0.75,
     },
     armorValueMods={
-        -- QuickDraw
-        QuickDraw = 0.5,
-        BeltThrowSpeedBuff = 0.25,
-        AcquisitionTimeByEnemyTurretsBuff = 0.5,
-        -- Survivalist
-        -- SurvivalistHealth = 0.12,
-        -- SurvivalistEnergy = 0.2,
         -- Doombringer Armor Upgrades
         HealthBuff = 200,
         RegenTimeBuff = 0.25,
         EnergyBuff = 10,
         HealthRegenRateBuff = 0.25,
-        -- Potential Energy
-        PotentialEnergy = true,
-        -- Super Heavy
-        SuperHeavy = true,
     }
 }
 

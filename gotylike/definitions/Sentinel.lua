@@ -33,13 +33,6 @@ local classDef = {
         VehicleSpeedInheritance = 1,
     },
     armorValueMods={
-        -- QuickDraw
-        QuickDraw = 0.5,
-        BeltThrowSpeedBuff = 0.25,
-        AcquisitionTimeByEnemyTurretsBuff = 0.5,
-        -- Survivalist
-        -- SurvivalistHealth = 0.3,
-        -- SurvivalistEnergy = 0.2,
         -- Sentinel Armor Upgrades
         RegenTimeBuff = 0.25,
         WalkSpeedBuff = 0.1,

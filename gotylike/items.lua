@@ -356,7 +356,187 @@ itemChangeDefs = {
             changes={
                 Damage = 900,
             },
-        },      
+        },
+        
+
+        ---------------------
+        -- PERKS
+        ---------------------
+        {
+            class="Light", -- Will apply across classes
+            name="Bounty Hunter",
+            valueMods={
+                -- This doesn't do anything because credits don't exist...
+            }
+        },
+        {
+            class="Light", -- Will apply across classes
+            name="Close Combat",
+            valueMods={
+                MeleeDamageReduction = 0.6,
+                BackstabMeleeBuff = 1,
+            }
+        },
+        {
+            class="Light", -- Will apply across classes
+            name="Determination",
+            valueMods={
+                Determination = true,
+            }
+        },
+        {
+            class="Light", -- Will apply across classes
+            name="Egocentric",
+            valueMods={
+                SelfDamageReduction = 0.35,
+                IgnoreGrenadeEffectsOnSelf = true,
+            }
+        },
+        {
+            class="Light", -- Will apply across classes
+            name="Lightweight",
+            valueMods={
+                MassBuff = -0.3,
+                RegenTimeBuff = -2.0
+            }
+        },
+        {
+            class="Light", -- Will apply across classes
+            name="Looter",
+            valueMods={
+                AmmoPickupBuff = 1.0,
+                BeltPickupBuff = 1,
+            }
+        },
+        {
+            class="Light", -- Will apply across classes
+            name="Mechanic",
+            valueMods={
+                RepairToolDamagesEnemyObjectives = true,
+                RepairRateBuff = 0.2,
+                VehiclePassengerDamageReductionBuff = 0.25,
+            }
+        },
+        {
+            class="Light", -- Will apply across classes
+            name="Pilot",
+            valueMods={
+                VehicleHealthBuff = 0.2,
+                EjectionSeat = true,
+            }
+        },
+        {
+            class="Light", -- Will apply across classes
+            name="Potential Energy",
+            valueMods={
+                PotentialEnergy = true,
+                PotentialEnergyDamageTransferBuff = 0.06,
+                PotentialEnergyOnFallDamage = true,
+            }
+        },
+        {
+            class="Light", -- Will apply across classes
+            name="Quick Draw",
+            valueMods={
+                QuickDraw = 0.5,
+                QuickDrawBelt = 0.2,
+            }
+        },
+        {
+            class="Light", -- Will apply across classes
+            name="Rage",
+            valueMods={
+                Rage = true,
+                RageTime = 15,
+                RageEnergyRegen = 100,
+                RageMassReduction = -0.2,
+                RageHealthRestoration = 0.5,
+            }
+        },
+        {
+            class="Light", -- Will apply across classes
+            name="Reach",
+            valueMods={
+                Reach = true,
+                ReachTier = 3,
+                ReachOnPickups = true,
+            }
+        },
+        {
+            class="Light", -- Will apply across classes
+            name="Safe Fall",
+            valueMods={
+                FallDamageReduction = 1.0,
+                RunoverDamageReduction = 1.0,
+            }
+        },
+        {
+            class="Light", -- Will apply across classes
+            name="Safety Third",
+            valueMods={
+                ExtraBeltAmmo = 1,
+                BeltDamageRadiusBuff = 0.1,
+                ExtraMines = 1,
+            }
+        },
+        {
+            class="Light", -- Will apply across classes
+            name="Sonic Punch",
+            valueMods={
+                SonicPunch = true,
+                SonicPunchRange = 315,
+                SonicPunchKnockback = 750,
+                SonicPunchFlagDrop = true,
+            }
+        },
+        {
+            class="Light", -- Will apply across classes
+            name="Stealthy",
+            valueMods={
+                Stealthy = 0.9,
+                TurretTargetAcquisitionBuff = 0.3,
+            }
+        },
+        {
+            class="Light", -- Will apply across classes
+            -- aka Ultra Capacitor I
+            name="Super Capacitor",
+            valueMods={
+                EnergyBuff = 10,
+            }
+        },
+        {
+            class="Light", -- Will apply across classes
+            name="Super Heavy",
+            valueMods={
+                MassBuff = 0.8,
+                SuperHeavy = true,
+            }
+        },
+        {
+            class="Light", -- Will apply across classes
+            name="Survivalist",
+            valueMods={
+                SurvivalistHealth = 0.2,
+                SurvivalistEnergy = 0.4,
+            }
+        },
+        {
+            class="Light", -- Will apply across classes
+            -- aka Ultra Capacitor II
+            name="Ultra Capacitor",
+            valueMods={
+                EnergyBuff = 10,
+            }
+        },
+        {
+            class="Light", -- Will apply across classes
+            name="Wheel Deal",
+            valueMods={
+                -- Credits don't exist, so you just get the energy bonus
+                VehicleEnergyBuff = 0.25,
+            }
+        },
     },
 }
 
