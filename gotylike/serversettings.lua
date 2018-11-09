@@ -2,13 +2,15 @@
 ServerSettings.TimeLimit = 25
 ServerSettings.WarmupTime = 120
 ServerSettings.RespawnTime = 5
-ServerSettings.SniperRespawnDelay = 3
+ServerSettings.SniperRespawnDelay = 5
 ServerSettings.TeamAssignType = TeamAssignTypes.Unbalanced
 ServerSettings.AutoBalanceTeams = false
 ServerSettings.CTFCapLimit = 7
 ServerSettings.FriendlyFire = true
 ServerSettings.FriendlyFireMultiplier = 1
 ServerSettings.BaseAssets = false
+ServerSettings.AmmoPickupLifespan = 3
+ServerSettings.CTFFlagTimeout = 40
 
 -- Game Rules testing
 -- ServerSettings.TimeLimit = 1
