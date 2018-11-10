@@ -9,7 +9,7 @@ ServerSettings.CTFCapLimit = 7
 ServerSettings.FriendlyFire = true
 ServerSettings.FriendlyFireMultiplier = 1
 ServerSettings.BaseAssets = false
-ServerSettings.AmmoPickupLifespan = 3
+ServerSettings.AmmoPickupLifespan = 60
 ServerSettings.CTFFlagTimeout = 40
 
 -- Game Rules testing
