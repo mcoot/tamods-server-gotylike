@@ -11,6 +11,7 @@ ServerSettings.FriendlyFireMultiplier = 1
 ServerSettings.BaseAssets = false
 ServerSettings.AmmoPickupLifespan = 60
 ServerSettings.CTFFlagTimeout = 40
+ServerSettings.UseGOTYShieldPack = true
 
 -- Game Rules testing
 -- ServerSettings.TimeLimit = 1
@@ -43,4 +44,4 @@ ServerSettings.DisabledEquipPoints.add("Heavy", Loadouts.EquipPoints.Tertiary)
 -- Access Control
 Admin.Roles.add("admin", "gotytest", true)
 
-Core.AllowUnmoddedClients = false
+Core.AllowUnmoddedClients = true
