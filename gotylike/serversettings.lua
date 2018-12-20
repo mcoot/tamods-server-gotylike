@@ -11,7 +11,15 @@ ServerSettings.FriendlyFireMultiplier = 1
 ServerSettings.BaseAssets = false
 ServerSettings.AmmoPickupLifespan = 60
 ServerSettings.CTFFlagTimeout = 40
+
+-- Make inventory stations give energy
+-- ServerSettings.InventoryStationsRestoreEnergy = true
+-- Disable heavy shield pack impulse reduction
 ServerSettings.UseGOTYShieldPack = true
+-- Enable using the laser targeter to call in Inv Stations
+ServerSettings.EnableInventoryCallIn = true
+ServerSettings.InventoryCallInBuildUpTime = 2.0
+ServerSettings.InventoryCallInCooldownTime = 10.0
 
 -- Game Rules testing
 -- ServerSettings.TimeLimit = 1
