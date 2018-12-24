@@ -46,7 +46,7 @@ local itemDefs = {
     {
         name="BXT1", 
         changes={
-            Damage = 10, -- Uncharged damage
+            Damage = 125, -- Uncharged damage
             BXTChargeMaxDamage = 500,
             BXTChargeTime = 2.5,
             BXTChargeMultCoefficient = 16,
@@ -65,7 +65,7 @@ local itemDefs = {
     {
         name="BXT1A", 
         changes={
-            Damage = 10, -- Uncharged damage
+            Damage = 125, -- Uncharged damage
             BXTChargeMaxDamage = 500,
             BXTChargeTime = 2.8,
             BXTChargeMultCoefficient = 16,

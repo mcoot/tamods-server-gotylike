@@ -16,6 +16,8 @@ ServerSettings.CTFFlagTimeout = 40
 -- ServerSettings.InventoryStationsRestoreEnergy = true
 -- Disable heavy shield pack impulse reduction
 ServerSettings.UseGOTYShieldPack = true
+-- Re-enable GOTY BXT charging
+ServerSettings.UseGOTYBXTCharging = true
 -- Enable using the laser targeter to call in Inv Stations
 ServerSettings.EnableInventoryCallIn = true
 ServerSettings.InventoryCallInBuildUpTime = 2.0
@@ -23,8 +25,8 @@ ServerSettings.InventoryCallInCooldownTime = 10.0
 
 -- Game Rules testing
 -- ServerSettings.TimeLimit = 1
-ServerSettings.WarmupTime = 20
--- ServerSettings.OvertimeLimit = 1
+-- ServerSettings.WarmupTime = 1
+-- ServerSettings.OvertimeLimit = 0
 
 -- Vehicles
 ServerSettings.GravCycleLimit = 16
@@ -52,4 +54,4 @@ ServerSettings.DisabledEquipPoints.add("Heavy", Loadouts.EquipPoints.Tertiary)
 -- Access Control
 Admin.Roles.add("admin", "gotytest", true)
 
-Core.AllowUnmoddedClients = true
+Core.AllowUnmoddedClients = false
