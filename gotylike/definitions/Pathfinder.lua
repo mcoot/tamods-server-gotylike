@@ -46,7 +46,10 @@ local classDef = {
     armorValueMods={
 		QuickDraw = 0.5,
         QuickDrawBelt = 0.2,
-        SelfDamageReduction = 0.35,
+        SelfDamageReduction = 0.35,                
+        Reach = true,
+        ReachTier = 3,
+        ReachOnPickups = true,
         -- Pathfinder Armor Upgrades
         RegenTimeBuff = 0.25,
         EnergyBuff = 10,

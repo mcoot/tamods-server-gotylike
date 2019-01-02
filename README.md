@@ -14,8 +14,12 @@ Current Changes vs GOTY
 
 - Rage Removes the Self Damage Reduction
 
+- Rage Removes
+
 ### Pathfinder Changes
-- Pathfinders have Egocentrics Self Damage Reduction
+- Pathfinders have Egocentric's Self Damage Reduction
+
+- Pathfinders now have Reach's flag grab and pickup range increase
 
 ### Infiltrator Changes
 - Infiltrator now has Double the Melee damage
@@ -30,6 +34,8 @@ Current Changes vs GOTY
 - Quick Draw Disabled
 
 - Egocentric Disabled
+
+- Reach Disabled
 
 - Close Combat Disabled
 

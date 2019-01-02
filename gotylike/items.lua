@@ -459,9 +459,9 @@ itemChangeDefs = {
             class="Light", -- Will apply across classes
             name="Reach",
             valueMods={
-                Reach = true,
-                ReachTier = 3,
-                ReachOnPickups = true,
+                --Reach = true,
+                --ReachTier = 3,
+                --ReachOnPickups = true,
             }
         },
         {
