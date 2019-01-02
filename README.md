@@ -2,19 +2,20 @@
 
 TAMods-Server preset which uses GOTY as a base.
 
-Current Changes vs GOTY:
+Current Changes vs GOTY
+-----------------------
 
  - Universal Quick Draw (Weapon switch and grenade throw time reduced)
 
-Rage Changes
+### Rage Changes
 - Rage now includes Lightweight mass reduction and regen time increase
 
 - Rage time is reduced to 6 seconds vs 15
 
-Infiltrator Changes
+### Infiltrator Changes
 - Infiltrator now has Double the Melee damage
 
-Perk Changes
+### Perk Changes
 
 - Quick Draw Disabled
 
@@ -28,7 +29,8 @@ Perk Changes
 
 - Wheel Deal Disabled
 
-Future Plans:
+Future Plans
+------------
 - Replace Disabled Perks
 
 - Make perks required for specific roles universal for that class
