@@ -12,12 +12,24 @@ Current Changes vs GOTY
 
 - Rage time is reduced to 6 seconds vs 15
 
+- Rage Removes the Self Damage Reduction
+
+### Pathfinder Changes
+- Pathfinders have Egocentrics Self Damage Reduction
+
 ### Infiltrator Changes
 - Infiltrator now has Double the Melee damage
 
-### Perk Changes
+### Technician Changes
+- Technicians get repair tool that damages enemy objectives and repair rate buff from Mechanic (20%)
+
+- Technicians get ejection from seat when in a vehicle and it exploads (Pilot)
+
+### Disabled Perks
 
 - Quick Draw Disabled
+
+- Egocentric Disabled
 
 - Close Combat Disabled
 
@@ -28,6 +40,10 @@ Current Changes vs GOTY
 - Ultra Capacitor Disabled
 
 - Wheel Deal Disabled
+
+- Pilot Disabled
+
+- Mechanic Disabled
 
 Future Plans
 ------------

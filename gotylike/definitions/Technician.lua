@@ -36,6 +36,9 @@ local classDef = {
     armorValueMods={
 		QuickDraw = 0.5,
 		QuickDrawBelt = 0.2,
+        EjectionSeat = true,
+        RepairToolDamagesEnemyObjectives = true,
+        RepairRateBuff = 0.2,
         -- Technician Armor Upgrades
         RegenTimeBuff = 0.25,
         HealthBuff = 100,

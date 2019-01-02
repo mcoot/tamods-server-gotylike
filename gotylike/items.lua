@@ -412,17 +412,17 @@ itemChangeDefs = {
             class="Light", -- Will apply across classes
             name="Mechanic",
             valueMods={
-                RepairToolDamagesEnemyObjectives = true,
-                RepairRateBuff = 0.2,
-                VehiclePassengerDamageReductionBuff = 0.25,
+                --RepairToolDamagesEnemyObjectives = true,
+                --RepairRateBuff = 0.2,
+                --VehiclePassengerDamageReductionBuff = 0.25,
             }
         },
         {
             class="Light", -- Will apply across classes
             name="Pilot",
             valueMods={
-                VehicleHealthBuff = 0.2,
-                EjectionSeat = true,
+                --VehicleHealthBuff = 0.2,
+                --EjectionSeat = true,
             }
         },
         {
