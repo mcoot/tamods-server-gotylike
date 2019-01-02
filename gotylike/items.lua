@@ -476,9 +476,9 @@ itemChangeDefs = {
             class="Light", -- Will apply across classes
             name="Safety Third",
             valueMods={
-                ExtraBeltAmmo = 1,
-                BeltDamageRadiusBuff = 0.1,
-                ExtraMines = 1,
+                --ExtraBeltAmmo = 1,
+                --BeltDamageRadiusBuff = 0.1,
+                --ExtraMines = 1,
             }
         },
         {
@@ -523,6 +523,8 @@ itemChangeDefs = {
                 SurvivalistEnergy = 0.4,
                 AmmoPickupBuff = 1.0,
                 BeltPickupBuff = 1,
+                ExtraBeltAmmo = 1,
+                ExtraMines = 1,
             }
         },
         {

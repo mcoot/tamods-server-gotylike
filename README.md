@@ -8,7 +8,7 @@ Current Changes vs GOTY
  - Universal Quick Draw (Weapon switch and grenade throw time reduced)
 
 ### Rage Changes
-- Rage now includes Lightweight mass reduction and regen time increase
+- Rage now includes Lightweight mass reduction and regeneration time increase
 
 - Rage time is reduced from 15 to 6 seconds
 
@@ -16,6 +16,8 @@ Current Changes vs GOTY
 
 ### Survivalist Changes
 - Survivalist now includes Looters Ammo/Belt Pickup buff 
+
+- Survivalist now includes Safety Thirds extra belt ammo and extra mine but not the damage radius buff
 
 ### Pathfinder Changes
 - Pathfinders have Egocentric's Self Damage Reduction
@@ -28,7 +30,7 @@ Current Changes vs GOTY
 ### Technician Changes
 - Technicians get repair tool that damages enemy objectives and repair rate buff from Mechanic (20%)
 
-- Technicians get ejection from seat when in a vehicle and it exploads (Pilot)
+- Technicians get ejection from seat when in a vehicle and it explodes (Pilot)
 
 
 ### Enabled Perks
@@ -38,8 +40,6 @@ Current Changes vs GOTY
 Rage
 
 Stealthy
-
-Safety third
 
 - Secondary:
 
@@ -51,27 +51,29 @@ Super Heavy
 
 ### Disabled Perks
 
-- Quick Draw Disabled
+- Quick Draw
 
-- Egocentric Disabled
+- Egocentric
 
-- Reach Disabled
+- Reach
 
-- Close Combat Disabled
+- Close Combat
 
-- Looter Disabled
+- Looter
 
-- Determination Disabled
+- Determination
 
-- Super Capacitor Disabled
+- Super Capacitor
 
-- Ultra Capacitor Disabled
+- Ultra Capacitor
 
-- Wheel Deal Disabled
+- Wheel Deal
 
-- Pilot Disabled
+- Pilot
 
-- Mechanic Disabled
+- Mechanic
+
+- Safety third
 
 Future Plans
 ------------
@@ -107,7 +109,7 @@ Future Plans
 
 - Eagle Eye
 
-TrapDetection that lets you see markers for enemy mines
+Trap detection that lets you see markers for enemy mines
 
 Increase opacity of stealthed targets that are within a short range
 
@@ -136,6 +138,16 @@ Stealth Pack activation speed lowered to just above max walk speed
 Jet energy cost is high
 
 Time after going in stealth where you wont be unclocked by damage is set to 1 seconds
+
+- Classic Kit
+
+Regen is disabled
+
+Impulse is greatly increased
+
+Jet/Air movement is changed to match t1/t2c/whatever
+
+Nuggets give health
 
 
 ## Secondary Perk Ideas
