@@ -396,8 +396,8 @@ itemChangeDefs = {
             class="Light", -- Will apply across classes
             name="Lightweight",
             valueMods={
-                MassBuff = -0.3,
-                RegenTimeBuff = -2.0
+                --MassBuff = -0.3,
+                --RegenTimeBuff = -2.0
             }
         },
         {
@@ -447,9 +447,10 @@ itemChangeDefs = {
             name="Rage",
             valueMods={
                 Rage = true,
-                RageTime = 15,
+                RageTime = 6,
                 RageEnergyRegen = 100,
-                RageMassChange = -0.2,
+                RageMassChange = -0.5,
+                RegenTimeBuff = -2.0,
                 RageHealthRestoration = 0.5,
             }
         },
