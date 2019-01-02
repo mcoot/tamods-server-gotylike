@@ -404,8 +404,8 @@ itemChangeDefs = {
             class="Light", -- Will apply across classes
             name="Looter",
             valueMods={
-                AmmoPickupBuff = 1.0,
-                BeltPickupBuff = 1,
+                --AmmoPickupBuff = 1.0,
+                --BeltPickupBuff = 1,
             }
         },
         {
@@ -521,6 +521,8 @@ itemChangeDefs = {
             valueMods={
                 SurvivalistHealth = 0.2,
                 SurvivalistEnergy = 0.4,
+                AmmoPickupBuff = 1.0,
+                BeltPickupBuff = 1,
             }
         },
         {

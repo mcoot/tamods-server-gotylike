@@ -10,11 +10,12 @@ Current Changes vs GOTY
 ### Rage Changes
 - Rage now includes Lightweight mass reduction and regen time increase
 
-- Rage time is reduced to 6 seconds vs 15
+- Rage time is reduced from 15 to 6 seconds
 
 - Rage Removes the Self Damage Reduction
 
-- Rage Removes
+### Survivalist Changes
+- Survivalist now includes Looters Ammo/Belt Pickup buff 
 
 ### Pathfinder Changes
 - Pathfinders have Egocentric's Self Damage Reduction
@@ -38,6 +39,8 @@ Current Changes vs GOTY
 - Reach Disabled
 
 - Close Combat Disabled
+
+- Looter Disabled
 
 - Determination Disabled
 
