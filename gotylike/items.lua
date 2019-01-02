@@ -388,8 +388,8 @@ itemChangeDefs = {
             class="Light", -- Will apply across classes
             name="Egocentric",
             valueMods={
-                SelfDamageReduction = 0.35,
-                IgnoreGrenadeEffectsOnSelf = true,
+                --SelfDamageReduction = 0.35,
+                --IgnoreGrenadeEffectsOnSelf = true,
             }
         },
         {
@@ -452,6 +452,7 @@ itemChangeDefs = {
                 RageMassChange = -0.5,
                 RegenTimeBuff = -2.0,
                 RageHealthRestoration = 0.5,
+                SelfDamageReduction = 0,
             }
         },
         {
