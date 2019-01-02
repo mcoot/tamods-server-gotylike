@@ -373,15 +373,15 @@ itemChangeDefs = {
             class="Light", -- Will apply across classes
             name="Close Combat",
             valueMods={
-                MeleeDamageReduction = 0.6,
-                BackstabMeleeBuff = 1,
+                --MeleeDamageReduction = 0.6,
+                --BackstabMeleeBuff = 1,
             }
         },
         {
             class="Light", -- Will apply across classes
             name="Determination",
             valueMods={
-                Determination = true,
+                --Determination = true,
             }
         },
         {
@@ -503,7 +503,7 @@ itemChangeDefs = {
             -- aka Ultra Capacitor I
             name="Super Capacitor",
             valueMods={
-                EnergyBuff = 10,
+                --EnergyBuff = 10,
             }
         },
         {
@@ -527,7 +527,7 @@ itemChangeDefs = {
             -- aka Ultra Capacitor II
             name="Ultra Capacitor",
             valueMods={
-                EnergyBuff = 10,
+                --EnergyBuff = 10,
             }
         },
         {
@@ -535,7 +535,7 @@ itemChangeDefs = {
             name="Wheel Deal",
             valueMods={
                 -- Credits don't exist, so you just get the energy bonus
-                VehicleEnergyBuff = 0.25,
+                --VehicleEnergyBuff = 0.25,
             }
         },
     },

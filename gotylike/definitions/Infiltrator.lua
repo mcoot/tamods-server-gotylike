@@ -33,6 +33,7 @@ local classDef = {
         VehicleSpeedInheritance = 1,
     },
     armorValueMods={
+        BackstabMeleeBuff = 1,
 		QuickDraw = 0.5,
 		QuickDrawBelt = 0.2,
         -- Infiltrator Armor Upgrades
