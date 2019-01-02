@@ -30,6 +30,25 @@ Current Changes vs GOTY
 
 - Technicians get ejection from seat when in a vehicle and it exploads (Pilot)
 
+
+### Enabled Perks
+
+- Primary:
+
+Rage
+
+Stealthy
+
+Safety third
+
+- Secondary:
+
+Sonic punch
+
+Survivalist
+
+Super Heavy
+
 ### Disabled Perks
 
 - Quick Draw Disabled
@@ -58,8 +77,65 @@ Future Plans
 ------------
 - Replace Disabled Perks
 
-- Make perks required for specific roles universal for that class
+- Alter momentum dampening so getting hit with an explosion alters speed
 
-- Balance perks
+- Increase Diversity in perks and classes
+
+- Balance perks where primary perks are a strong change and secondary perks are a light change
+
+- Replace Energy Packs with gameplay altering packs
+
+- Health Regen Pack variant to Raider/Soldier Class
+
+- Add Drop Jammer to Technician
+
+- Buff Jammer Range
+
+- Buff Sensor Range
+
+- Buff Stealthy
+
+- Buff Force Field but increase time to activate
+
+- Balance Mines
 
 - Add Cheese
+
+
+
+## Primary Perk Ideas
+
+- Eagle Eye
+
+TrapDetection that lets you see markers for enemy mines
+
+Increase opacity of stealthed targets that are within a short range
+
+Decreases blackout length duration from 5 seconds to 2
+
+Sensors always show enemy markers at full visibility when in range
+
+Increase enemy marker range
+
+- Jumper
+
+Thrust pack forward impulse is set to 0
+
+Thrust pack vertical impulse is set to a high value
+
+Thrust pack speed falloff range is increased significantly
+
+Must have maximum energy to activate
+
+- Ninja
+
+Walk Speed Buff 50%
+
+Stealth Pack activation speed lowered to just above max walk speed
+
+Jet energy cost is high
+
+Time after going in stealth where you wont be unclocked by damage is set to 1 seconds
+
+
+## Secondary Perk Ideas
