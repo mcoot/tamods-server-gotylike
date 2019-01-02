@@ -29,6 +29,8 @@ local classDef = {
         VehicleSpeedInheritance = 0.75,
     },
     armorValueMods={
+		QuickDraw = 0.5,
+		QuickDrawBelt = 0.2,
         -- Doombringer Armor Upgrades
         HealthBuff = 200,
         RegenTimeBuff = 0.25,

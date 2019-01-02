@@ -438,8 +438,8 @@ itemChangeDefs = {
             class="Light", -- Will apply across classes
             name="Quick Draw",
             valueMods={
-                QuickDraw = 0.5,
-                QuickDrawBelt = 0.2,
+                --QuickDraw = 0.5,
+                --QuickDrawBelt = 0.2,
             }
         },
         {
