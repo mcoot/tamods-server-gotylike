@@ -8,7 +8,7 @@ Current Changes vs GOTY
  - Universal Quick Draw (Weapon switch and grenade throw time reduced)
 
 ### Rage Changes
-- Rage now includes Lightweight mass reduction and regeneration time increase
+- Rage now has a slightly higher mass change
 
 - Rage time is reduced from 15 to 6 seconds
 
@@ -32,6 +32,31 @@ Current Changes vs GOTY
 
 - Technicians get ejection from seat when in a vehicle and it explodes (Pilot)
 
+### Eagle Eye Perk (Replaces Ultra Capacitor II)
+
+Trap detection that lets you see markers for enemy mines
+
+Decreases blackout length duration from 5 seconds to 2
+
+Sensors always show enemy markers at full visibility when in range
+
+Increase opacity of stealthed targets that are within a short range (Yet to be implimented) 
+
+TODO Increase enemy marker range (Yet to be implimented) 
+
+### Tribes Classic Perk (Replaces Ultra Capacitor)
+
+Regen is disabled
+
+Impulse is greatly increased
+
+Nuggets give health
+
+Decrease walk speed by 30%
+
+Disabled thrust pack
+
+Jet/Air movement is changed to match t1/t2c/whatever and increase collision radius (Yet to be implimented) 
 
 ### Enabled Perks
 
@@ -41,9 +66,13 @@ Rage
 
 Stealthy
 
+Eagle Eye
+
 - Secondary:
 
 Sonic punch
+
+Lightweight
 
 Survivalist
 
@@ -106,19 +135,6 @@ Future Plans
 
 
 ## Primary Perk Ideas
-
-- Eagle Eye
-
-Trap detection that lets you see markers for enemy mines
-
-Increase opacity of stealthed targets that are within a short range
-
-Decreases blackout length duration from 5 seconds to 2
-
-Sensors always show enemy markers at full visibility when in range
-
-Increase enemy marker range
-
 - Jumper
 
 Thrust pack forward impulse is set to 0
@@ -137,17 +153,6 @@ Stealth Pack activation speed lowered to just above max walk speed
 
 Jet energy cost is high
 
-Time after going in stealth where you wont be unclocked by damage is set to 1 seconds
-
-- Classic Kit
-
-Regen is disabled
-
-Impulse is greatly increased
-
-Jet/Air movement is changed to match t1/t2c/whatever
-
-Nuggets give health
-
+Time after going in stealth where you wont be uncloaked by damage is set to 1 seconds
 
 ## Secondary Perk Ideas

@@ -396,8 +396,8 @@ itemChangeDefs = {
             class="Light", -- Will apply across classes
             name="Lightweight",
             valueMods={
-                --MassBuff = -0.3,
-                --RegenTimeBuff = -2.0
+                MassBuff = -0.25,
+                RegenTimeBuff = -2.0
             }
         },
         {
@@ -449,8 +449,7 @@ itemChangeDefs = {
                 Rage = true,
                 RageTime = 6,
                 RageEnergyRegen = 100,
-                RageMassChange = -0.5,
-                RegenTimeBuff = -2.0,
+                RageMassChange = -0.25,
                 RageHealthRestoration = 0.5,
                 SelfDamageReduction = 0,
             }
@@ -505,6 +504,15 @@ itemChangeDefs = {
             name="Super Capacitor",
             valueMods={
                 --EnergyBuff = 10,
+                --"Tribes Classic"
+                --TODO  Disable regen rather than increase time
+                --      Modify air movement to be similar to old games (Directional jets?) + increase collision size
+                ThrustPackCostReduction = -50,
+                WalkSpeedBuff = -0.3,
+				RegenTimeBuff = -999,
+				MassBuff = -0.35,
+                SurvivalistHealth = 0.5,
+				SelfDamageReduction = -0.25,
             }
         },
         {
@@ -533,6 +541,12 @@ itemChangeDefs = {
             name="Ultra Capacitor",
             valueMods={
                 --EnergyBuff = 10,
+				--"Eagle Eye"
+                --TODO  Increase enemy marker range
+                --      Increase opacity of stealthed targets that are within a short range
+				RadarLink = true,
+				TrapDetection = true,
+				BlackoutLengthReduction = 0.6,
             }
         },
         {
