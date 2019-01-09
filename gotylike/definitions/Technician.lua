@@ -27,6 +27,7 @@ local classDef = {
     },
     properties={
         HealthPool = 1200,
+        RegenTime = 20,
         Mass = 100,
         RegenRate = 0.1,
         VehicleSpeedInheritance = 1,
@@ -36,7 +37,6 @@ local classDef = {
     armorValueMods={
         -- Technician Armor Upgrades
         RegenTimeBuff = 0.25,
-        RegenTime = 20,
         HealthBuff = 100,
         HealthRegenRateBuff = 0.25,
         EnergyBuff = 10,
