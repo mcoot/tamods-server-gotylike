@@ -50,7 +50,6 @@ local classDef = {
         SurvivalistHealth = 0.3,
         SurvivalistEnergy = 0.2,
         -- Pathfinder Armor Upgrades
-        RegenTimeBuff = 0.25,
         EnergyBuff = 10,
         HealthRegenRateBuff = 0.25,
         HealthBuff = 100,

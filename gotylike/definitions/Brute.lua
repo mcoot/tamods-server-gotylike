@@ -37,7 +37,6 @@ local classDef = {
     armorValueMods={
         -- Brute Armor Upgrades
         HealthBuff = 200,
-        RegenTimeBuff = 0.25,
         EnergyBuff = 5,
         HealthRegenRateBuff = 0.25,
     }

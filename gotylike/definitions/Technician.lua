@@ -35,7 +35,6 @@ local classDef = {
     },
     armorValueMods={
         -- Technician Armor Upgrades
-        RegenTimeBuff = 0.25,
         HealthBuff = 100,
         HealthRegenRateBuff = 0.25,
         EnergyBuff = 10,

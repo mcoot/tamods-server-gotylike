@@ -34,7 +34,6 @@ local classDef = {
     },
     armorValueMods={
         -- Infiltrator Armor Upgrades
-        RegenTimeBuff = 0.25,
         EnergyBuff = 10,
         HealthBuff = 200,
         WalkSpeedBuff = 0.1,

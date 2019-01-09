@@ -34,7 +34,6 @@ local classDef = {
     },
     armorValueMods={
         -- Sentinel Armor Upgrades
-        RegenTimeBuff = 0.25,
         WalkSpeedBuff = 0.1,
         HealthRegenRateBuff = 0.25,
         HealthBuff = 100,

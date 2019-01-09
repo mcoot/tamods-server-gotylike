@@ -45,11 +45,10 @@ local classDef = {
     },
     armorValueMods={
         -- Pathfinder Armor Upgrades
-        RegenTimeBuff = 0.25,
         EnergyBuff = 10,
         HealthRegenRateBuff = 0.25,
         HealthBuff = 100,
-        MassBuff = -0.1,
+        -- MassBuff = -0.1,
     }
 }
 

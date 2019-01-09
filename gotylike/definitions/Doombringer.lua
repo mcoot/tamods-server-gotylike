@@ -31,7 +31,6 @@ local classDef = {
     armorValueMods={
         -- Doombringer Armor Upgrades
         HealthBuff = 200,
-        RegenTimeBuff = 0.25,
         EnergyBuff = 10,
         HealthRegenRateBuff = 0.25,
     }

@@ -38,7 +38,6 @@ local classDef = {
     },
     armorValueMods={
         -- Soldier Armor Upgrades
-        RegenTimeBuff = 0.25,
         HealthBuff = 100,
         HealthRegenRateBuff = 0.25,
         EnergyBuff = 5,
