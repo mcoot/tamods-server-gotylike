@@ -50,7 +50,7 @@ local classDef = {
         EnergyBuff = 10,
         HealthRegenRateBuff = 0.25,
         HealthBuff = 100,
-        MassBuff = -0.1,
+        -- MassBuff = -0.1,
     }
 }
 
