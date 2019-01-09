@@ -37,6 +37,8 @@ local classDef = {
         CollisionCylinderHeight = 46,
     },
     armorValueMods={
+		QuickDraw = 0.5,
+		QuickDrawBelt = 0.2,
         -- Soldier Armor Upgrades
         RegenTimeBuff = 0.25,
         HealthBuff = 100,

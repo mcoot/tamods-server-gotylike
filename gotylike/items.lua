@@ -373,30 +373,30 @@ itemChangeDefs = {
             class="Light", -- Will apply across classes
             name="Close Combat",
             valueMods={
-                MeleeDamageReduction = 0.6,
-                BackstabMeleeBuff = 1,
+                --MeleeDamageReduction = 0.6,
+                --BackstabMeleeBuff = 1,
             }
         },
         {
             class="Light", -- Will apply across classes
             name="Determination",
             valueMods={
-                Determination = true,
+                --Determination = true,
             }
         },
         {
             class="Light", -- Will apply across classes
             name="Egocentric",
             valueMods={
-                SelfDamageReduction = 0.35,
-                IgnoreGrenadeEffectsOnSelf = true,
+                --SelfDamageReduction = 0.35,
+                --IgnoreGrenadeEffectsOnSelf = true,
             }
         },
         {
             class="Light", -- Will apply across classes
             name="Lightweight",
             valueMods={
-                MassBuff = -0.3,
+                MassBuff = -0.25,
                 RegenTimeBuff = -2.0
             }
         },
@@ -404,25 +404,25 @@ itemChangeDefs = {
             class="Light", -- Will apply across classes
             name="Looter",
             valueMods={
-                AmmoPickupBuff = 1.0,
-                BeltPickupBuff = 1,
+                --AmmoPickupBuff = 1.0,
+                --BeltPickupBuff = 1,
             }
         },
         {
             class="Light", -- Will apply across classes
             name="Mechanic",
             valueMods={
-                RepairToolDamagesEnemyObjectives = true,
-                RepairRateBuff = 0.2,
-                VehiclePassengerDamageReductionBuff = 0.25,
+                --RepairToolDamagesEnemyObjectives = true,
+                --RepairRateBuff = 0.2,
+                --VehiclePassengerDamageReductionBuff = 0.25,
             }
         },
         {
             class="Light", -- Will apply across classes
             name="Pilot",
             valueMods={
-                VehicleHealthBuff = 0.2,
-                EjectionSeat = true,
+                --VehicleHealthBuff = 0.2,
+                --EjectionSeat = true,
             }
         },
         {
@@ -438,8 +438,8 @@ itemChangeDefs = {
             class="Light", -- Will apply across classes
             name="Quick Draw",
             valueMods={
-                QuickDraw = 0.5,
-                QuickDrawBelt = 0.2,
+                --QuickDraw = 0.5,
+                --QuickDrawBelt = 0.2,
             }
         },
         {
@@ -447,19 +447,20 @@ itemChangeDefs = {
             name="Rage",
             valueMods={
                 Rage = true,
-                RageTime = 15,
+                RageTime = 6,
                 RageEnergyRegen = 100,
-                RageMassChange = -0.2,
+                RageMassChange = -0.25,
                 RageHealthRestoration = 0.5,
+                SelfDamageReduction = 0,
             }
         },
         {
             class="Light", -- Will apply across classes
             name="Reach",
             valueMods={
-                Reach = true,
-                ReachTier = 3,
-                ReachOnPickups = true,
+                --Reach = true,
+                --ReachTier = 3,
+                --ReachOnPickups = true,
             }
         },
         {
@@ -474,9 +475,9 @@ itemChangeDefs = {
             class="Light", -- Will apply across classes
             name="Safety Third",
             valueMods={
-                ExtraBeltAmmo = 1,
-                BeltDamageRadiusBuff = 0.1,
-                ExtraMines = 1,
+                --ExtraBeltAmmo = 1,
+                --BeltDamageRadiusBuff = 0.1,
+                --ExtraMines = 1,
             }
         },
         {
@@ -502,7 +503,16 @@ itemChangeDefs = {
             -- aka Ultra Capacitor I
             name="Super Capacitor",
             valueMods={
-                EnergyBuff = 10,
+                --EnergyBuff = 10,
+                --"Tribes Classic"
+                --TODO  Disable regen rather than increase time
+                --      Modify air movement to be similar to old games (Directional jets?) + increase collision size
+                ThrustPackCostReduction = -50,
+                WalkSpeedBuff = -0.3,
+				RegenTimeBuff = -999,
+				MassBuff = -0.35,
+                SurvivalistHealth = 0.5,
+				SelfDamageReduction = -0.25,
             }
         },
         {
@@ -519,6 +529,10 @@ itemChangeDefs = {
             valueMods={
                 SurvivalistHealth = 0.2,
                 SurvivalistEnergy = 0.4,
+                AmmoPickupBuff = 1.0,
+                BeltPickupBuff = 1,
+                ExtraBeltAmmo = 1,
+                ExtraMines = 1,
             }
         },
         {
@@ -526,7 +540,13 @@ itemChangeDefs = {
             -- aka Ultra Capacitor II
             name="Ultra Capacitor",
             valueMods={
-                EnergyBuff = 10,
+                --EnergyBuff = 10,
+				--"Eagle Eye"
+                --TODO  Increase enemy marker range
+                --      Increase opacity of stealthed targets that are within a short range
+				RadarLink = true,
+				TrapDetection = true,
+				BlackoutLengthReduction = 0.6,
             }
         },
         {
@@ -534,7 +554,7 @@ itemChangeDefs = {
             name="Wheel Deal",
             valueMods={
                 -- Credits don't exist, so you just get the energy bonus
-                VehicleEnergyBuff = 0.25,
+                --VehicleEnergyBuff = 0.25,
             }
         },
     },

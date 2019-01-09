@@ -42,8 +42,9 @@ local classDef = {
         VehicleSpeedInheritance = 1,
     },
     armorValueMods={
+		QuickDraw = 0.5,
+		QuickDrawBelt = 0.2,
         -- QuickDraw
-        QuickDraw = 0.5,
         BeltThrowSpeedBuff = 0.25,
         AcquisitionTimeByEnemyTurretsBuff = 0.5,
         -- Survivalist
