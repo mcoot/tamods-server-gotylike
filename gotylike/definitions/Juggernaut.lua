@@ -26,6 +26,7 @@ local classDef = {
     },
     properties={
         HealthPool = 2400,
+        RegenTime = 20,
         RegenRate = 0.1,
         EnergyPool = 80,
         EnergyRechargeRate = 9,

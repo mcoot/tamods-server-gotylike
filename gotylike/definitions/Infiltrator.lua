@@ -28,6 +28,7 @@ local classDef = {
     },
     properties={
         HealthPool = 800,
+        RegenTime = 20,
         Mass = 100,
         RegenRate = 0.1,
         VehicleSpeedInheritance = 1,
