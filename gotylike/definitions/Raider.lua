@@ -123,6 +123,7 @@ local itemDefs = {
             SpareAmmo = 216,
             ReloadTime = 1.53,
             FireInterval = 0.2,
+            Accuracy = 0.99,
         },
     },
     {
