@@ -452,7 +452,7 @@ itemChangeDefs = {
             valueMods={
                 Rage = true,
                 RageTime = 15,
-                RageEnergyRegen = 100,
+                RageEnergyRegen = 0.2,
                 RageMassChange = -0.2,
                 RageHealthRestoration = 0.5,
             }
