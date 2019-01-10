@@ -36,6 +36,7 @@ local classDef = {
         RegenTimeBuff = 0.25,
         EnergyBuff = 10,
         HealthRegenRateBuff = 0.25,
+        MassBuff = 30,
     }
 }
 

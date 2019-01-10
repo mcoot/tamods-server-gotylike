@@ -519,7 +519,7 @@ itemChangeDefs = {
             class="Light", -- Will apply across classes
             name="Super Heavy",
             valueMods={
-                MassBuff = 0.8,
+                MassBuff = 0.5,
                 SuperHeavy = true,
             }
         },

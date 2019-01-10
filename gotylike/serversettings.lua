@@ -11,6 +11,8 @@ ServerSettings.FriendlyFireMultiplier = 1
 ServerSettings.BaseAssets = false
 ServerSettings.AmmoPickupLifespan = 60
 ServerSettings.CTFFlagTimeout = 40
+ServerSettings.DS_SensorRadius = 30000 -- TODO altered based on map/base design and tested
+ServerSettings.BE_SensorRadius = 30000
 
 -- Make inventory stations give energy
 -- ServerSettings.InventoryStationsRestoreEnergy = true
