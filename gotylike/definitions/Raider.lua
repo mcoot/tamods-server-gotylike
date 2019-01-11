@@ -132,7 +132,7 @@ local itemDefs = {
             Damage = 600,
             ExplosiveRadius = 682,
             EnergyDrain = 192,
-            SpareAmmo = 1,
+            SpareAmmo = 2,
         }
     },
     {
@@ -141,7 +141,7 @@ local itemDefs = {
             Damage = 500,
             ExplosiveRadius = 858,
             EnergyDrain = 192,
-            SpareAmmo = 1,
+            SpareAmmo = 2,
         }
     },
     {

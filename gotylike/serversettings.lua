@@ -13,20 +13,22 @@ ServerSettings.AmmoPickupLifespan = 60
 ServerSettings.CTFFlagTimeout = 40
 
 -- Make inventory stations give energy
--- ServerSettings.InventoryStationsRestoreEnergy = true
+ServerSettings.InventoryStationsRestoreEnergy = true
 -- Disable heavy shield pack impulse reduction
 ServerSettings.UseGOTYShieldPack = true
 -- Re-enable GOTY BXT charging
 ServerSettings.UseGOTYBXTCharging = true
+-- Disable the OOTB Rage effect causing Thrust speed to depend on the capper's grab speed
+-- ServerSettings.RageThrustPackDependsOnCapperSpeed = false
 -- Enable using the laser targeter to call in Inv Stations
 ServerSettings.EnableInventoryCallIn = true
 ServerSettings.InventoryCallInBuildUpTime = 2.0
 ServerSettings.InventoryCallInCooldownTime = 10.0
 
 -- Game Rules testing
--- ServerSettings.TimeLimit = 1
--- ServerSettings.WarmupTime = 1
--- ServerSettings.OvertimeLimit = 0
+ServerSettings.TimeLimit = 1
+ServerSettings.WarmupTime = 1
+ServerSettings.OvertimeLimit = 0
 
 -- Vehicles
 ServerSettings.GravCycleLimit = 16
