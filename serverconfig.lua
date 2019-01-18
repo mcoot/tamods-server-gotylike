@@ -6,6 +6,8 @@ require("gotylike/main")
 Logger.debug("----- GOTYLike Preset Applied -----")
 
 -- Map Rotation
+-- ServerSettings.MapRotation.add(Maps.Arena.WalledIn)
+-- ServerSettings.MapRotation.add(Maps.TDM.DrydockNight)
 ServerSettings.MapRotation.add(Maps.CTF.ArxNovena)
 ServerSettings.MapRotation.add(Maps.CTF.Katabatic)
 ServerSettings.MapRotation.add(Maps.CTF.DX)

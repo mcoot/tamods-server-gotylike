@@ -18,6 +18,8 @@ ServerSettings.InventoryStationsRestoreEnergy = true
 ServerSettings.UseGOTYShieldPack = true
 -- Re-enable GOTY BXT charging
 ServerSettings.UseGOTYBXTCharging = true
+-- Re-enable Airburst on the Jackal
+ServerSettings.UseGOTYJackalAirburst = true
 -- Disable the OOTB Rage effect causing Thrust speed to depend on the capper's grab speed
 -- ServerSettings.RageThrustPackDependsOnCapperSpeed = false
 -- Enable using the laser targeter to call in Inv Stations
@@ -26,9 +28,10 @@ ServerSettings.InventoryCallInBuildUpTime = 2.0
 ServerSettings.InventoryCallInCooldownTime = 10.0
 
 -- Game Rules testing
-ServerSettings.TimeLimit = 1
-ServerSettings.WarmupTime = 1
-ServerSettings.OvertimeLimit = 0
+-- ServerSettings.TimeLimit = 1
+-- ServerSettings.CTFCapLimit = 1
+-- ServerSettings.WarmupTime = 10
+-- ServerSettings.OvertimeLimit = 0
 
 -- Vehicles
 ServerSettings.GravCycleLimit = 16
