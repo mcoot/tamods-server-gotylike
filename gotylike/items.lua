@@ -312,10 +312,10 @@ itemChangeDefs = {
         {
             group="chain", 
             changes={
-                Accuracy = 0.98,
-                AccuracyLossOnShot = 0,
-                AccuracyLossMax = 0.11,
-                AccuracyCorrectionRate = 0.19,
+                -- Accuracy = 0.98,
+                -- AccuracyLossOnShot = 0,
+                -- AccuracyLossMax = 0.11,
+                -- AccuracyCorrectionRate = 0.19,
                 CollisionSize = 50,
                 ProjectileLifespan = 1.0,
                 -- GOTY damage falloff

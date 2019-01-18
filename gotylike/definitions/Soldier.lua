@@ -134,10 +134,12 @@ local itemDefs = {
             SpareAmmo = 132,
             ReloadTime = 1.26,
             FireInterval = 0.16,
-            Accuracy = 0.98,
+            -- Accuracy = 0.98,
+            Accuracy = 0.99,
             AccuracyLossOnShot = 0.45,
             AccuracyLossMax = 0.1,
             AccuracyCorrectionRate = 0.38,
+            -- AccuracyCorrectionRate = 0.39,
         },
     },
     {
