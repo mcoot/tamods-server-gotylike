@@ -74,6 +74,15 @@ local itemDefs = {
         },
     },
     {
+        name="Blinksfusor", 
+        changes={
+            Damage = 550,
+            DirectHitMultiplier = 1.6,
+            SpareAmmo = 28,
+            ReloadTime = 1.24,
+        },
+    },
+    {
         name="Light Twinfusor", 
         changes={
             Damage = 380,

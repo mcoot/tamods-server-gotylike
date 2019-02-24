@@ -19,9 +19,9 @@ ServerSettings.UseGOTYShieldPack = true
 -- Re-enable GOTY BXT charging
 ServerSettings.UseGOTYBXTCharging = true
 -- Re-enable Airburst on the Jackal
-ServerSettings.UseGOTYJackalAirburst = true
+-- ServerSettings.UseGOTYJackalAirburst = true
 -- Disable the OOTB Rage effect causing Thrust speed to depend on the capper's grab speed
--- ServerSettings.RageThrustPackDependsOnCapperSpeed = false
+ServerSettings.RageThrustPackDependsOnCapperSpeed = false
 -- Enable using the laser targeter to call in Inv Stations
 ServerSettings.EnableInventoryCallIn = true
 ServerSettings.InventoryCallInBuildUpTime = 2.0
@@ -42,12 +42,12 @@ ServerSettings.BeowulfSpawnTime = 600
 ServerSettings.ShrikeSpawnTime = 420
 
 -- Vehicles testing
-ServerSettings.GravCycleLimit = 16
-ServerSettings.BeowulfLimit = 1
-ServerSettings.ShrikeLimit = 2
-ServerSettings.GravCycleSpawnTime = 10
-ServerSettings.BeowulfSpawnTime = 120
-ServerSettings.ShrikeSpawnTime = 60
+-- ServerSettings.GravCycleLimit = 16
+-- ServerSettings.BeowulfLimit = 1
+-- ServerSettings.ShrikeLimit = 2
+-- ServerSettings.GravCycleSpawnTime = 10
+-- ServerSettings.BeowulfSpawnTime = 120
+-- ServerSettings.ShrikeSpawnTime = 60
 
 -- Weapon bans
 
