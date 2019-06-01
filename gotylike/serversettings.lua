@@ -45,9 +45,13 @@ ServerSettings.ShrikeSpawnTime = 420
 -- ServerSettings.GravCycleLimit = 16
 -- ServerSettings.BeowulfLimit = 1
 -- ServerSettings.ShrikeLimit = 2
--- ServerSettings.GravCycleSpawnTime = 10
--- ServerSettings.BeowulfSpawnTime = 120
--- ServerSettings.ShrikeSpawnTime = 60
+-- -- ServerSettings.HERCLimit = 2
+-- -- ServerSettings.HavocLimit = 2
+-- ServerSettings.GravCycleSpawnTime = 1
+-- ServerSettings.BeowulfSpawnTime = 1
+-- ServerSettings.ShrikeSpawnTime = 1
+-- -- ServerSettings.HERCSpawnTime = 1
+-- -- ServerSettings.HavocSpawnTime = 1
 
 -- Weapon bans
 
