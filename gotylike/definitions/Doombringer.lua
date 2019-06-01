@@ -93,7 +93,7 @@ local itemDefs = {
             DirectHitMultiplier = 1.25,
             ProjectileSpeed = 3000,
             ProjectileMaxSpeed = 8000,
-            ImpactMomentum = 75000,
+            ImpactMomentum = 55000,
             SelfImpactMomentumMultiplier = 1.2,
             SpareAmmo = 20,
             ReloadTime = 1.7,
@@ -108,7 +108,7 @@ local itemDefs = {
             DirectHitMultiplier = 1.25,
             ProjectileSpeed = 3000,
             ProjectileMaxSpeed = 8000,
-            ImpactMomentum  = 85000,
+            ImpactMomentum  = 65000,
             SelfImpactMomentumMultiplier = 1.2,
             SpareAmmo = 20,
             ReloadTime = 1.7,
@@ -132,6 +132,15 @@ local itemDefs = {
             SpareAmmo = 2,
             MineCollisionCylinderRadius = 180,
             MineCollisionCylinderHeight = 72,
+        },
+    },
+    {
+        name="Forcefield",
+        changes={
+            ForcefieldMinDamage = 100,
+            ForcefieldMaxDamage = 800,
+            ForcefieldMinDamageSpeed = 100,
+            ForcefieldMaxDamageSpeed = 1800,
         },
     },
 }
