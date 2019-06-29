@@ -40,18 +40,11 @@ ServerSettings.ShrikeLimit = 1
 ServerSettings.GravCycleSpawnTime = 30
 ServerSettings.BeowulfSpawnTime = 600
 ServerSettings.ShrikeSpawnTime = 420
+ServerSettings.GravCycleEjectionSeat = false
+ServerSettings.BeowulfEjectionSeat = false
+ServerSettings.ShrikeEjectionSeat = false
 
 -- Vehicles testing
--- ServerSettings.GravCycleLimit = 16
--- ServerSettings.BeowulfLimit = 1
--- ServerSettings.ShrikeLimit = 2
--- -- ServerSettings.HERCLimit = 2
--- -- ServerSettings.HavocLimit = 2
--- ServerSettings.GravCycleSpawnTime = 1
--- ServerSettings.BeowulfSpawnTime = 1
--- ServerSettings.ShrikeSpawnTime = 1
--- -- ServerSettings.HERCSpawnTime = 1
--- -- ServerSettings.HavocSpawnTime = 1
 
 -- Weapon bans
 
