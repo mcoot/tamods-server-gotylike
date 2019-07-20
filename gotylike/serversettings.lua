@@ -2,6 +2,7 @@
 ServerSettings.TimeLimit = 25
 ServerSettings.WarmupTime = 120
 ServerSettings.RespawnTime = 5
+ServerSettings.EndMatchWaitTime = 46
 ServerSettings.SniperRespawnDelay = 5
 ServerSettings.TeamAssignType = TeamAssignTypes.Unbalanced
 ServerSettings.AutoBalanceTeams = false
@@ -11,6 +12,7 @@ ServerSettings.FriendlyFireMultiplier = 1
 ServerSettings.BaseAssets = false
 ServerSettings.AmmoPickupLifespan = 60
 ServerSettings.CTFFlagTimeout = 40
+ServerSettings.TeamCredits = true
 
 -- Make inventory stations give energy
 ServerSettings.InventoryStationsRestoreEnergy = true
@@ -24,6 +26,7 @@ ServerSettings.UseGOTYBXTCharging = true
 ServerSettings.RageThrustPackDependsOnCapperSpeed = false
 -- Enable using the laser targeter to call in Inv Stations
 ServerSettings.EnableInventoryCallIn = true
+ServerSettings.InventoryCallInCost = 4000
 ServerSettings.InventoryCallInBuildUpTime = 2.0
 ServerSettings.InventoryCallInCooldownTime = 10.0
 
@@ -34,12 +37,15 @@ ServerSettings.InventoryCallInCooldownTime = 10.0
 -- ServerSettings.OvertimeLimit = 0
 
 -- Vehicles
+ServerSettings.VehiclesEarnedWithCredits = true
 ServerSettings.GravCycleLimit = 16
 ServerSettings.BeowulfLimit = 1
 ServerSettings.ShrikeLimit = 1
-ServerSettings.GravCycleSpawnTime = 30
-ServerSettings.BeowulfSpawnTime = 600
-ServerSettings.ShrikeSpawnTime = 420
+
+ServerSettings.GravCycleCost = 5000
+ServerSettings.BeowulfCost = 25000
+ServerSettings.ShrikeCost = 40000
+
 ServerSettings.GravCycleEjectionSeat = false
 ServerSettings.BeowulfEjectionSeat = false
 ServerSettings.ShrikeEjectionSeat = false
@@ -52,8 +58,5 @@ ServerSettings.ShrikeEjectionSeat = false
 ServerSettings.DisabledEquipPoints.add("Light", Loadouts.EquipPoints.Tertiary)
 ServerSettings.DisabledEquipPoints.add("Medium", Loadouts.EquipPoints.Tertiary)
 ServerSettings.DisabledEquipPoints.add("Heavy", Loadouts.EquipPoints.Tertiary)
-
--- Access Control
-Admin.Roles.add("admin", "gotytest", true)
 
 Core.AllowUnmoddedClients = false
