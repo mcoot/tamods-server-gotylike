@@ -11,6 +11,9 @@ ServerSettings.Motd = "This is my GOTY server"
 -- ServerSettings.Password = "some-password"
 ServerSettings.GameSettingMode = ServerSettings.GameSettingModes.GOTY
 
+-- Uncomment below and set role name / password to allow admin access to your server
+-- Admin.Roles.add("admin", "gotytest", true)
+
 -- Map Rotation
 -- ServerSettings.MapRotation.add(Maps.Arena.WalledIn)
 -- ServerSettings.MapRotation.add(Maps.TDM.DrydockNight)
