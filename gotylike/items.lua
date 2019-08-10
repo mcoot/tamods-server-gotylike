@@ -538,7 +538,7 @@ itemChangeDefs = {
             class="Light", -- Will apply across classes
             name="Wheel Deal",
             valueMods={
-                -- Credits don't exist, so you just get the energy bonus
+                VehicleCostReduction = 0.3,
                 VehicleEnergyBuff = 0.25,
             }
         },
