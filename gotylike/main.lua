@@ -9,3 +9,6 @@ require("gotylike/classes")
 
 -- Vehicles
 require("gotylike/vehicles")
+
+-- Admin commands
+require("gotylike/admin")
