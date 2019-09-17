@@ -32,7 +32,7 @@ local classDef = {
         RegenTime = 20,
         Mass = 130,
         RegenRate = 0.1,
-        EnergyPool = 90,
+        EnergyPool = 80,
         VehicleSpeedInheritance = 0.75,
     },
     armorValueMods={
