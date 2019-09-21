@@ -1,6 +1,3 @@
---- vvv Change to true to set up admin and moderator roles! Make sure you set the passwords! vvv
-local setupRoles = false
-
 local commands = {
     {
         name      = "NextMap",
@@ -34,22 +31,7 @@ local commands = {
     },
 }
 
-local roles = {
-    {
-        name     = "admin",
-        password = "gotytest", -- <<< Set the password!
-        commands = {"NextMap", "StartMap", "EndMap"},
-        canLua   = true, -- Admin can execute arbitrary Lua!
-    },
-    {
-        name     = "mod",
-        password = "moderator", -- <<< Set the password!
-        commands = {"NextMap", "StartMap", "EndMap"},
-        canLua   = false,
-    },
-}
-
-if setupRoles then
+function doSetupRoles(roles)
     for cmdIdx, command in pairs(commands) do
         Admin.Command.define(command.name, command.arguments, command.func)
     end
@@ -57,7 +39,6 @@ if setupRoles then
     for roleIdx, role in pairs(roles) do
         Admin.Roles.add(role.name, role.password, role.canLua)
         for cmdIdx, cmdName in pairs(role.commands) do
-            Logger.debug("Adding allowed command " .. cmdName .. " to role " .. role.name)
             Admin.Roles.addAllowedCommand(role.name, cmdName)
         end
     end
