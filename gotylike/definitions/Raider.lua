@@ -158,7 +158,7 @@ local itemDefs = {
             PackSustainedEnergyCost = 1.5,
         },
         valueMods={
-            ShieldPackBuff = 0.01,
+            ShieldPackBuff = -0.01,
         },
     },
     {
